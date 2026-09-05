@@ -686,6 +686,8 @@ Ya no habrá más jaulas para ti.
 
 *(JASMINE se pone una capucha en la cabeza y sale corriendo, seguida de RAJAH, MANAL e ISIR)*
 
+### CANCIÓN PENDIENTE (título y letra por escribir)
+
 *(Desde la otra dirección, JAFAR irrumpe con un libro de brujería. IAGO está cerca detrás en actitud de estar pensando en un plan)*
 
 **IAGO:** Ya sé... ya tengo un plan que podría conseguir el favor de la princesa.
