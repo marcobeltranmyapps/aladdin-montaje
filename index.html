@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ensayos — ALADDÍN | B612</title>
+<meta name="description" content="Cronograma de ensayos del musical ALADDÍN — B612 Audiovisual">
+<style>
+  :root {
+    color-scheme: light;
+    --bg:        #f9f9f7;
+    --card:      #ffffff;
+    --text:      #171614;
+    --muted:     #6b6960;
+    --border:    rgba(23,22,20,0.10);
+    --accent:    #b5651d;
+    --accent-bg: #fbeee2;
+    --next-bg:   #fff4e0;
+    --next-border: #eda100;
+    --done:      #c9c7bd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --bg:        #14130f;
+      --card:      #1f1e19;
+      --text:      #f3f2ee;
+      --muted:     #a6a397;
+      --border:    rgba(255,255,255,0.10);
+      --accent:    #e2a15c;
+      --accent-bg: #2a2015;
+      --next-bg:   #2c2410;
+      --next-border: #d9950f;
+      --done:      #48453c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.45;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 18px 60px; }
+
+  header { padding: 4px 0 22px; text-align: center; }
+  header h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: 0.2px; }
+  header p { margin: 0; color: var(--muted); font-size: 14.5px; }
+  header .estreno {
+    display: inline-block; margin-top: 12px; padding: 6px 14px;
+    background: var(--accent-bg); color: var(--accent); font-weight: 700;
+    border-radius: 20px; font-size: 13px;
+  }
+
+  #next {
+    background: var(--next-bg); border: 1.5px solid var(--next-border);
+    border-radius: 14px; padding: 16px 18px; margin: 22px 0 30px;
+  }
+  #next .tag { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--next-border); }
+  #next .date { font-size: 19px; font-weight: 700; margin: 4px 0 6px; }
+  #next .desc { font-size: 14.5px; color: var(--text); }
+
+  h2.phase-title {
+    font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px;
+    color: var(--muted); margin: 30px 0 10px; padding-bottom: 6px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .session {
+    display: grid; grid-template-columns: 92px 1fr; gap: 14px;
+    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
+    padding: 12px 14px; margin-bottom: 8px; font-size: 14px;
+  }
+  .session .d { font-weight: 700; color: var(--text); }
+  .session .d .wd { display: block; font-size: 11px; font-weight: 500; color: var(--muted); text-transform: uppercase; }
+  .session.past { opacity: 0.5; }
+  .session.past .d::after { content: " ✓"; color: var(--muted); }
+  .session.today { border-color: var(--next-border); }
+
+  .note {
+    margin-top: 30px; padding: 14px 16px; background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; font-size: 13px; color: var(--muted); line-height: 1.55;
+  }
+  .note strong { color: var(--text); }
+
+  footer { margin-top: 26px; text-align: center; color: var(--muted); font-size: 11.5px; }
+
+  @media (max-width: 420px) {
+    .session { grid-template-columns: 74px 1fr; gap: 10px; padding: 10px 12px; }
+    header h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Ensayos — ALADDÍN</h1>
+    <p>B612 Audiovisual · Sábados, 10:30 a.m. – 2:00 p.m.</p>
+    <span class="estreno">Estreno: 13 de diciembre de 2026</span>
+  </header>
+
+  <div id="next"></div>
+
+  <div id="schedule"></div>
+
+  <div class="note">
+    <strong>Importante:</strong> este cronograma es un estimado y puede ajustarse según el avance de cada sábado. Cualquier cambio de fecha u horario se anunciará con anticipación. Ante cualquier duda, consulta con la dirección de B612.
+  </div>
+
+  <footer>B612 Audiovisual · última actualización manual del cronograma.</footer>
+</div>
+
+<script>
+const sessions = [
+  { phase: "Ensamble inicial", date: "2026-09-05", desc: "Prólogo + Escena Uno: Mercado" },
+  { phase: "Ensamble inicial", date: "2026-09-12", desc: "Escena Dos: Palacio + Escena Tres: Mercado" },
+  { phase: "Ensamble inicial", date: "2026-09-19", desc: "Escena Cuatro: Viaje al desierto + Escena Cinco: Cueva + Escena Seis: Viaje fuera del desierto" },
+  { phase: "Ensamble inicial", date: "2026-09-26", desc: "Escena Siete: Palacio (Príncipe Alí) + Escena Ocho: Balcón (Un Mundo Ideal) + Escenas Nueve, Diez, Once + Entrada de Genio 2 + Escena Doce" },
+  { phase: "Ensamble inicial", date: "2026-10-03", desc: "Escena Trece: La Boda — sesión completa" },
+
+  { phase: "Ensayo 1 (coreografía básica, sin libreto en mano)", date: "2026-10-10", desc: "Repaso Acto I, primera mitad: Prólogo – Escena Tres" },
+  { phase: "Ensayo 1 (coreografía básica, sin libreto en mano)", date: "2026-10-17", desc: "Repaso Acto I final + arranque Acto II: Escena Cuatro – Escena Siete" },
+  { phase: "Ensayo 1 (coreografía básica, sin libreto en mano)", date: "2026-10-24", desc: "Acto II: Escena Ocho – Escena Doce" },
+  { phase: "Ensayo 1 (coreografía básica, sin libreto en mano)", date: "2026-10-31", desc: "Escena Trece: La Boda" },
+
+  { phase: "Ensayo 2 (afinar coreografía, armonías, timing)", date: "2026-11-07", desc: "Acto I completo (Prólogo – Escena Seis)" },
+  { phase: "Ensayo 2 (afinar coreografía, armonías, timing)", date: "2026-11-14", desc: "Escena Siete – Escena Once" },
+  { phase: "Ensayo 2 (afinar coreografía, armonías, timing)", date: "2026-11-21", desc: "Entrada de Genio 2 – Escena Doce + repaso parcial de Escena Trece" },
+
+  { phase: "Pulido (transiciones, entradas/salidas, ritmo)", date: "2026-11-28", desc: "Pulido obra completa: Acto I, Acto II y Escena Trece — sesión intensiva única" },
+
+  { phase: "Ensayos generales", date: "2026-12-05", desc: "Ensayo general 1: obra completa de principio a fin" },
+  { phase: "Ensayos generales", date: "2026-12-12", desc: "Ensayo general 2: técnica, vestuario y último repaso — víspera del estreno" },
+];
+
+const WEEKDAY = ["dom","lun","mar","mié","jue","vie","sáb"];
+const MONTH = ["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"];
+
+function fmtShort(d) {
+  return `${d.getDate()} ${MONTH[d.getMonth()]}`;
+}
+function fmtLong(d) {
+  const w = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"][d.getDay()];
+  const m = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"][d.getMonth()];
+  return `${w} ${d.getDate()} de ${m}`;
+}
+
+const todayStr = new Date().toISOString().slice(0,10);
+const scheduleEl = document.getElementById("schedule");
+const nextEl = document.getElementById("next");
+
+let lastPhase = null;
+let nextSession = null;
+
+sessions.forEach(s => {
+  if (s.phase !== lastPhase) {
+    const h = document.createElement("h2");
+    h.className = "phase-title";
+    h.textContent = s.phase;
+    scheduleEl.appendChild(h);
+    lastPhase = s.phase;
+  }
+  const isPast = s.date < todayStr;
+  const isToday = s.date === todayStr;
+  if (!isPast && !nextSession) nextSession = s;
+
+  const d = new Date(s.date + "T00:00:00");
+  const row = document.createElement("div");
+  row.className = "session" + (isPast ? " past" : "") + (isToday ? " today" : "");
+  row.innerHTML = `
+    <div class="d"><span class="wd">${WEEKDAY[d.getDay()]}</span>${fmtShort(d)}</div>
+    <div class="desc">${s.desc}</div>
+  `;
+  scheduleEl.appendChild(row);
+});
+
+if (nextSession) {
+  const d = new Date(nextSession.date + "T00:00:00");
+  nextEl.innerHTML = `
+    <div class="tag">Próximo ensayo</div>
+    <div class="date">${fmtLong(d)}</div>
+    <div class="desc">${nextSession.desc}</div>
+  `;
+} else {
+  nextEl.innerHTML = `
+    <div class="tag">Temporada de ensayos</div>
+    <div class="date">¡Completada!</div>
+    <div class="desc">Todos los ensayos programados ya se realizaron. ¡Nos vemos en el estreno!</div>
+  `;
+}
+</script>
+</body>
+</html>
