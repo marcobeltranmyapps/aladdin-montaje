@@ -12,9 +12,10 @@
 <style>
   /* ---------- Lista de escenas ---------- */
   .scene-row {
+    position: relative;
     display: flex; align-items: center; justify-content: space-between; gap: 12px;
     background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
-    padding: 14px 16px; margin-bottom: 8px; text-decoration: none; color: inherit;
+    padding: 14px 46px 14px 16px; margin-bottom: 8px; text-decoration: none; color: inherit;
     transition: transform 120ms ease, border-color 120ms ease;
   }
   .scene-row:hover { border-color: var(--border-strong); }
@@ -24,7 +25,7 @@
   .scene-row .chev { color: var(--ink-faint); flex-shrink: 0; }
 
   /* ---------- Vista de escena (formato guion) ---------- */
-  .scene-header { margin-bottom: 22px; }
+  .scene-header { position: relative; margin-bottom: 22px; padding-right: 46px; }
   .scene-header .act { color: var(--teal); }
   .scene-header h1 { font-size: clamp(22px, 5vw, 28px); margin-top: 4px; }
 
@@ -120,6 +121,7 @@ const root = document.getElementById("root");
 let SCENES = null;
 
 const MUSIC_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`;
+function pad2(n) { return String(n).padStart(2, "0"); }
 
 function renderList() {
   const acts = [];
@@ -142,6 +144,7 @@ function renderList() {
       const songCount = s.blocks.filter(b => b.type === "song").length;
       html += `
         <a class="scene-row" href="#${s.id}">
+          <span class="num-badge">${pad2(SCENES.indexOf(s) + 1)}</span>
           <span>
             <span class="title">${s.title}</span>
             ${songCount ? `<span class="songs">${songCount} número${songCount > 1 ? "s" : ""} musical${songCount > 1 ? "es" : ""}</span>` : ""}
@@ -164,6 +167,7 @@ function renderScene(id) {
       Todas las escenas
     </a>
     <div class="scene-header">
+      <span class="num-badge">${pad2(SCENES.indexOf(scene) + 1)}</span>
       <div class="eyebrow act">${scene.act}</div>
       <h1>${scene.title}</h1>
     </div>
