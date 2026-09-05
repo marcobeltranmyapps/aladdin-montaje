@@ -129,7 +129,9 @@ a { color: inherit; }
   font-family: var(--font-display); font-weight: 700; font-size: 24px; line-height: 1;
   color: var(--num-ink); background: none; padding: 0; white-space: nowrap;
   font-variant-numeric: tabular-nums;
+  max-width: calc(100% - 24px); overflow: hidden; text-overflow: ellipsis;
 }
+.num-badge.multi { font-size: 15px; letter-spacing: 0.2px; top: 13px; }
 
 .pill {
   display: inline-flex; align-items: center; gap: 6px;

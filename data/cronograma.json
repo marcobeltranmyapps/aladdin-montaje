@@ -2,7 +2,7 @@
   "premiere": "2026-12-13",
   "rehearsalTime": "Sábados, 10:30 a.m. – 2:00 p.m.",
   "sessions": [
-    { "date": "2026-09-05", "phase": "Ensamble inicial", "num": "02, 03, 05", "desc": "Escena Uno (resto) + Escena Dos (Jafar/Iago/Sultán) + Escena Cuatro",
+    { "date": "2026-09-05", "phase": "Ensamble inicial", "num": "02·03·05", "desc": "Escena Uno (resto) + Escena Dos (Jafar/Iago/Sultán) + Escena Cuatro",
       "synopsis": "Reprogramado: las actrices de Jazmín no asisten hoy, así que se prioriza el resto del elenco en 3 escenas de reparto distinto. Se cierra la Escena Uno (Aladdín y sus amigos en el mercado), se arma la trama de Jafar e Iago junto al Sultán en el palacio, y se monta el viaje de Jafar, Iago y Aladdín rumbo al desierto.",
       "progress": "10:30–11:00 calentamiento · 11:00–11:50 Escena Uno (cierre: apertura + persecución, venía parcial de la sesión anterior) · 11:50–12:40 Escena Dos, solo parte de Jafar/Iago/Sultán/Abdullah (sin Jazmín) · 12:40–13:30 Escena Cuatro (Jafar, Iago, Aladdín) · resto: repaso." },
     { "date": "2026-09-12", "phase": "Ensamble inicial", "num": "03–04", "desc": "Escena Dos: Palacio + Escena Tres: Mercado",

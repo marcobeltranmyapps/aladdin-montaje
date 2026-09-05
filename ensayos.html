@@ -86,6 +86,11 @@ const todayStr = new Date().toISOString().slice(0,10);
 const scheduleEl = document.getElementById("schedule");
 const nextEl = document.getElementById("next");
 
+function numBadge(num) {
+  const cls = num.length > 5 ? " multi" : "";
+  return `<span class="num-badge${cls}">${num}</span>`;
+}
+
 function fmtPremiere(dateStr) {
   const d = new Date(dateStr + "T00:00:00");
   const m = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"][d.getMonth()];
@@ -116,7 +121,7 @@ function render(data) {
     const row = document.createElement("div");
     row.className = "session" + (isPast ? " past" : "") + (isToday ? " today" : "");
     row.innerHTML = `
-      <span class="num-badge">${s.num}</span>
+      ${numBadge(s.num)}
       <div class="d"><span class="wd">${WEEKDAY[d.getDay()]}</span>${fmtShort(d)}</div>
       <div>
         <div class="desc">${s.desc}</div>
@@ -130,7 +135,7 @@ function render(data) {
   if (nextSession) {
     const d = new Date(nextSession.date + "T00:00:00");
     nextEl.innerHTML = `
-      <span class="num-badge">${nextSession.num}</span>
+      ${numBadge(nextSession.num)}
       <div class="tag">Próximo ensayo</div>
       <div class="date">${fmtLong(d)}</div>
       <div class="desc">${nextSession.desc}</div>
