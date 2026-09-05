@@ -1,0 +1,41 @@
+{
+  "premiere": "2026-12-13",
+  "rehearsalTime": "Sábados, 10:30 a.m. – 2:00 p.m.",
+  "sessions": [
+    { "date": "2026-09-05", "phase": "Ensamble inicial", "num": "02", "desc": "Escena Uno: Mercado",
+      "synopsis": "Aladdín, ladronzuelo de buen corazón, es perseguido en el mercado junto a sus amigos Babkak, Omar y Kassim tras un lío con un vendedor — y sueña con el día en que su difunta madre pueda sentirse orgullosa de él.",
+      "progress": "Parcial: ensamblado desde la entrada de Aladdín (empujado al escenario) hasta antes de 'Un Salto Adelante'. Falta la apertura ('Noche de Arabia') y la persecución con esa canción + 'Orgullosa de Mí'." },
+    { "date": "2026-09-12", "phase": "Ensamble inicial", "num": "03–04", "desc": "Escena Dos: Palacio + Escena Tres: Mercado",
+      "synopsis": "Jafar trama hacerse con el trono mientras el Sultán presiona a Jasmín para casarse; ella escapa disfrazada al mercado y conoce a Aladdín sin saber que es el 'diamante en bruto' que Jafar necesita para robar una lámpara mágica." },
+    { "date": "2026-09-19", "phase": "Ensamble inicial", "num": "05–07", "desc": "Escena Cuatro: Viaje al desierto + Escena Cinco: Cueva + Escena Seis: Viaje fuera del desierto",
+      "synopsis": "Jafar lleva a Aladdín hasta la Cueva de las Maravillas para que le traiga la lámpara; atrapado adentro tras tocar un tesoro prohibido, Aladdín conoce al Genio y usa su primer deseo para convertirse en príncipe." },
+    { "date": "2026-09-26", "phase": "Ensamble inicial", "num": "08–14", "desc": "Escena Siete: Palacio (Príncipe Alí) + Escena Ocho: Balcón (Un Mundo Ideal) + Escenas Nueve, Diez, Once + Entrada de Genio 2 + Escena Doce",
+      "synopsis": "Aladdín se presenta en palacio como el 'Príncipe Alí', pasea a Jasmín en la alfombra mágica sin decirle toda la verdad, y termina arrestado — sus amigos intentan rescatarlo y el Genio lo libera con su segundo deseo, justo cuando Jafar descubre quién es realmente." },
+    { "date": "2026-10-03", "phase": "Ensamble inicial", "num": "15", "desc": "Escena Trece: La Boda — sesión completa",
+      "synopsis": "El día de la boda, Jafar expone el engaño de Aladdín y roba la lámpara para volverse Sultán y luego un genio todopoderoso — hasta que Aladdín lo vence, cumple su promesa de liberar al Genio, y se queda con Jasmín siendo simplemente él mismo." },
+
+    { "date": "2026-10-10", "phase": "Ensayo 1 (coreografía básica, sin libreto en mano)", "num": "01–04", "desc": "Repaso Acto I, primera mitad: Prólogo – Escena Tres",
+      "synopsis": "Repaso del arranque de la historia: la infancia de Aladdín, su vida como ladronzuelo en el mercado, y su primer encuentro con Jasmín, quien escapó del palacio disfrazada." },
+    { "date": "2026-10-17", "phase": "Ensayo 1 (coreografía básica, sin libreto en mano)", "num": "05–08", "desc": "Repaso Acto I final + arranque Acto II: Escena Cuatro – Escena Siete",
+      "synopsis": "Repaso de la Cueva de las Maravillas, el encuentro con el Genio, y la transformación de Aladdín en el 'Príncipe Alí' para presentarse ante el Sultán." },
+    { "date": "2026-10-24", "phase": "Ensayo 1 (coreografía básica, sin libreto en mano)", "num": "09–14", "desc": "Acto II: Escena Ocho – Escena Doce",
+      "synopsis": "Repaso del paseo en alfombra mágica con Jasmín, el arresto de Aladdín, el rescate de sus amigos, y el momento en que Jafar descubre su verdadera identidad." },
+    { "date": "2026-10-31", "phase": "Ensayo 1 (coreografía básica, sin libreto en mano)", "num": "15", "desc": "Escena Trece: La Boda",
+      "synopsis": "Repaso de la escena de la boda: la traición de Jafar, su transformación en genio, y el final feliz de Aladdín y Jasmín." },
+
+    { "date": "2026-11-07", "phase": "Ensayo 2 (afinar coreografía, armonías, timing)", "num": "01–07", "desc": "Acto I completo (Prólogo – Escena Seis)",
+      "synopsis": "Repaso de todo el Acto I: de la infancia de Aladdín hasta el momento en que se convierte en príncipe para acercarse a Jasmín." },
+    { "date": "2026-11-14", "phase": "Ensayo 2 (afinar coreografía, armonías, timing)", "num": "08–12", "desc": "Escena Siete – Escena Once",
+      "synopsis": "Repaso de la llegada del 'Príncipe Alí' al palacio hasta el intento de rescate de sus amigos." },
+    { "date": "2026-11-21", "phase": "Ensayo 2 (afinar coreografía, armonías, timing)", "num": "13–15", "desc": "Entrada de Genio 2 – Escena Doce + repaso parcial de Escena Trece",
+      "synopsis": "Repaso del rescate final de Aladdín y el inicio del desenlace en la boda." },
+
+    { "date": "2026-11-28", "phase": "Pulido (transiciones, entradas/salidas, ritmo)", "num": "01–15", "desc": "Pulido obra completa: Acto I, Acto II y Escena Trece — sesión intensiva única",
+      "synopsis": "Repaso corrido de la obra completa, de principio a fin, afinando transiciones y entradas." },
+
+    { "date": "2026-12-05", "phase": "Ensayos generales", "num": "01–15", "desc": "Ensayo general 1: obra completa de principio a fin",
+      "synopsis": "Primer ensayo general: la historia completa de Aladdín, de principio a fin, sin pausas." },
+    { "date": "2026-12-12", "phase": "Ensayos generales", "num": "01–15", "desc": "Ensayo general 2: técnica, vestuario y último repaso — víspera del estreno",
+      "synopsis": "Último ensayo antes del estreno: repaso final con vestuario y técnica." }
+  ]
+}
