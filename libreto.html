@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Libreto — ALADDÍN</title>
+<meta name="description" content="Libreto completo del musical ALADDÍN, por escenas — B612 Audiovisual">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Vazirmatn:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* ---------- Lista de escenas ---------- */
+  .scene-row {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 14px 16px; margin-bottom: 8px; text-decoration: none; color: inherit;
+    transition: transform 120ms ease, border-color 120ms ease;
+  }
+  .scene-row:hover { border-color: var(--border-strong); }
+  .scene-row:active { transform: scale(0.99); }
+  .scene-row .title { font-family: var(--font-display); font-size: 15.5px; color: var(--ink); }
+  .scene-row .songs { display: block; font-size: 12px; color: var(--ink-faint); margin-top: 2px; }
+  .scene-row .chev { color: var(--ink-faint); flex-shrink: 0; }
+
+  /* ---------- Vista de escena (formato guion) ---------- */
+  .scene-header { margin-bottom: 22px; }
+  .scene-header .act { color: var(--teal); }
+  .scene-header h1 { font-size: clamp(22px, 5vw, 28px); margin-top: 4px; }
+
+  .line { display: grid; grid-template-columns: 130px 1fr; gap: 16px; margin-bottom: 14px; }
+  .line .who { font-family: var(--font-display); font-weight: 700; font-size: 13.5px; letter-spacing: 0.3px; color: var(--brass-ink); background: var(--brass-soft); border-radius: 6px; padding: 2px 8px; height: fit-content; justify-self: start; }
+  .line .txt { font-size: 15px; color: var(--ink); }
+  .line .txt em { color: var(--ink-soft); font-style: italic; }
+
+  .line.lyric .who { background: var(--teal-soft); color: var(--teal); }
+  .line.lyric .txt { font-style: italic; font-weight: 600; color: var(--ink); }
+  .line.lyric .txt div + div { margin-top: 2px; }
+
+  .block-action {
+    text-align: center; font-style: italic; color: var(--ink-soft); font-size: 13.5px;
+    margin: 16px auto; max-width: 480px;
+  }
+
+  .block-song {
+    display: flex; align-items: center; gap: 10px; margin: 30px 0 18px;
+    font-family: var(--font-display); font-size: 14.5px; letter-spacing: 0.3px;
+    color: var(--teal); text-transform: uppercase;
+  }
+  .block-song::before, .block-song::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+  .block-song svg { flex-shrink: 0; width: 15px; height: 15px; }
+
+  @media (max-width: 520px) {
+    .line { grid-template-columns: 1fr; gap: 3px; }
+    .line .who { justify-self: start; }
+  }
+
+  .loading, .error { text-align: center; color: var(--ink-soft); padding: 40px 0; font-size: 14px; }
+
+  #gate {
+    position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center;
+    background: var(--bg); padding: 20px;
+  }
+  #gate .card { max-width: 340px; width: 100%; padding: 30px 26px; text-align: center; }
+  #gate .brand { font-family: var(--font-display); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); margin-bottom: 8px; }
+  #gate h1 { font-size: 20px; margin-bottom: 8px; }
+  #gate p.hint { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 18px; }
+  #gate input {
+    width: 100%; padding: 11px 13px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--surface-2); color: var(--ink); font-size: 15px; margin-bottom: 12px;
+    font-family: var(--font-body);
+  }
+  #gate button {
+    width: 100%; padding: 11px 13px; border-radius: 8px; border: none;
+    background: var(--brass); color: var(--brass-ink); font-weight: 700; font-size: 14px; cursor: pointer;
+    transition: transform 120ms ease;
+  }
+  #gate button:active { transform: scale(0.97); }
+  #gate .err { color: var(--terracotta); font-size: 12.5px; margin-top: 10px; min-height: 16px; }
+  .shell[hidden] { display: none; }
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <form class="card" id="gate-form">
+    <div class="brand">B612 Audiovisual</div>
+    <h1>Libreto — acceso restringido</h1>
+    <p class="hint">Esta sección es solo para el elenco y el equipo de producción.</p>
+    <input type="password" id="gate-input" placeholder="Contraseña" autocomplete="off" autofocus>
+    <button type="submit">Entrar</button>
+    <div class="err" id="gate-err"></div>
+  </form>
+</div>
+
+<div class="shell" id="shell" hidden>
+  <a class="crumb" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    Inicio
+  </a>
+
+  <div id="root">
+    <div class="loading">Cargando libreto…</div>
+  </div>
+
+  <footer class="site">B612 Audiovisual · el libreto se genera directamente desde <code>Libreto_Aladdin.md</code>, la fuente original.</footer>
+</div>
+
+<script src="assets/libreto-parser.js"></script>
+<script>
+const root = document.getElementById("root");
+let SCENES = null;
+
+const MUSIC_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`;
+
+function renderList() {
+  const acts = [];
+  const byAct = {};
+  SCENES.forEach(s => {
+    if (!byAct[s.act]) { byAct[s.act] = []; acts.push(s.act); }
+    byAct[s.act].push(s);
+  });
+
+  let html = `
+    <header class="masthead" style="text-align:left; padding-bottom:4px;">
+      <div class="brand">B612 Audiovisual</div>
+      <h1>Libreto</h1>
+      <p class="sub">Toca una escena para leerla en formato de guion.</p>
+    </header>
+  `;
+  acts.forEach(act => {
+    html += `<h2 class="section-title">${act}</h2>`;
+    byAct[act].forEach(s => {
+      const songCount = s.blocks.filter(b => b.type === "song").length;
+      html += `
+        <a class="scene-row" href="#${s.id}">
+          <span>
+            <span class="title">${s.title}</span>
+            ${songCount ? `<span class="songs">${songCount} número${songCount > 1 ? "s" : ""} musical${songCount > 1 ? "es" : ""}</span>` : ""}
+          </span>
+          <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+        </a>
+      `;
+    });
+  });
+  root.innerHTML = html;
+}
+
+function renderScene(id) {
+  const scene = SCENES.find(s => s.id === id);
+  if (!scene) { renderList(); return; }
+
+  let html = `
+    <a class="crumb" href="#" onclick="location.hash=''; return false;" style="margin-bottom:22px;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      Todas las escenas
+    </a>
+    <div class="scene-header">
+      <div class="eyebrow act">${scene.act}</div>
+      <h1>${scene.title}</h1>
+    </div>
+  `;
+
+  scene.blocks.forEach(b => {
+    if (b.type === "song") {
+      html += `<div class="block-song">${MUSIC_ICON}<span>${b.text}</span>${MUSIC_ICON}</div>`;
+    } else if (b.type === "action") {
+      html += `<div class="block-action">${b.html}</div>`;
+    } else if (b.type === "dialogue" || b.type === "continuation") {
+      const who = b.character ? `<div class="who">${b.character}</div>` : `<div class="who"></div>`;
+      html += `<div class="line">${who}<div class="txt">${b.html}</div></div>`;
+    } else if (b.type === "lyric") {
+      const lines = b.lines.map(l => `<div>${l}</div>`).join("");
+      html += `<div class="line lyric"><div class="who">${b.character}</div><div class="txt">${lines}</div></div>`;
+    }
+  });
+
+  root.innerHTML = html;
+  window.scrollTo(0, 0);
+}
+
+function route() {
+  if (!SCENES) return;
+  const id = location.hash.replace(/^#/, "");
+  if (id) renderScene(id); else renderList();
+}
+
+window.addEventListener("hashchange", route);
+
+function loadLibreto() {
+  fetch("data/Libreto_Aladdin.md")
+    .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); })
+    .then(text => {
+      SCENES = LibretoParser.parse(text).scenes;
+      route();
+    })
+    .catch(err => {
+      root.innerHTML = `<div class="error">No se pudo cargar el libreto (${err.message}).<br>Si estás probando esto localmente, ábrelo desde un servidor (no directamente como archivo).</div>`;
+    });
+}
+
+// ---------- Candado de acceso ----------
+// Aviso honesto: esto es disuasorio, no seguridad real. Cualquiera que vea
+// el código fuente encuentra la contraseña, y data/Libreto_Aladdin.md sigue
+// siendo descargable directamente por su URL. Solo evita que alguien caiga
+// aquí por accidente o vía buscadores (ver meta robots noindex).
+const PASSWORD = "aladd1n";
+const gate = document.getElementById("gate");
+const shell = document.getElementById("shell");
+const gateForm = document.getElementById("gate-form");
+const gateInput = document.getElementById("gate-input");
+const gateErr = document.getElementById("gate-err");
+
+function unlock() {
+  sessionStorage.setItem("libreto_ok", "1");
+  gate.remove();
+  shell.hidden = false;
+  loadLibreto();
+}
+
+if (sessionStorage.getItem("libreto_ok") === "1") {
+  unlock();
+} else {
+  gateForm.addEventListener("submit", e => {
+    e.preventDefault();
+    if (gateInput.value === PASSWORD) {
+      unlock();
+    } else {
+      gateErr.textContent = "Contraseña incorrecta.";
+      gateInput.value = "";
+      gateInput.focus();
+    }
+  });
+}
+</script>
+</body>
+</html>

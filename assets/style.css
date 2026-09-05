@@ -1,0 +1,169 @@
+/* =========================================================================
+   ALADDÍN · B612 — sistema visual compartido
+   Paleta: arena/pergamino de Agrabah de día, brasas de lámpara de noche.
+   Tipografía: Amiri (display, caligrafía árabe latinizada) + Vazirmatn
+   (texto, geométrica de origen árabe-latino, muy legible en pantalla).
+   ========================================================================= */
+
+:root {
+  color-scheme: light;
+
+  --ink:          #241a10;
+  --ink-soft:     #6b5738;
+  --ink-faint:    #9c8963;
+
+  --bg:           #f1e4c6;
+  --surface:      #faf3e1;
+  --surface-2:    #ecdbb3;
+  --border:       rgba(36,26,16,0.14);
+  --border-strong:rgba(36,26,16,0.28);
+
+  --brass:        #ad7414;
+  --brass-ink:    #40290a;
+  --brass-soft:   #ecdaac;
+
+  --teal:         #0d5955;
+  --teal-soft:    #d7e9e6;
+
+  --terracotta:      #ab4623;
+  --terracotta-soft: #f4dccb;
+
+  --shadow: 0 1px 2px rgba(36,26,16,0.06), 0 6px 20px -8px rgba(36,26,16,0.20);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --ink:          #f3e7c9;
+    --ink-soft:     #c7b088;
+    --ink-faint:    #8d7a58;
+
+    --bg:           #1b140b;
+    --surface:      #241b11;
+    --surface-2:    #2f2415;
+    --border:       rgba(243,231,201,0.12);
+    --border-strong:rgba(243,231,201,0.22);
+
+    --brass:        #dda43e;
+    --brass-ink:    #2c1d09;
+    --brass-soft:   #3a2b12;
+
+    --teal:         #4bb6ab;
+    --teal-soft:    #16302c;
+
+    --terracotta:      #e2794e;
+    --terracotta-soft: #3a2115;
+
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 10px 28px -10px rgba(0,0,0,0.55);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ink:          #f3e7c9;
+  --ink-soft:     #c7b088;
+  --ink-faint:    #8d7a58;
+  --bg:           #1b140b;
+  --surface:      #241b11;
+  --surface-2:    #2f2415;
+  --border:       rgba(243,231,201,0.12);
+  --border-strong:rgba(243,231,201,0.22);
+  --brass:        #dda43e;
+  --brass-ink:    #2c1d09;
+  --brass-soft:   #3a2b12;
+  --teal:         #4bb6ab;
+  --teal-soft:    #16302c;
+  --terracotta:      #e2794e;
+  --terracotta-soft: #3a2115;
+  --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 10px 28px -10px rgba(0,0,0,0.55);
+}
+
+* { box-sizing: border-box; }
+
+html, body { background: var(--bg); }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+:root {
+  --font-display: 'Amiri', Georgia, 'Times New Roman', serif;
+  --font-body: 'Vazirmatn', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+
+a { color: inherit; }
+
+.shell { max-width: 760px; margin: 0 auto; padding: 26px 18px 64px; }
+
+.crumb {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; color: var(--ink-soft); text-decoration: none;
+  margin-bottom: 18px; width: fit-content;
+}
+.crumb:hover { color: var(--brass); }
+.crumb svg { width: 14px; height: 14px; }
+
+.masthead { text-align: center; padding: 6px 0 8px; }
+.masthead .brand {
+  font-family: var(--font-display); font-size: 15px; letter-spacing: 2.5px;
+  text-transform: uppercase; color: var(--brass); margin-bottom: 6px;
+}
+.masthead h1 {
+  font-size: clamp(28px, 6vw, 38px); font-weight: 700; color: var(--ink);
+}
+.masthead p.sub { margin: 8px 0 0; color: var(--ink-soft); font-size: 14.5px; }
+
+.pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 6px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 600;
+  background: var(--brass-soft); color: var(--brass-ink);
+}
+
+.eyebrow {
+  font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px;
+  color: var(--teal);
+}
+
+.section-title {
+  font-family: var(--font-display); font-size: 17px; color: var(--ink);
+  margin: 34px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
+}
+
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.note {
+  margin-top: 26px; padding: 15px 18px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 12px; font-size: 13.5px; color: var(--ink-soft); line-height: 1.6;
+}
+.note strong { color: var(--ink); }
+
+footer.site {
+  margin-top: 32px; text-align: center; color: var(--ink-faint); font-size: 11.5px;
+}
+
+/* ---------- Arco ornamental (motivo compartido, uso comedido) ---------- */
+:root { --arch-opacity: 0.55; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --arch-opacity: 0.38; } }
+:root[data-theme="dark"] { --arch-opacity: 0.38; }
+
+.arch-motif {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  opacity: var(--arch-opacity);
+}
+
+@media (max-width: 560px) {
+  .shell { padding: 20px 14px 56px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /libreto.html
+Disallow: /data/
