@@ -2,9 +2,9 @@
   "premiere": "2026-12-13",
   "rehearsalTime": "Sábados, 10:30 a.m. – 2:00 p.m.",
   "sessions": [
-    { "date": "2026-09-05", "phase": "Ensamble inicial", "num": "02", "desc": "Escena Uno: Mercado",
-      "synopsis": "Aladdín, ladronzuelo de buen corazón, es perseguido en el mercado junto a sus amigos Babkak, Omar y Kassim tras un lío con un vendedor — y sueña con el día en que su difunta madre pueda sentirse orgullosa de él.",
-      "progress": "Parcial: ensamblado desde la entrada de Aladdín (empujado al escenario) hasta antes de 'Un Salto Adelante'. Falta la apertura ('Noche de Arabia') y la persecución con esa canción + 'Orgullosa de Mí'." },
+    { "date": "2026-09-05", "phase": "Ensamble inicial", "num": "02, 03, 05", "desc": "Escena Uno (resto) + Escena Dos (Jafar/Iago/Sultán) + Escena Cuatro",
+      "synopsis": "Reprogramado: las actrices de Jazmín no asisten hoy, así que se prioriza el resto del elenco en 3 escenas de reparto distinto. Se cierra la Escena Uno (Aladdín y sus amigos en el mercado), se arma la trama de Jafar e Iago junto al Sultán en el palacio, y se monta el viaje de Jafar, Iago y Aladdín rumbo al desierto.",
+      "progress": "10:30–11:00 calentamiento · 11:00–11:50 Escena Uno (cierre: apertura + persecución, venía parcial de la sesión anterior) · 11:50–12:40 Escena Dos, solo parte de Jafar/Iago/Sultán/Abdullah (sin Jazmín) · 12:40–13:30 Escena Cuatro (Jafar, Iago, Aladdín) · resto: repaso." },
     { "date": "2026-09-12", "phase": "Ensamble inicial", "num": "03–04", "desc": "Escena Dos: Palacio + Escena Tres: Mercado",
       "synopsis": "Jafar trama hacerse con el trono mientras el Sultán presiona a Jasmín para casarse; ella escapa disfrazada al mercado y conoce a Aladdín sin saber que es el 'diamante en bruto' que Jafar necesita para robar una lámpara mágica." },
     { "date": "2026-09-19", "phase": "Ensamble inicial", "num": "05–07", "desc": "Escena Cuatro: Viaje al desierto + Escena Cinco: Cueva + Escena Seis: Viaje fuera del desierto",

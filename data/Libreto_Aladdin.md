@@ -7,22 +7,22 @@
 3. Omar
 4. Kassim
 5. Babkak
-6. Agrabahns
+6. Jazmín
 7. Rajah
-8. Makid
-9. Jazmín
-10. Sultán
-11. Iago
-12. Jafar
-13. Manal
-14. Príncipe Abdullah
+8. Manal
+9. Isir
+10. Iago
+11. Jafar
+12. Sultán
+13. Príncipe Abdullah
+14. Razoul
 15. Narrador
-16. Isir
-17. Primer guardia
-18. Segundo guardia
-19. Naima (madre de Aladdín — solo aparece en el Prólogo)
-20. Halima (vendedora de pan — solo aparece en el Prólogo)
-21. Cobrador (recaudador de impuestos — solo aparece en el Prólogo)
+16. Primer guardia
+17. Segundo guardia
+18. Naima (madre de Aladdín — solo aparece en el Prólogo)
+19. Halima (vendedora de pan — solo aparece en el Prólogo)
+20. Cobrador (recaudador de impuestos — solo aparece en el Prólogo)
+21. Niños
 
 *Nota: en el Prólogo, los actores de Aladdín, Babkak, Omar y Kassim interpretan versiones niño de sus propios personajes.*
 
@@ -149,7 +149,7 @@ Orgullosa de ti...
 
 **NARRADOR:** ¡Salaam y buenas noches a ustedes, dignos amigos! ¡Bienvenidos... a la legendaria ciudad de Agrabah!
 
-Ciudad de alfombras voladoras, grandes héroes, promesas de amor y más brillo y glamor que cualquier otra ciudad ficticia en el mundo.
+Ciudad de alfombras voladoras, grandes héroes, promesas de amor y más brillo y glamour que cualquier otra ciudad ficticia en el mundo.
 
 *(Surgen varios AGRABAHNS y también se dirigen a la audiencia)*
 
@@ -534,17 +534,17 @@ Orgullosa de mí
 
 **IAGO:** La princesa Jasmine ha estado hablando con el príncipe Abdullah por más de una hora.
 
-**JAFAR:** ¿¿Una hora?? Pero si ella elige un pretendiente antes de la próxima luna, él se convierte en el próximo sultán... ¡en vez de mí!
+**JAFAR:** ¿¿Una hora?? Pero si ella elige un pretendiente antes de la próxima luna, él se será el próximo sultán... ¡en vez de mí!
 
-**IAGO:** ¡Es por eso que dije que tenemos problemas!
+**IAGO:** ¡Por eso que dije que tenemos problemas!
 
-*(El SULTÁN entra, caminando nerviosamente)*
+*(El SULTÁN entra, caminando nerviosamente, mientras se observa a Iago intentando apaciguar a Jafar)*
 
-**SULTÁN:** Jafar, ahí estás. ¿Alguna noticia sobre cómo va?
+**SULTÁN:** Jafar, al fin de encuentro. ¿tenemos alguna noticia sobre la visita del príncipe Abdulah?
 
-**JAFAR** *(reverencia)*: Nada todavía, Su Majestad.
+**JAFAR** *(inclinándose con falta devoción)*: Aun no, Su Majestad.
 
-**SULTÁN:** Espero que este príncipe sea un ganador. ¡Nos estamos quedando sin pretendientes!
+**SULTÁN:** Espero que este príncipe sea el definitivo... ¡Nos estamos quedando sin pretendientes!
 
 *(EL PRÍNCIPE ABDULLAH entra, molesto)*
 
@@ -1065,7 +1065,7 @@ hallemos el hogar!
 
 **JAFAR:** Hay una cueva encantada que contiene muchas maravillas.
 
-**IAGO:** ¡Lo llamamos "La Cueva de las Maravillas"! ¿Original no?
+**IAGO:** ¿Sabes cómo lo llamamos? *(A Aladdin)* "La Cueva de las Maravillas"! *(mirando a Jafar)* ¿Original no?
 
 **JAFAR:** En lo profundo de la cueva hay una lámpara que necesito que traigas por mí. Pero, debes asegurarte de tocar solo la lámpara.
 
