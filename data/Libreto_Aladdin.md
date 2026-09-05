@@ -7,7 +7,7 @@
 3. Omar
 4. Kassim
 5. Babkak
-6. Jazmín
+6. Jasmine
 7. Rajah
 8. Manal
 9. Isir
@@ -540,9 +540,9 @@ Orgullosa de mí
 
 *(El SULTÁN entra, caminando nerviosamente, mientras se observa a Iago intentando apaciguar a Jafar)*
 
-**SULTÁN:** Jafar, al fin de encuentro. ¿tenemos alguna noticia sobre la visita del príncipe Abdulah?
+**SULTÁN:** Jafar, al fin te encuentro. ¿Tenemos alguna noticia sobre la visita del príncipe Abdullah?
 
-**JAFAR** *(inclinándose con falta devoción)*: Aun no, Su Majestad.
+**JAFAR** *(inclinándose con falsa devoción)*: Aún no, Su Majestad.
 
 **SULTÁN:** Espero que este príncipe sea el definitivo... ¡Nos estamos quedando sin pretendientes!
 
@@ -574,33 +574,33 @@ Príncipe Abdullah!
 
 **IAGO** *(aparte)*: ¡Adiós, tonto!
 
-**JAFAR** *(fingiendo preocupación por el beneficio de SULTAN)*: Oh querido. ¿Qué vas a hacer, señor?
+**JAFAR** *(fingiendo preocupación por el beneficio de SULTÁN)*: Oh querido. ¿Qué vas a hacer, señor?
 
 **SULTÁN:** Esto es absurdo. Claramente he malcriado a la chica. Bueno, todo eso va a cambiar. Desde ahora ¡tengo la intención de reinar sobre ella con un puño de hierro!
 
 *(JASMINE entra)*
 
-**JAZMÍN:** ¿Papi?
+**JASMINE:** ¿Papi?
 
 **SULTÁN** *(asustado, voltea rápidamente)*: ¿Sí, calabacita? *(se arrepiente)* ¿Qué le dijiste a ese pobre príncipe?
 
-**JAZMÍN:** Le acabo de decir la verdad: que si se casa conmigo, obtendrá un compañero igual con la misma voz. Y que tendrá que cambiarle los pañales a nuestros hijos.
+**JASMINE:** Le acabo de decir la verdad: que si se casa conmigo, tendrá una esposa, no una sirvienta — alguien con voz propia, que no está sujeta a nadie. Y que tendrá que cambiarle los pañales a nuestros hijos.
 
 **SULTÁN:** Pero eso se dice después de casarse... 
 
-**JAZMÍN:** ¿tengo que casarme? ¿Qué pasaría si una mujer quiere dirigit el reino?
+**JASMINE:** ¿Tengo que casarme? ¿Qué pasaría si una mujer quiere dirigir el reino?
 
 **IAGO** *(aparte)*: ¡Habla sobre vivir en un cuento de hadas!
 
 **SULTÁN:** Jasmine, eres una princesa. La ley establece que debes casarte con un príncipe en la próxima luna. Nosotros debemos mantener las formas antiguas, querida.
 
-**JAZMÍN:** Si tengo que casarme con alguien que no amo, entonces tal vez ya no quiera ser una princesa.
+**JASMINE:** Si tengo que casarme con alguien que no amo, entonces tal vez ya no quiera ser una princesa.
 
 **SULTÁN:** No es solo la ley. No estaré para siempre, y quiero asegurarme de que te cuiden.
 
-**JAZMÍN:** ¡Puedo cuidarme sola, gracias! *(JASMINE sale)*
+**JASMINE:** ¡Puedo cuidarme sola, gracias! *(JASMINE sale)*
 
-**SULTÁN** *(nervioso, siguiendo a JASMINE)*: Jasmine, si no eliges un esposo mañana, ¡elegiré uno para ti! *(SULTAN sale)*
+**SULTÁN** *(nervioso, siguiendo a JASMINE)*: Jasmine, si no eliges un esposo mañana, ¡elegiré uno para ti! *(SULTÁN sale)*
 
 **IAGO:** Pero señor, si él la obliga a casarse...
 
@@ -612,7 +612,7 @@ Príncipe Abdullah!
 
 **ISIR:** ¿Qué dijo el sultán?
 
-**JAZMÍN:** Que si no elijo un pretendiente, él lo elegirá para mí.
+**JASMINE:** Que si no elijo un pretendiente, él lo elegirá para mí.
 
 **ISIR:** oh oh.
 
@@ -620,7 +620,7 @@ Príncipe Abdullah!
 
 ### CANCIÓN: ESTOS MUROS DE PALACIO ("These Palace Walls")
 
-**JAZMÍN:**  
+**JASMINE:**  
 ¿Una princesa debe aceptar esto?
 ¿Una princesa debe casarse con un total desconocido? 
 ¡Es absurdo!  
@@ -637,11 +637,11 @@ una jaula son.
 
 **RAJAH:** No sé, princesa, para alguien como tú el mundo exterior podría ser abrumador.
 
-**JAZMÍN:** ¿Eso es un reto?
+**JASMINE:** ¿Eso es un reto?
 
 **MANAL:** Creo que podría ser bueno para ti.
 
-**JAZMÍN:** ¿Tú lo harías?
+**JASMINE:** ¿Tú lo harías?
 
 **ISIR:** Cariño, nunca he visto a alguien que necesite salir más que tú.
 
@@ -649,27 +649,27 @@ una jaula son.
 Siempre te dijeron qué hacer.  
 Has de obedecerles.  
 
-**JAZMÍN:** ¿Y si siento algo en mi interior?
+**JASMINE:** ¿Y si siento algo en mi interior?
 
 **RAJAH, MANAL, ISIR:** ¡Lo retienes!
 
-**JAZMÍN:** ¿Qué es lo que me sugieres?
+**JASMINE:** ¿Qué es lo que me sugieres?
 
 **MANAL:** ¡Tienes que arriesgar!
 
 **RAJAH, MANAL, ISIR:** ¿Por qué será que cada día te preguntas..?
 
-**JAZMÍN:**  
+**JASMINE:**  
 ¿Qué debo hacer? ¿Salir volando?  
 Ser libre y no seguir llorando 
 Seguir mi sueño hasta alcanzarlo
 ¿O seguir callando?  
 
-**JAZMÍN, RAJAH, MANAL, ISIR:** ¿Qué hay más allá de estas paredes?
+**JASMINE, RAJAH, MANAL, ISIR:** ¿Qué hay más allá de estas paredes?
 
 **RAJAH, MANAL, ISIR:** Un gran amor quizá encuentres.
 
-**JAZMÍN:**  
+**JASMINE:**  
 En estos muros del palacio no.  
 Voy a cruzar.  
 Voy a arriesgar.  
@@ -692,17 +692,17 @@ Ya no habrá más jaulas para ti.
 
 **JAFAR:** Habla!
 
-**IAGO:** Talvez si se afeitara esa fea barba, cambiara a un atuendo un poco más colorido y...
+**IAGO:** Tal vez si se afeitara esa fea barba, cambiara a un atuendo un poco más colorido y...
 
 *(Jafar lo toma del cuello de la camisa)*
 
 **JAFAR:** ¿Qué tienes contra mi barba! y qué te he dicho sobre la forma de dirigirte a mi?
 
-*(Iago disimulla la imprudencia de su comentario)*
+*(Iago disimula la imprudencia de su comentario)*
 
 **IAGO:** Ehmm... ¿yo?.... ¿Qué hay en el libro, oh divinísimo?
 
-**JAFAR:** ¡La llave de una lámpara que contiene un genio todopoderoso! Una vez que lo tengo a mi alcance, los pretendientes de la princesa serán un recuerdo lejano. ¡Tendré todo el reino a mi merced!
+**JAFAR:** ¡La llave de una lámpara que contiene un genio todopoderoso! Una vez que lo tenga a mi alcance, los pretendientes de la princesa serán un recuerdo lejano. ¡Tendré todo el reino a mi merced!
 
 **IAGO:** Se nota que ha tenido tiempo para pensar en este plan... ¿Cómo tendremos esa lámpara en nuestras manos?
 
@@ -724,7 +724,7 @@ Guardianes de tormentas y mareas furiosas,
 
 **IAGO:** ¿Él es el diamante en bruto? ¿Ese tipo? Entiendo lo de bruto, ¿pero diamante?
 
-**VOZ EN OFF:** ¡Encuentra el diamante en bruto! ¡Y asegúrese de que solo toque la lámpara!
+**VOZ EN OFF:** ¡Encuentra el diamante en bruto! ¡Y asegúrate de que solo toque la lámpara!
 
 **JAFAR:** ¡Una vez que tengamos a ese chico, tenemos nuestra lámpara! ¡Y finalmente seré el Sultán de Agrabah!
 
@@ -744,7 +744,7 @@ Guardianes de tormentas y mareas furiosas,
 
 **ALADDIN:** Te lo dije, vamos a pasar a mejorar nuestra vida. Vamos a ganar nuestro propio dinero.
 
-**KASIM:** No sé. ¿Gente que paga por ver a otras personas cantar y bailar? *(a la audiencia)* Quién hace eso.
+**KASSIM:** No sé. ¿Gente que paga por ver a otras personas cantar y bailar? *(a la audiencia)* Quién hace eso.
 
 **OMAR:** Puede ser emocionante obtener alguna atención positiva por una vez.
 
@@ -802,21 +802,21 @@ Babkak, Omar, Kassim y Aladdin
 
 **ALADDIN:** Primera vez en el mercado, ¿verdad?
 
-**JAZMÍN:** ¿Qué te hace pensar que es mi primera vez aquí?
+**JASMINE:** ¿Qué te hace pensar que es mi primera vez aquí?
 
 **ALADDIN:** Oh, no sé... aretes de oro macizo, capa de satín y ni una mota de polvo en tus zapatos.
 
-**JAZMÍN:** Supongo que es algo obvio.
+**JASMINE:** Supongo que es algo obvio.
 
 **ALADDIN:** Por suerte para ti, conozco este lugar como la palma de mi mano. Déjame mostrarte el lugar.
 
 *(JASMINE ve algunas joyas en un carrito)*
 
-**JAZMÍN:** Ooo!
+**JASMINE:** Ooo!
 
 **ALADDIN:** Hermosa, ¿eh? Jade egipcio ¡Apto para una princesa! *(JASMINE se sorprende)* 
 
-**JAZMÍN:** ¿Por qué dices eso?
+**JASMINE:** ¿Por qué dices eso?
 
 **ALADDIN:** Úsalo y te sentirás como de la realeza. Te lo compraría, pero dejé todas mis monedas de oro en mi otra vida. ¿Qué estoy diciendo? Una chica como tú no necesita joyas. Una chica como tú no necesita nada.
 
@@ -824,7 +824,7 @@ Babkak, Omar, Kassim y Aladdin
 
 **VENDEDOR DE MANZANA:** ¡Será mejor que puedas pagar por eso!
 
-**JAZMÍN:** ¿Pagar?
+**JASMINE:** ¿Pagar?
 
 *(El VENDEDOR DE LA MANZANA amenaza con pasos hacia JASMINE, ella se asusta y al voltear deja caer un objeto del carrito, el VENDEDOR se muestra más molesto)*
 
@@ -832,11 +832,11 @@ Babkak, Omar, Kassim y Aladdin
 
 **VENDEDOR DE MANZANA:** Ella me parece perfectamente sana.
 
-**JAZMÍN** *(actuando junto, apunta al VENDEDOR DE MANZANA)*: ¿Por qué nos habla ese mono?
+**JASMINE** *(actuando junto, apunta al VENDEDOR DE MANZANA)*: ¿Por qué nos habla ese mono?
 
 **ALADDIN:** Qué mono.
 
-**JAZMÍN:** El del turbante.
+**JASMINE:** El del turbante.
 
 **ALADDIN:** Uh-oh, ella está empeorando. Será mejor que la lleve al médico.
 
@@ -848,49 +848,49 @@ Babkak, Omar, Kassim y Aladdin
 
 ### PERSECUCIÓN 1
 
-**JAZMÍN:** ¡El mono está loco!
+**JASMINE:** ¡El mono está loco!
 
 **ALADDIN:** ¡Por aquí!
 
 *(ALADDIN y JASMINE salen corriendo del escenario, seguidos de RAZOUL. Sin aliento, ALADDIN y JASMINE vuelven a entrar en un refugio en un rincón elevado del mercado donde Aladdin hace su "hogar")*
 
-**JAZMÍN:** ¿Crees que los perdimos?
+**JASMINE:** ¿Crees que los perdimos?
 
 **ALADDIN:** No te preocupes, nunca nos encontrarán aquí arriba. ¿Así que de dónde eres?
 
-**JAZMÍN:** Pensé que con tus habilidades ya lo habrías resuelto
+**JASMINE:** Pensé que con tus habilidades ya lo habrías resuelto
 
 **ALADDIN:** Bueno... definitivamente no eres de aquí... lo que significa que debes huir de algo.
 
-**JAZMÍN:** Mi padre.
+**JASMINE:** Mi padre.
 
 **ALADDIN:** ¿Huyendo de casa?
 
-**JAZMÍN:** Huyendo de la vida. Intenta obligarme a casarme contra mi voluntad.
+**JASMINE:** Huyendo de la vida. Intenta obligarme a casarme contra mi voluntad.
 
 **ALADDIN:** Eso es terrible. Deberías ser libre de tomar tus propias decisiones, ¿verdad?
 
-**JAZMÍN:** Correcto. *(mira a su alrededor, sorprendido por la pobreza)* ¿Vives aquí?
+**JASMINE:** Correcto. *(mira a su alrededor, sorprendido por la pobreza)* ¿Vives aquí?
 
 **ALADDIN:** Oh, sí... me faltan algunas cosas, o mejor dicho, muchas cosas, ¿Pero qué hay de la vista? Mira qué hermoso es el palacio.
 
-**JAZMÍN** *(rostro sin expresión)*: Espectacular.
+**JASMINE** *(rostro sin expresión)*: Espectacular.
 
 **ALADDIN:** ¿No te impresionó?
 
-**JAZMÍN:** Oh!... no es eso, Es hermoso, pero ¿por qué algunas personas deberían vivir con tanto esplendor, cuando otras... *(mira a su alrededor otra vez)* ...no? No es justo.
+**JASMINE:** Oh!... no es eso, Es hermoso, pero ¿por qué algunas personas deberían vivir con tanto esplendor, cuando otras... *(mira a su alrededor otra vez)* ...no? No es justo.
 
 **ALADDIN:** ¡Bienvenido a mi vida! *(mira hacia el palacio)* Me pregunto cómo sería vivir allí, tener sirvientes y abundante comida... y una cama.
 
-**JAZMÍN:** Sí... y estar encerrada detrás de las paredes y que te digan qué hacer y a quién amar.
+**JASMINE:** Sí... y estar encerrada detrás de las paredes y que te digan qué hacer y a quién amar.
 
 **ALADDIN:** Es mejor que aquí. Siempre buscando comida y esquivando a los guardias.
 
-**JAZMÍN:** Pero al menos eres libre de tomar tus propias decisiones.
+**JASMINE:** Pero al menos eres libre de tomar tus propias decisiones.
 
 **ALADDIN:** Aunque a veces me siento tan...
 
-**JAZMÍN:** Pero al menos tú no estás...
+**JASMINE:** Pero al menos tú no estás...
 
 **ALADDIN, JASMINE:** Atrapado.
 
@@ -898,11 +898,11 @@ Babkak, Omar, Kassim y Aladdin
 
 **ALADDIN:** ¿Alguna vez has imaginado cómo sería salir volando y nunca mirar atrás?
 
-**JAZMÍN:** Solo cada hora de cada día.
+**JASMINE:** Solo cada hora de cada día.
 
 **ALADDIN:** ¿Qué nos detiene? Sería tan fácil dar el primer paso
 
-### CANCIÓN: A mil kilómetros de aquí
+### CANCIÓN: A MIL KILÓMETROS DE AQUÍ
 
 **ALADDIN:**  
 Salgamos ya de este lugar  
@@ -969,7 +969,7 @@ al perderte quién sabrá que puedes encontrar
 Y el viaje nos guiará  
 Rumbo a la libertad  
 y en ese largo viaje quizá  
-hallenos nuestro hogar  
+hallemos nuestro hogar  
 A mil kilómetros quizá  
 hallemos el hogar!  
 
@@ -987,11 +987,11 @@ hallemos el hogar!
 
 ### PERSECUCIÓN 2
 
-**JAZMÍN:** ¿Qué dijiste?
+**JASMINE:** ¿Qué dijiste?
 
 **ALADDIN** *(extiende su mano hacia JASMINE)*: ¿Confías en mí?
 
-**JAZMÍN** *(vacila, luego toma la mano de ALADDIN)*: No estoy seguro de por qué, pero... sí.
+**JASMINE** *(vacila, luego toma la mano de ALADDIN)*: No estoy segura de por qué, pero... sí.
 
 **ALADDIN:** ¡Entonces vamos!
 
@@ -1005,7 +1005,7 @@ hallemos el hogar!
 
 **RAZOUL:** ¡Silencio! ¡O los castigaré a los dos aquí en la calle!
 
-**JAZMÍN:** ¡Espere! Te ordeno que pares! *(JASMINE baja su capucha para revelar su tiara)*
+**JASMINE:** ¡Espere! Te ordeno que pares! *(JASMINE baja su capucha para revelar su tiara)*
 
 **RAZOUL:** ¿Princesa Jasmine? *(RAZOUL y los GUARDIAS se inclinan)*
 
@@ -1021,15 +1021,15 @@ hallemos el hogar!
 
 **JAFAR:** ¡Tranquilo!
 
-**JAZMÍN** *(a RAZOUL)*: Liberarás a Aladdin de inmediato.
+**JASMINE** *(a RAZOUL)*: Liberarás a Aladdin de inmediato.
 
 **RAZOUL:** Con el debido respeto, princesa, mis órdenes provienen del sultán, no usted.
 
-**JAZMÍN** *(a ALADDIN)*: Todo va a estar bien. ¡El Sultán enderezará esto!
+**JASMINE** *(a ALADDIN)*: Todo va a estar bien. ¡El Sultán enderezará esto!
 
 **ALADDIN:** No sabía que eras la princesa.
 
-**JAZMÍN:** Claro que no lo sabías. Y fue maravilloso.
+**JASMINE:** Claro que no lo sabías. Y fue maravilloso.
 
 **RAZOUL** *(a un GUARDIA)*: ¡Escolta a la princesa al palacio! *(JASMINE y un GUARDIA se van. RAZOUL y el otro GUARDIA detienen a ALADDIN)* ¡Ahora pagarás por tus crímenes, rata!
 
@@ -1165,7 +1165,7 @@ hallemos el hogar!
 
 **GENIO:** ¿Te importa si te llamo Al, Al? ¿Por qué no solo te acomodas mientras te hago un recorrido de tus posibilidades?
 
-### CANCIÓN: UN AMIGO FIEL EN MI
+### CANCIÓN: UN AMIGO FIEL EN MÍ
 
 **GENIO:**  
 Ni Sherezada ni Alí Babá  
@@ -1226,7 +1226,7 @@ Tiene un amigo fiel en mí
 
 **ALADDIN:** Me concederás los tres deseos que quiero, ¿eh?
 
-**GENIO:** ¡Está bien! ¡Pero espera! ¡Una gran la lámpara conlleva una gran responsabilidad! Así que repasemos el libro de reglas. ¿Listo? Regla número uno: no puedo matar a nadie. Regla número dos: no puedo resucitar a nadie. Y la regla número tres: no puedo hacer que nadie se enamore de ti. ¿Lo tienes?
+**GENIO:** ¡Está bien! ¡Pero espera! ¡Una gran lámpara conlleva una gran responsabilidad! Así que repasemos el libro de reglas. ¿Listo? Regla número uno: no puedo matar a nadie. Regla número dos: no puedo resucitar a nadie. Y la regla número tres: no puedo hacer que nadie se enamore de ti. ¿Lo tienes?
 
 **ALADDIN:** Lo tengo.
 
@@ -1292,13 +1292,13 @@ Tiene un amigo fiel en mí
 
 *(GENIO corre tras ALADDIN)*
 
-### CANCION: REPRISE ORGULLOSA DE MI
+### CANCIÓN: REPRISE ORGULLOSA DE MÍ
 
 **ALADDIN:** ¡Genio, deseo que me conviertas en un príncipe!
 
 **GENIO:**  
 ¡Por fin llegó la hora de conceder deseos!  
-¡Tu deseos son órdenes!  
+¡Tus deseos son órdenes!  
 ¡Atrás, atrás! ¡Ahhh!  
 ¡Dejen que el Genio haga lo suyo!  
 Primero que nada, tenemos que arreglar ese atuendo.  
@@ -1347,39 +1347,39 @@ orgullosa de mi
 
 ## ESCENA SIETE: PALACIO
 
-*(SULTAN y JASMINE entran)*
+*(SULTÁN y JASMINE entran)*
 
-**JAZMÍN:** Padre, ¿tienes idea de cómo viven tus súbditos en las calles?
+**JASMINE:** Padre, ¿tienes idea de cómo viven tus súbditos en las calles?
 
 **SULTÁN:** ¡Jasmine, no deberías haber estado sola en el mercado!
 
-**JAZMÍN:** No estaba sola. Te lo dije, estaba con un chico llamado Aladdin, y los guardias...
+**JASMINE:** No estaba sola. Te lo dije, estaba con un chico llamado Aladdin, y los guardias...
 
-*(IAGO y JAFAR entran y se paran al otro lado de SULTAN, que termina en el medio de un partido de tenis entre su asesor y su hija)*
+*(IAGO y JAFAR entran y se paran al otro lado de SULTÁN, que termina en el medio de un partido de tenis entre su asesor y su hija)*
 
 **SULTÁN:** Ah, Jafar, ahí estás. ¿Conoces a un niño arrestado en el mercado?
 
 **JAFAR:** Sí, su Majestad. Razoul me trajo el secuestrador de la princesa.
 
-**JAZMÍN:** Aladdin no me secuestró. Me escapé-
+**JASMINE:** Aladdin no me secuestró. Me escapé-
 
 **SULTÁN:** ¿¿Te escapaste?!
 
 **JAFAR:** Oh señor. No se preocupe, me temo que la sentencia del niño ya se ha cumplido.
 
-**JAZMÍN:** ¿Sentencia?
+**JASMINE:** ¿Sentencia?
 
 **JAFAR:** La pena máxima, por supuesto.
 
-**JAZMÍN:** ¿Qué? ¿¿Cómo pudiste?!? ¡No hizo nada malo! *(JASMINE está tan impotente que hace todo lo posible para no llorar)*
+**JASMINE:** ¿Qué? ¿¿Cómo pudiste?!? ¡No hizo nada malo! *(JASMINE está tan impotente que hace todo lo posible para no llorar)*
 
 **SULTÁN:** Jafar, ¡esto es un insulto! ¡De ahora en adelante, debes discutir la sentencia de los prisioneros conmigo!
 
-**JAZMÍN:** Al menos algo bueno saldrá al casarme de manera forzada... *(a JAFAR)* ¡Cuando sea reina, tendré el poder de deshacerme de ti! *(JASMINE sale, seguido de SULTAN)*
+**JASMINE:** Al menos algo bueno saldrá al casarme de manera forzada... *(a JAFAR)* ¡Cuando sea reina, tendré el poder de deshacerme de ti! *(JASMINE sale, seguido de SULTÁN)*
 
 **SULTÁN:** Jasmine...
 
-**JAFAR** *(al salir el SULTAN)*: Mis disculpas más sinceras, Su Majestad.
+**JAFAR** *(al salir el SULTÁN)*: Mis disculpas más sinceras, Su Majestad.
 
 **IAGO** *(imitando a JASMINE)*: "¡Cuando sea reina, tendré el poder de deshacerme de ti!"
 
@@ -1417,7 +1417,7 @@ Hey tú, una estrella verán pasar
 ¿Quién es el primero que lo va a admirar?
 Mira, viene ya, tambores tocar
 Todos lo adorarán
-Principe Alí, honor a ti
+Príncipe Alí, honor a ti
 Alí Ababua
 Y a sus pies
 Póstrense bien
@@ -1425,7 +1425,7 @@ Quédense ahí
 Felices admirarán
 Con respetuoso Salaam
 Su séquito es sensacional, sin mentir
-Principe Alí, reinas aquí
+Príncipe Alí, reinas aquí
 Alí Ababua
 Es más fuerte que diez hombres del visir
 Las hordas enfrentará
@@ -1502,7 +1502,7 @@ Con osos, leones, trompeta y más
 Con sus cocineros, sus panaderos, sus aves finas para ver y honrar
 Al Príncipe Alí!
 
-*(El SÉQUITO se inclina ante ALADDIN. SULTAN entra cuando el SÉQUITO. GENIO permanece al lado de ALADDIN. BABKAK, OMAR Y KASSIM permanecen al fondo. ALADDIN se acerca a SULTAN)*
+*(El SÉQUITO se inclina ante ALADDIN. SULTÁN entra cuando el SÉQUITO. GENIO permanece al lado de ALADDIN. BABKAK, OMAR Y KASSIM permanecen al fondo. ALADDIN se acerca a SULTÁN)*
 
 **ALADDIN** *(ejecuta una profunda reverencia)*: Oh, su Majestad, es un gran placer conocerlo. Trajimos muchos obsequios, oro, joyas, comida, y... bueno... muchas cosas...
 
@@ -1564,9 +1564,9 @@ Al Príncipe Alí!
 
 **SULTÁN** *(a ALADDIN)*: Ella se calmará. Te puedes quedar para la cena.
 
-**JAFAR** *(aparte, a SULTAN)*: ¿Estás seguro, majestad? No confío en él.
+**JAFAR** *(aparte, a SULTÁN)*: ¿Estás seguro, majestad? No confío en él.
 
-**SULTÁN:** Disparates. Una cosa de la que me enorgullezco, Jafar, es que soy un excelente juez de carácter. *(SULTAN le da una palmada a JAFAR en el hombro y sale)*
+**SULTÁN:** Disparates. Una cosa de la que me enorgullezco, Jafar, es que soy un excelente juez de carácter. *(SULTÁN le da una palmada a JAFAR en el hombro y sale)*
 
 **JAFAR:** Por supuesto, su majestad... *(JAFAR e IAGO salen)*
 
@@ -1602,7 +1602,7 @@ Al Príncipe Alí!
 
 **GENIO:** ¿Estás... bien?
 
-**ALADDIN:** Terrible. Genio, auyenté por completo a la princesa. Tengo que intentarlo aún más o ella va a descubrir la verdad! Y eso es lo último que quiero. Si Jasmine descubriera que yo no era nadie, se reiría... ¡en mi cara!
+**ALADDIN:** Terrible. Genio, ahuyenté por completo a la princesa. Tengo que intentarlo aún más o ella va a descubrir la verdad! Y eso es lo último que quiero. Si Jasmine descubriera que yo no era nadie, se reiría... ¡en mi cara!
 
 **GENIO:** Escúchame. Yo cambié todo lo exterior. Pero aquí, *(señala su corazón)* no alteré nada. Está bien, lo puedes intentar. Pero te aconsejo que si piensas ganar convirtiéndote en alguien que no eres, toda tu vida se convertirá en una mentira. Yo preferiría la verdad.
 
@@ -1620,7 +1620,7 @@ Al Príncipe Alí!
 
 **ISIR:** ¿A dónde vas a ir?
 
-**JAZMÍN:** No importa. ¡Ningún alarde egocéntrico me va a comprar!
+**JASMINE:** No importa. ¡Ningún alarde egocéntrico me va a comprar!
 
 **ALADDIN** *(entrando)*: Espero que estés hablando de algún otro alarde egocéntrico. Porque si no, esto sería torpe...
 
@@ -1632,7 +1632,7 @@ Al Príncipe Alí!
 
 **ISIR:** Vete antes de que llamemos a los guardias.
 
-**JASMINE:** Tranquilas, chicas. Principe Ali, ¿cómo entraste aquí?
+**JASMINE:** Tranquilas, chicas. Príncipe Ali, ¿cómo entraste aquí?
 
 **ALADDIN:** Emmm... ¿Alfombra mágica?
 
@@ -1642,7 +1642,7 @@ Al Príncipe Alí!
 
 **ALADDIN** *(asustarse)*: Eso he oído...
 
-**JAZMÍN** *(risas)*: Está bien, chicas. Yo puedo manejarlo.
+**JASMINE** *(risas)*: Está bien, chicas. Yo puedo manejarlo.
 
 **ISIR:** Estaremos justo afuera si necesitas algo. *(a RAJAH y MANAL)* Vámonos. *(aparte, a ALADDIN)* ¿Tienes un hermano?
 
@@ -1650,25 +1650,25 @@ Al Príncipe Alí!
 
 **ALADDIN:** ¡Uf! Al fin solos.
 
-**JAZMÍN:** Ahórrate el aliento, príncipe Ali.
+**JASMINE:** Ahórrate el aliento, príncipe Ali.
 
 **ALADDIN:** Por favor princesa. Obviamente, te he ofendido, lo cual no era mi intención. Humildemente te pido perdón.
 
 *(ALADDIN se quita el turbante y se inclina. JASMINE ve algo familiar)*
 
-**JAZMÍN:** Espera un momento. ¿Te conozco?
+**JASMINE:** Espera un momento. ¿Te conozco?
 
 **ALADDIN:** Uh... *(reemplaza rápidamente su turbante y se aleja)* ¡Eso es imposible!
 
-**JAZMÍN:** Me recuerdas a alguien que conocí en el mercado.
+**JASMINE:** Me recuerdas a alguien que conocí en el mercado.
 
 **ALADDIN:** ¿El mercado? *(cubriendo rápidamente)* Oh, tengo criados que van al mercado por mí. Incluso tengo sirvientes que van al mercado para mis sirvientes. Entonces no podría haber sido yo a quien conociste.
 
-**JAZMÍN:** No, no podrías ser él.
+**JASMINE:** No, no podrías ser él.
 
 **ALADDIN:** ¿Mencioné lo hermosa que te ves esta noche?
 
-**JAZMÍN** *(incitándolo)*: Y también tengo mucho dinero... Un buen premio para cualquier príncipe...
+**JASMINE** *(incitándolo)*: Y también tengo mucho dinero... Un buen premio para cualquier príncipe...
 
 **ALADDIN:** No debí expresarme de esa manera. ¿Qué te parece si... damos un paseo? 
 
@@ -1682,7 +1682,7 @@ Al Príncipe Alí!
 
 **ALADDIN:** ¿Confías en mí?
 
-**JAZMÍN:** No estoy segura de por qué, pero sí.
+**JASMINE:** No estoy segura de por qué, pero sí.
 
 *(ALADDIN ayuda a JASMINE a subir a la alfombra mágica, que vuela hacia el cielo nocturno.)*
 
@@ -1768,27 +1768,27 @@ Tú junto a mí.
 
 **ALADDIN:** Ahí tienes. Sana y salva.
 
-**JAZMÍN:** Gracias por el paseo. Nunca había visto algo tan sorprendente. Es hermoso.
+**JASMINE:** Gracias por el paseo. Nunca había visto algo tan sorprendente. Es hermoso.
 
 **ALADDIN** *(mirando a JASMINE)*: Lo es. Sabes, princesa, incluso si no me eliges, yo todavía recuerdo esto como la mejor noche de toda mi vida.
 
-**JAZMÍN:** ¿Incluso mejor que la noche que planeamos huir juntos?
+**JASMINE:** ¿Incluso mejor que la noche que planeamos huir juntos?
 
 **ALADDIN:** ¡Bueno, eso también fue genial! *(se da cuenta)*
 
-**JAZMÍN:** ¿Creías que realmente iría a una alfombra mágica con un completo desconocido? ¿Por qué mentiste a mí? La verdad, esta vez.
+**JASMINE:** ¿Creías que realmente iría a una alfombra mágica con un completo desconocido? ¿Por qué mentiste a mí? La verdad, esta vez.
 
 **ALADDIN:** ¿La verdad? La verdad es que... a veces me visto como un plebeyo y salgo al mercado para experimentar cómo viven las "personas normales". ¿Suena familiar?
 
-**JAZMÍN** *(se sonroja)*: Tal vez... Realmente pensé que eras un egocéntrico... Otro príncipe que quería sobornar al mi padre con sus grandezas... Pero, ahora que ya sé la verdad, me equivoqué contigo, Príncipe Ali.
+**JASMINE** *(se sonroja)*: Tal vez... Realmente pensé que eras un egocéntrico... Otro príncipe que quería sobornar a mi padre con sus grandezas... Pero, ahora que ya sé la verdad, me equivoqué contigo, Príncipe Ali.
 
 **ALADDIN:** Entonces, ¿te veré de nuevo?
 
-**JAZMÍN:** Tan pronto como hable con mi padre.
+**JASMINE:** Tan pronto como hable con mi padre.
 
 **ALADDIN:** ¿Qué quieres decir?
 
-**JAZMÍN:** Bueno, tengo que decirle que tal vez he encontrado al príncipe perfecto, ¿no lo crees?
+**JASMINE:** Bueno, tengo que decirle que tal vez he encontrado al príncipe perfecto, ¿no lo crees?
 
 *(JASMINE sale corriendo del escenario. ALADDIN está sonrojado)*
 
@@ -1974,11 +1974,11 @@ Tú junto a mí.
 
 ## ESCENA DOCE: HABITACIÓN DEL PALACIO
 
-*(SULTAN y JASMINE entran. MANAL, ISIR y RAJAH lo siguen ansiosamente)*
+*(SULTÁN y JASMINE entran. MANAL, ISIR y RAJAH lo siguen ansiosamente)*
 
 **SULTÁN:** No sabes cuán feliz me hace tu decisión, Jasmine.
 
-**JAZMÍN:** Sé que parece tan repentino, pero es como si lo hubiera conocido toda mi vida.
+**JASMINE:** Sé que parece tan repentino, pero es como si lo hubiera conocido toda mi vida.
 
 **RAJAH** *(sacudiendo la cabeza, a MANAL e ISIR)*: Creo que ya lo veía venir...
 
@@ -1994,9 +1994,9 @@ Tú junto a mí.
 
 **ALADDIN** *(traga)*: ¿¿Carácter moral??
 
-**SULTÁN:** ¡Así es! Eres una persona honrada y sobre todo honesta. Me enorgullece que desde ahora pueda llamarte mi hijo. *(SULTAN sale)*
+**SULTÁN:** ¡Así es! Eres una persona honrada y sobre todo honesta. Me enorgullece que desde ahora pueda llamarte mi hijo. *(SULTÁN sale)*
 
-**JAZMÍN:** ¿Pasa algo, Ali?
+**JASMINE:** ¿Pasa algo, Ali?
 
 **ALADDIN:** ¿Qué? ¡Oh, no, por supuesto que no! No te preocupes...
 
@@ -2028,7 +2028,7 @@ Tú junto a mí.
 
 **JAFAR:** ¡Obviamente no, cerebro de pájaro!
 
-### CANCION ORGULLOSA DE MÍ REPRISE
+### CANCIÓN: ORGULLOSA DE MÍ REPRISE
 
 **ALADDIN** *(a él mismo)*: Si digo la verdad, perderé a la princesa. Si me quedo con ella, viviré una mentira.
 
@@ -2053,7 +2053,7 @@ Tu orgullo seré
 
 **IAGO:** Parece que el Príncipe Ali, es en realidad Aladdin
 
-**JAFAR:** ¡Ya lo sé Yago! Después de años, la lámpara por fin es mía.
+**JAFAR:** ¡Ya lo sé Iago! Después de años, la lámpara por fin es mía.
 
 *(JAFAR e IAGO se ríen con desdén cuando salen)*
 
@@ -2061,7 +2061,7 @@ Tu orgullo seré
 
 ## ESCENA TRECE: LA BODA
 
-*(Desde la otra dirección, el resto de AGRABAHNS entra. SULTAN ingresa junto a JASMINE y se dirige a la audiencia)*
+*(Desde la otra dirección, el resto de AGRABAHNS entra. SULTÁN ingresa junto a JASMINE y se dirige a la audiencia)*
 
 **SULTÁN:** Mis súbditos reales, estamos reunidos aquí hoy para casar a nuestra amada princesa Jasmine con... ¡El Príncipe Ali de Ababwa!
 
@@ -2139,7 +2139,7 @@ Tu orgullo seré
 
 **JAFAR:** ¡Razoul, tú sirves al Sultán, ahora yo SOY EL SULTÁN!
 
-**JASMINE:** ¡BASTA! Tú no tienes lo que se requiere para se el Sultán de mi pueblo.
+**JASMINE:** ¡BASTA! Tú no tienes lo que se requiere para ser el Sultán de mi pueblo.
 
 **JAFAR:** Y tú crees que lo tienes? 
 
@@ -2147,7 +2147,7 @@ Tu orgullo seré
 
 *(JASMINE empieza a ser escoltada, pero el tiempo se detiene)*
 
-### CANCION CALLAR
+### CANCIÓN: CALLAR
 
 **JASMINE:**
 Siglos de reglas y absurda verdad
@@ -2274,7 +2274,7 @@ Ya no quedan aquí más personas,
 
 **JAFAR:** ¡Al final! ¡Todo el poder me pertenece! *(siente un tirón hacia abajo)* Espera... espera, ¿qué está pasando? ¡Noooooooooooo!
 
-*(JAFAR desaparece en una lámpara negra. Las cadenas se caen: BABKAK, OMAR, KASSIM, MANAL, ISIR, RAJAH y JASMINE. Los GUARDIAS liberan a ALADDIN y al SULTAN. ALADDIN toma la lámpara negra, junto con la lámpara dorada de GENIO)*
+*(JAFAR desaparece en una lámpara negra. Las cadenas se caen: BABKAK, OMAR, KASSIM, MANAL, ISIR, RAJAH y JASMINE. Los GUARDIAS liberan a ALADDIN y al SULTÁN. ALADDIN toma la lámpara negra, junto con la lámpara dorada de GENIO)*
 
 **ALADDIN:** ¡Jafar quería ser un genio y lo consiguió! ¡Y todo lo que conlleva!
 
@@ -2296,7 +2296,7 @@ Ya no quedan aquí más personas,
 
 **ALADDIN:** Jasmine, nunca quise lastimarte. Pensé que ser un príncipe me haría digno de ti. Pero me di cuenta que no quiero vivir en una mentira. Esto es lo que soy.
 
-**JAZMÍN:** Lo entiendo...
+**JASMINE:** Lo entiendo...
 
 **ALADDIN:** Bueno, supongo que esto es un adiós.
 
@@ -2334,15 +2334,15 @@ Ya no quedan aquí más personas,
 
 *(Sin creer lo que oyen, MANAL, ISIR y RAJAH se acurrucan y se toman de la mano)*
 
-**JAZMÍN:** ¿En serio padre?
+**JASMINE:** ¿En serio padre?
 
 **SULTÁN:** Sí, mi calabacita.
 
-**JAZMÍN** *(se vuelve hacia ALADDIN y extiende su mano)*: ¿Confías en mí... Aladdin?
+**JASMINE** *(se vuelve hacia ALADDIN y extiende su mano)*: ¿Confías en mí... Aladdin?
 
 **ALADDIN:** ¿Qué dijiste?
 
-**JAZMÍN:** ¿Confías en mí?
+**JASMINE:** ¿Confías en mí?
 
 **ALADDIN** *(sonríe, toma la mano de JASMINE)*: Llámame Al.
 
@@ -2352,11 +2352,11 @@ Ya no quedan aquí más personas,
 
 **ALADDIN:** Debería haberte escuchado desde el principio, Kassim.
 
-**JAZMÍN** *(entrando, a KASSIM)*: ¿Qué dices para ser nuestro asesor real?
+**JASMINE** *(entrando, a KASSIM)*: ¿Qué dices para ser nuestro asesor real?
 
 **KASSIM:** Sería un honor... *(reverencia)* ...Su Alteza.
 
-**JAZMÍN** *(levantando a KASSIM y sonriendo)*: Puedes llamarme Jasmine.
+**JASMINE** *(levantando a KASSIM y sonriendo)*: Puedes llamarme Jasmine.
 
 **BABKAK:** Estoy seguro de que necesitarás un Catador de comida Real...
 
@@ -2376,7 +2376,7 @@ Ya no quedan aquí más personas,
 
 *(MANAL, ISIR y RAJAH traen a BABKAK, OMAR y KASSIM al redil del palacio. Todos se dirigen a la audiencia)*
 
-### CANCION FINALE: UN MUNDO IDEAL (REPRISE)
+### CANCIÓN FINALE: UN MUNDO IDEAL (REPRISE)
 
 **SOLISTA:**
 Así acaba la historia
