@@ -1,5 +1,7 @@
 {
   "premiere": "2026-12-13",
+  "premiereConfirmed": false,
+  "premiereNote": "Objetivo aproximado — la fecha confirmada la tendremos a fines de septiembre, según el avance de los ensayos.",
   "rehearsalTime": "Sábados, 10:30 a.m. – 2:00 p.m.",
   "sessions": [
     { "date": "2026-09-05", "phase": "Ensamble inicial", "num": "02·03·05", "desc": "Escena Uno (resto) + Escena Dos (Jafar/Iago/Sultán) + Escena Cuatro",

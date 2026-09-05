@@ -14,6 +14,8 @@
     background: var(--terracotta-soft); border: 1.5px solid var(--terracotta);
     border-radius: 14px; padding: 18px 20px; margin: 22px 0 8px;
   }
+  .premiere-note { margin: 8px 0 0; font-size: 12px; color: var(--ink-faint); }
+
   #next .tag { font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: var(--terracotta); }
   #next .date { font-family: var(--font-display); font-size: 21px; font-weight: 700; margin: 5px 0 6px; color: var(--ink); }
   #next .desc { font-size: 14.5px; color: var(--ink); }
@@ -61,6 +63,7 @@
     <h1>Ensayos</h1>
     <p class="sub" id="rehearsalTime"></p>
     <div style="margin-top:12px;"><span class="pill" id="premierePill"></span></div>
+    <p class="premiere-note" id="premiereNote"></p>
   </header>
 
   <div id="next"></div>
@@ -98,15 +101,17 @@ function numStack(num) {
   return `<div class="num-stack">${items.map(n => `<span class="num-pill">${n}</span>`).join("")}</div>`;
 }
 
-function fmtPremiere(dateStr) {
+function fmtPremiere(dateStr, confirmed) {
   const d = new Date(dateStr + "T00:00:00");
   const m = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"][d.getMonth()];
-  return `Estreno: ${d.getDate()} de ${m} de ${d.getFullYear()}`;
+  const label = confirmed ? "Estreno" : "Objetivo de estreno";
+  return `${label}: ${d.getDate()} de ${m} de ${d.getFullYear()}`;
 }
 
 function render(data) {
   document.getElementById("rehearsalTime").textContent = data.rehearsalTime;
-  document.getElementById("premierePill").textContent = fmtPremiere(data.premiere);
+  document.getElementById("premierePill").textContent = fmtPremiere(data.premiere, data.premiereConfirmed);
+  document.getElementById("premiereNote").textContent = data.premiereConfirmed ? "" : (data.premiereNote || "");
 
   scheduleEl.innerHTML = "";
   let lastPhase = null;
