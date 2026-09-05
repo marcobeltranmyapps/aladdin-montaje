@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Libreto — ALADDÍN</title>
 <meta name="description" content="Libreto completo del musical ALADDÍN, por escenas — B612 Audiovisual">
 <meta name="robots" content="noindex, nofollow">
@@ -29,6 +29,37 @@
   .scene-header .act { color: var(--teal); }
   .scene-header h1 { font-size: clamp(22px, 5vw, 28px); margin-top: 4px; }
 
+  /* ---------- Navegación entre escenas ---------- */
+  .scene-nav {
+    display: flex; align-items: stretch; gap: 10px; margin: 10px 0 22px;
+  }
+  .scene-nav .nav-link {
+    flex: 1; display: flex; flex-direction: column; gap: 2px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 10px 14px; text-decoration: none; color: inherit; min-width: 0;
+  }
+  .scene-nav .nav-link:hover { border-color: var(--border-strong); }
+  .scene-nav .nav-link.prev { text-align: left; }
+  .scene-nav .nav-link.next { text-align: right; }
+  .scene-nav .nav-link .lbl {
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--ink-faint);
+  }
+  .scene-nav .nav-link .ttl {
+    font-family: var(--font-display); font-size: 14px; color: var(--ink);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .scene-nav .nav-link.index {
+    flex: 0 0 auto; align-items: center; justify-content: center; flex-direction: row; gap: 6px;
+  }
+  .scene-nav .nav-link.index svg { width: 16px; height: 16px; flex-shrink: 0; }
+  .scene-nav.bottom { margin-top: 26px; margin-bottom: 0; }
+
+  @media (max-width: 480px) {
+    .scene-nav { flex-wrap: wrap; }
+    .scene-nav .nav-link.prev, .scene-nav .nav-link.next { flex: 1 1 100%; }
+    .scene-nav .nav-link.index { flex: 1 1 100%; order: -1; }
+  }
+
   .line { display: grid; grid-template-columns: 130px 1fr; gap: 16px; margin-bottom: 14px; }
   .line .who { font-family: var(--font-display); font-weight: 700; font-size: 13.5px; letter-spacing: 0.3px; color: var(--brass); background: var(--brass-soft); border-radius: 6px; padding: 2px 8px; height: fit-content; justify-self: start; }
   .line .txt { font-size: 15px; color: var(--ink); }
@@ -53,7 +84,12 @@
 
   @media (max-width: 520px) {
     .line { grid-template-columns: 1fr; gap: 3px; }
-    .line .who { justify-self: start; }
+    .line .who { justify-self: start; font-size: 14.5px; }
+    .line .txt { font-size: 16.5px; }
+    .block-action { font-size: 14.5px; }
+    .block-song { font-size: 15.5px; }
+    .scene-row .title { font-size: 16.5px; }
+    .scene-row .songs { font-size: 13px; }
   }
 
   .loading, .error { text-align: center; color: var(--ink-soft); padding: 40px 0; font-size: 14px; }
@@ -123,6 +159,21 @@ let SCENES = null;
 const MUSIC_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`;
 function pad2(n) { return String(n).padStart(2, "0"); }
 
+const SCENE_ORDINALS = {
+  "UNO": 1, "DOS": 2, "TRES": 3, "CUATRO": 4, "CINCO": 5, "SEIS": 6,
+  "SIETE": 7, "OCHO": 8, "NUEVE": 9, "DIEZ": 10, "ONCE": 11, "DOCE": 12, "TRECE": 13
+};
+
+// El número flotante refleja el nombre de la escena (ESCENA CINCO -> 05), no
+// su posición en la lista: así el Prólogo y la Entrada de Genio 2, que no
+// son "Escena N", no llevan número.
+function sceneBadge(scene) {
+  const m = /^ESCENA\s+([A-ZÁÉÍÓÚÑ]+)\s*:/i.exec(scene.title);
+  if (!m) return null;
+  const n = SCENE_ORDINALS[m[1].toUpperCase()];
+  return n ? pad2(n) : null;
+}
+
 function renderList() {
   const acts = [];
   const byAct = {};
@@ -142,9 +193,10 @@ function renderList() {
     html += `<h2 class="section-title">${act}</h2>`;
     byAct[act].forEach(s => {
       const songCount = s.blocks.filter(b => b.type === "song").length;
+      const badge = sceneBadge(s);
       html += `
         <a class="scene-row" href="#${s.id}">
-          <span class="num-badge">${pad2(SCENES.indexOf(s) + 1)}</span>
+          ${badge ? `<span class="num-badge">${badge}</span>` : ""}
           <span>
             <span class="title">${s.title}</span>
             ${songCount ? `<span class="songs">${songCount} número${songCount > 1 ? "s" : ""} musical${songCount > 1 ? "es" : ""}</span>` : ""}
@@ -157,17 +209,39 @@ function renderList() {
   root.innerHTML = html;
 }
 
+const INDEX_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>`;
+
+function sceneNav(scene) {
+  const idx = SCENES.indexOf(scene);
+  const prev = idx > 0 ? SCENES[idx - 1] : null;
+  const next = idx < SCENES.length - 1 ? SCENES[idx + 1] : null;
+
+  const prevHtml = prev
+    ? `<a class="nav-link prev" href="#${prev.id}"><span class="lbl">← Anterior</span><span class="ttl">${prev.title}</span></a>`
+    : "";
+  const nextHtml = next
+    ? `<a class="nav-link next" href="#${next.id}"><span class="lbl">Siguiente →</span><span class="ttl">${next.title}</span></a>`
+    : "";
+
+  return `
+    <div class="scene-nav">
+      ${prevHtml}
+      <a class="nav-link index" href="#" onclick="location.hash=''; return false;">${INDEX_ICON}Índice</a>
+      ${nextHtml}
+    </div>
+  `;
+}
+
 function renderScene(id) {
   const scene = SCENES.find(s => s.id === id);
   if (!scene) { renderList(); return; }
 
+  const nav = sceneNav(scene);
+  const badge = sceneBadge(scene);
   let html = `
-    <a class="crumb" href="#" onclick="location.hash=''; return false;" style="margin-bottom:22px;">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
-      Todas las escenas
-    </a>
+    ${nav}
     <div class="scene-header">
-      <span class="num-badge">${pad2(SCENES.indexOf(scene) + 1)}</span>
+      ${badge ? `<span class="num-badge">${badge}</span>` : ""}
       <div class="eyebrow act">${scene.act}</div>
       <h1>${scene.title}</h1>
     </div>
@@ -186,6 +260,8 @@ function renderScene(id) {
       html += `<div class="line lyric"><div class="who">${b.character}</div><div class="txt">${lines}</div></div>`;
     }
   });
+
+  html += nav.replace('class="scene-nav"', 'class="scene-nav bottom"');
 
   root.innerHTML = html;
   window.scrollTo(0, 0);
