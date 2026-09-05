@@ -149,7 +149,7 @@ Orgullosa de ti...
 
 **NARRADOR:** ¡Salaam y buenas noches a ustedes, dignos amigos! ¡Bienvenidos... a la legendaria ciudad de Agrabah!
 
-Ciudad de alfombras voladoras, grandes héroes, promesas de amor y más brillo y glamour que cualquier otra ciudad ficticia en el mundo.
+**NARRADOR:** Ciudad de alfombras voladoras, grandes héroes, promesas de amor y más brillo y glamour que cualquier otra ciudad ficticia en el mundo.
 
 *(Surgen varios AGRABAHNS y también se dirigen a la audiencia)*
 
@@ -171,9 +171,9 @@ Y una noche de Arabia estar
 
 **NARRADOR:** Y por supuesto, ¿saben por qué esta ciudad es tan famosa? Por eso...
 
-Pero no se dejen engañar por su apariencia común, como en muchas cosas lo de afuera no es importante, lo de adentro es lo que cuenta.
+**NARRADOR:** Pero no se dejen engañar por su apariencia común, como en muchas cosas lo de afuera no es importante, lo de adentro es lo que cuenta.
 
-Wow, llegamos a un punto importante, esta lámpara puso a Agrabah en el mapa ¿nunca han estado ahí? Eso lo podemos arreglar *(se abre telón)*
+**NARRADOR:** Wow, llegamos a un punto importante, esta lámpara puso a Agrabah en el mapa ¿nunca han estado ahí? Eso lo podemos arreglar *(se abre telón)*
 
 **SOLISTAS:**  
 En las calles andar  
@@ -548,7 +548,7 @@ Orgullosa de mí
 
 *(EL PRÍNCIPE ABDULLAH entra, molesto)*
 
-Príncipe Abdullah!
+**SULTÁN:** ¡Príncipe Abdullah!
 
 **PRÍNCIPE ABDULLAH:** ¡Nunca me he encontrado con tanta impertinencia en toda mi vida!
 
@@ -1091,7 +1091,7 @@ hallemos el hogar!
 
 *(Aparece la entrada de una cueva)*
 
-¡Da un paso adelante, muchacho!
+**JAFAR:** ¡Da un paso adelante, muchacho!
 
 *(ALADDIN se acerca. Se oye una voz. JAFAR e IAGO se encogen)*
 
