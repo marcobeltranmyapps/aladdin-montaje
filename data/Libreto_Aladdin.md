@@ -255,15 +255,15 @@ De Arabia son
 
 *(JASMINE aparece y se congela)*
 
-Excepto que su padre, el Sultán, es un fanático de las formas antiguas.
+**NARRADOR:** Excepto que su padre, el Sultán, es un fanático de las formas antiguas.
 
 *(El SULTÁN aparece y se congela)*
 
-Aquí los amigos de nuestro héroe son unos ladronzuelos, adorables pero pirañas.
+**NARRADOR:** Aquí los amigos de nuestro héroe son unos ladronzuelos, adorables pero pirañas.
 
 *(Los amigos de ALADDIN aparecen y se congelan)*
 
-Ohhh! Y por si no lo mencioné, aquí todo el mundo canta.
+**NARRADOR:** Ohhh! Y por si no lo mencioné, aquí todo el mundo canta.
 
 **CORO:**  
 De Arabia son  
