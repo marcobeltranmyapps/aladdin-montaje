@@ -1,0 +1,65 @@
+{
+  "sourceFile": "Libreto_Aladdin.md",
+  "note": "Los rangos 'lines' son numeros de linea en Libreto_Aladdin.md, usados solo para calcular el ancho proporcional de cada bloque en el timeline. status: 0 = no ensayado, 1 = primer ensamble / ensayo inicial, 2 = repasado / reforzado.",
+  "acts": [
+    {
+      "name": "Acto I",
+      "scenes": [
+        { "code": "P", "title": "Prólogo: Mercado de Agrabah (años atrás)", "lines": [31, 145], "status": 0, "note": "En pausa: falta elenco infantil.", "songs": [] },
+        { "code": "E1", "title": "Escena Uno: Mercado", "lines": [146, 522],
+          "songs": [
+            { "code": "C1", "title": "Noche de Arabia", "line": 156 },
+            { "code": "C2", "title": "Un Salto Adelante", "line": 357 },
+            { "code": "C3", "title": "Orgullosa de Mí", "line": 478 }
+          ],
+          "segments": [
+            { "from": 146, "to": 280, "status": 0, "label": "Apertura (Noche de Arabia)" },
+            { "from": 281, "to": 365, "status": 2, "label": "Cierre de apertura + arranque de la persecución" },
+            { "from": 366, "to": 431, "status": 0, "label": "Persecución (resto)" },
+            { "from": 432, "to": 522, "status": 0, "label": "Cierre de escena (incl. Orgullosa de Mí)" }
+          ]
+        },
+        { "code": "E2", "title": "Escena Dos: Palacio", "lines": [523, 736],
+          "songs": [ { "code": "C4", "title": "Estos Muros de Palacio", "line": 621 } ],
+          "segments": [
+            { "from": 523, "to": 619, "status": 1, "label": "Apertura: Jafar, Iago, Sultán y corte" },
+            { "from": 620, "to": 692, "status": 0, "label": "Canción de Jazmín + transición" },
+            { "from": 693, "to": 736, "status": 1, "label": "Cierre: plan de Jafar e Iago" }
+          ]
+        },
+        { "code": "E3", "title": "Escena Tres: Mercado", "lines": [737, 1059], "status": 0,
+          "songs": [
+            { "code": "C5", "title": "Babkak, Omar, Kassim, Aladdin", "line": 761 },
+            { "code": "C6", "title": "A mil kilómetros de aquí", "line": 907 }
+          ] },
+        { "code": "E4", "title": "Escena Cuatro: Viaje al Desierto", "lines": [1060, 1115], "status": 0, "songs": [] },
+        { "code": "E5", "title": "Escena Cinco: La Cueva de las Maravillas", "lines": [1116, 1244], "status": 0,
+          "songs": [ { "code": "C7", "title": "Un Amigo Fiel en Mí", "line": 1170 } ] },
+        { "code": "E6", "title": "Escena Seis: Viaje fuera del desierto", "lines": [1245, 1345], "status": 0,
+          "songs": [ { "code": "C8", "title": "Reprise Orgullosa de Mí", "line": 1297 } ] }
+      ]
+    },
+    {
+      "name": "Acto II",
+      "scenes": [
+        { "code": "E1", "title": "Escena Siete: Palacio (Príncipe Alí)", "lines": [1350, 1614], "status": 0,
+          "songs": [ { "code": "C1", "title": "Príncipe Alí", "line": 1404 } ] },
+        { "code": "E2", "title": "Escena Ocho: Balcón de Jasmine", "lines": [1615, 1828], "status": 0,
+          "songs": [ { "code": "C2", "title": "Un Mundo Ideal", "line": 1691 } ] },
+        { "code": "E3", "title": "Escena Nueve: Mercado", "lines": [1829, 1882], "status": 0, "songs": [] },
+        { "code": "E4", "title": "Escena Diez: Viaje al Palacio", "lines": [1883, 1906], "status": 0, "songs": [] },
+        { "code": "E5", "title": "Escena Once: Palacio", "lines": [1907, 1932], "status": 0, "songs": [] },
+        { "code": "E6", "title": "Entrada de Genio 2", "lines": [1933, 1976], "status": 0, "songs": [] },
+        { "code": "E7", "title": "Escena Doce: Habitación del Palacio", "lines": [1977, 2063], "status": 0,
+          "songs": [ { "code": "C3", "title": "Orgullosa de Mí (Reprise)", "line": 2033 } ] },
+        { "code": "E8", "title": "Escena Trece: La Boda", "lines": [2064, 2429], "status": 0,
+          "songs": [
+            { "code": "C4", "title": "Príncipe Alí / Jafar Reprise", "line": 2080 },
+            { "code": "C5", "title": "Callar", "line": 2152 },
+            { "code": "C6", "title": "El Poder", "line": 2219 },
+            { "code": "C7", "title": "Un Mundo Ideal (Finale)", "line": 2381 }
+          ] }
+      ]
+    }
+  ]
+}

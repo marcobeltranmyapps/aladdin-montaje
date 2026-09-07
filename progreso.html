@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Progreso — ALADDÍN</title>
+<meta name="description" content="Progreso de ensayos del musical ALADDÍN, escena por escena — B612 Audiovisual">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Vazirmatn:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  :root {
+    --prog-0: var(--surface-2);
+    --prog-1: #a8c98a;
+    --prog-2: #4f8f3f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --prog-1: #4f6b3a; --prog-2: #7ac257; }
+  }
+  :root[data-theme="dark"] { --prog-1: #4f6b3a; --prog-2: #7ac257; }
+
+  .act-block { margin-bottom: 46px; }
+  .act-title { font-size: 15px; margin-bottom: 20px; }
+
+  .timeline-wrap { position: relative; padding-top: 18px; padding-bottom: 34px; }
+
+  .bar {
+    display: flex; width: 100%; height: 34px; border-radius: 8px; overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .scene-block { display: flex; height: 100%; }
+  .scene-block + .scene-block { border-left: 2px solid var(--bg); }
+  .seg { height: 100%; background: var(--prog-0); }
+  .seg.s1 { background: var(--prog-1); }
+  .seg.s2 { background: var(--prog-2); }
+  .seg + .seg { border-left: 1px solid var(--bg); }
+
+  .tick { position: absolute; top: 0; width: 1px; height: 12px; background: var(--border-strong); }
+  .tick-label {
+    position: absolute; top: 0; transform: translateX(-50%);
+    font-family: var(--font-display); font-size: 10.5px; font-weight: 700; color: var(--ink-faint);
+  }
+  .scene-label {
+    position: absolute; bottom: 0; transform: translateX(-50%);
+    font-family: var(--font-display); font-size: 11.5px; font-weight: 700; color: var(--ink);
+  }
+  .song-tick { background: var(--teal); height: 16px; }
+  .song-label { color: var(--teal); top: 14px; font-size: 9.5px; }
+
+  .legend h3 { font-size: 13px; margin: 22px 0 10px; color: var(--ink-soft); }
+  .legend-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px 16px; font-size: 12.5px; }
+  .legend-grid .code { font-family: var(--font-display); font-weight: 700; color: var(--ink); margin-right: 6px; }
+  .legend-grid.songs .code { color: var(--teal); }
+
+  .status-key { display: flex; gap: 18px; flex-wrap: wrap; margin: 22px 0 30px; font-size: 12.5px; color: var(--ink-soft); }
+  .status-key span { display: inline-flex; align-items: center; gap: 6px; }
+  .swatch { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+
+  .loading, .error { text-align: center; color: var(--ink-soft); padding: 40px 0; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <a class="crumb" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    Inicio
+  </a>
+
+  <header class="masthead">
+    <div class="brand">B612 Audiovisual</div>
+    <h1>Progreso</h1>
+    <p class="sub">Qué tanto de cada escena ya está ensamblado, escena por escena y canción por canción.</p>
+  </header>
+
+  <div class="status-key">
+    <span><span class="swatch" style="background:var(--prog-0)"></span> No ensayado</span>
+    <span><span class="swatch" style="background:var(--prog-1)"></span> Primer ensamble / ensayo inicial</span>
+    <span><span class="swatch" style="background:var(--prog-2)"></span> Repasado / reforzado</span>
+    <span><span class="swatch" style="background:var(--teal)"></span> Número musical</span>
+  </div>
+
+  <div id="acts">
+    <div class="loading">Cargando progreso…</div>
+  </div>
+
+  <footer class="site">B612 Audiovisual · el avance se actualiza según cada ensayo.</footer>
+</div>
+
+<script>
+function renderAct(act, container) {
+  const start = act.scenes[0].lines[0];
+  const end = act.scenes[act.scenes.length - 1].lines[1];
+  const total = end - start;
+  const pct = line => ((line - start) / total) * 100;
+
+  const block = document.createElement("div");
+  block.className = "act-block";
+
+  const title = document.createElement("h2");
+  title.className = "act-title section-title";
+  title.textContent = act.name;
+  block.appendChild(title);
+
+  const wrap = document.createElement("div");
+  wrap.className = "timeline-wrap";
+
+  const bar = document.createElement("div");
+  bar.className = "bar";
+
+  const codeLegend = [];
+  const songLegend = [];
+
+  act.scenes.forEach(scene => {
+    const sceneWidthPct = ((scene.lines[1] - scene.lines[0]) / total) * 100;
+    const sceneEl = document.createElement("div");
+    sceneEl.className = "scene-block";
+    sceneEl.style.width = sceneWidthPct + "%";
+    sceneEl.title = scene.title + (scene.note ? " — " + scene.note : "");
+
+    const segs = scene.segments || [{ from: scene.lines[0], to: scene.lines[1], status: scene.status || 0, label: scene.title }];
+    const sceneLen = scene.lines[1] - scene.lines[0];
+    segs.forEach(seg => {
+      const segEl = document.createElement("div");
+      segEl.className = "seg s" + seg.status;
+      segEl.style.width = (((seg.to - seg.from) / sceneLen) * 100) + "%";
+      segEl.title = (seg.label || scene.title) + " — " + ["No ensayado", "Primer ensamble", "Repasado / reforzado"][seg.status];
+      sceneEl.appendChild(segEl);
+    });
+
+    bar.appendChild(sceneEl);
+    codeLegend.push({ code: scene.code, title: scene.title });
+
+    const midLine = (scene.lines[0] + scene.lines[1]) / 2;
+    const label = document.createElement("div");
+    label.className = "scene-label";
+    label.style.left = pct(midLine) + "%";
+    label.textContent = scene.code;
+    wrap.appendChild(label);
+
+    const boundaryTick = document.createElement("div");
+    boundaryTick.className = "tick";
+    boundaryTick.style.left = pct(scene.lines[0]) + "%";
+    wrap.appendChild(boundaryTick);
+
+    (scene.songs || []).forEach(song => {
+      const t = document.createElement("div");
+      t.className = "tick song-tick";
+      t.style.left = pct(song.line) + "%";
+      t.title = song.title;
+      wrap.appendChild(t);
+
+      const l = document.createElement("div");
+      l.className = "tick-label song-label";
+      l.style.left = pct(song.line) + "%";
+      l.textContent = song.code;
+      l.title = song.title;
+      wrap.appendChild(l);
+
+      songLegend.push({ code: song.code, title: song.title });
+    });
+  });
+
+  wrap.prepend(bar);
+  block.appendChild(wrap);
+
+  const legendGrid = document.createElement("div");
+  legendGrid.className = "legend-grid";
+  legendGrid.innerHTML = codeLegend.map(c => `<div><span class="code">${c.code}</span>${c.title}</div>`).join("");
+  const legendTitle = document.createElement("h3");
+  legendTitle.textContent = `Escenas — ${act.name}`;
+  block.appendChild(legendTitle);
+  block.appendChild(legendGrid);
+
+  if (songLegend.length) {
+    const songGrid = document.createElement("div");
+    songGrid.className = "legend-grid songs";
+    songGrid.innerHTML = songLegend.map(c => `<div><span class="code">${c.code}</span>${c.title}</div>`).join("");
+    const songTitle = document.createElement("h3");
+    songTitle.textContent = `Canciones — ${act.name}`;
+    block.appendChild(songTitle);
+    block.appendChild(songGrid);
+  }
+
+  container.appendChild(block);
+}
+
+fetch("data/progreso.json")
+  .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+  .then(data => {
+    const container = document.getElementById("acts");
+    container.innerHTML = "";
+    data.acts.forEach(act => renderAct(act, container));
+  })
+  .catch(err => {
+    document.getElementById("acts").innerHTML = `<div class="error">No se pudo cargar el progreso (${err.message}).<br>Si estás probando esto localmente, ábrelo desde un servidor (no directamente como archivo).</div>`;
+  });
+</script>
+</body>
+</html>
