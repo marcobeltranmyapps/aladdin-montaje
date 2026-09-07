@@ -6,9 +6,10 @@
   "sessions": [
     { "date": "2026-09-05", "phase": "Ensamble inicial", "num": "02·03·05", "desc": "Escena Uno (resto) + Escena Dos (Jafar/Iago/Sultán) + Escena Cuatro",
       "synopsis": "Reprogramado: las actrices de Jazmín no asisten hoy, así que se prioriza el resto del elenco en 3 escenas de reparto distinto. Se cierra la Escena Uno (Aladdín y sus amigos en el mercado), se arma la trama de Jafar e Iago junto al Sultán en el palacio, y se monta el viaje de Jafar, Iago y Aladdín rumbo al desierto.",
-      "progress": "10:30–11:00 calentamiento · 11:00–11:50 Escena Uno (cierre: apertura + persecución, venía parcial de la sesión anterior) · 11:50–12:40 Escena Dos, solo parte de Jafar/Iago/Sultán/Abdullah (sin Jazmín) · 12:40–13:30 Escena Cuatro (Jafar, Iago, Aladdín) · resto: repaso." },
-    { "date": "2026-09-12", "phase": "Ensamble inicial", "num": "03–04", "desc": "Escena Dos: Palacio + Escena Tres: Mercado",
-      "synopsis": "Jafar trama hacerse con el trono mientras el Sultán presiona a Jasmín para casarse; ella escapa disfrazada al mercado y conoce a Aladdín sin saber que es el 'diamante en bruto' que Jafar necesita para robar una lámpara mágica." },
+      "progress": "Real: Escena Dos casi lista — dos tramos (apertura de Jafar/Iago/Sultán y cierre del plan de Jafar) con primer ensayo hecho; solo falta la canción de Jazmín. Escena Uno: se reforzó el tramo de transición hacia la persecución (2do repaso); el cierre de la escena aún no se ensaya. Escena Cuatro no se llegó a tocar, queda pendiente." },
+    { "date": "2026-09-12", "phase": "Ensamble inicial", "num": "03·10·11", "desc": "Escena Dos (cierre completo) + Escena Nueve + Escena Diez",
+      "synopsis": "Aladdín no asiste hoy, así que se reprograma: con Jazmín ya disponible, se cierra la Escena Dos completa (por fin con su canción, 'Estos Muros de Palacio') corriéndola de principio a fin, y se arman dos escenas ligeras de Babkak, Omar y Kassim que no requieren a Aladdín.",
+      "progress": "Escena Tres y Escena Cuatro quedan pendientes de reprogramar para cuando Aladdín esté disponible." },
     { "date": "2026-09-19", "phase": "Ensamble inicial", "num": "05–07", "desc": "Escena Cuatro: Viaje al desierto + Escena Cinco: Cueva + Escena Seis: Viaje fuera del desierto",
       "synopsis": "Jafar lleva a Aladdín hasta la Cueva de las Maravillas para que le traiga la lámpara; atrapado adentro tras tocar un tesoro prohibido, Aladdín conoce al Genio y usa su primer deseo para convertirse en príncipe." },
     { "date": "2026-09-26", "phase": "Ensamble inicial", "num": "08–14", "desc": "Escena Siete: Palacio (Príncipe Alí) + Escena Ocho: Balcón (Un Mundo Ideal) + Escenas Nueve, Diez, Once + Entrada de Genio 2 + Escena Doce",
