@@ -40,9 +40,29 @@
   .session .d .wd { display: block; font-family: var(--font-body); font-size: 10.5px; font-weight: 600; color: var(--ink-faint); text-transform: uppercase; letter-spacing: 0.4px; }
   .session .desc { color: var(--ink); font-weight: 500; }
   .session .synopsis { color: var(--ink-soft); font-size: 13px; margin-top: 4px; line-height: 1.5; }
-  .session.past { opacity: 0.48; }
   .session.past .d::after { content: " ✓"; color: var(--teal); }
   .session.today { border-color: var(--terracotta); }
+
+  .past-card { margin: 18px 0 22px; padding: 0; overflow: hidden; }
+  .past-toggle {
+    display: flex; align-items: center; gap: 10px; width: 100%;
+    background: none; border: none; cursor: pointer; text-align: left;
+    padding: 13px 16px; font: inherit; color: var(--ink);
+  }
+  .past-toggle .chev {
+    width: 13px; height: 13px; color: var(--ink-faint); flex-shrink: 0;
+    transition: transform 0.15s ease;
+  }
+  .past-toggle[aria-expanded="true"] .chev { transform: rotate(90deg); }
+  .past-toggle .label { flex: 1; font-weight: 600; font-size: 14px; }
+  .past-toggle .past-count {
+    font-family: var(--font-display); font-weight: 700; font-size: 11.5px;
+    background: var(--surface-2); color: var(--ink-soft); border-radius: 999px;
+    padding: 2px 9px; font-variant-numeric: tabular-nums;
+  }
+  .past-list { padding: 0 12px 12px; }
+  .past-list .session { margin-bottom: 8px; }
+  .past-list .session:last-child { margin-bottom: 0; }
 
   @media (max-width: 420px) {
     .session { grid-template-columns: 70px 1fr; gap: 10px; padding: 10px 12px; }
@@ -108,6 +128,53 @@ function fmtPremiere(dateStr, confirmed) {
   return `${label}: ${d.getDate()} de ${m} de ${d.getFullYear()}`;
 }
 
+function sessionRow(s, extraClass) {
+  const d = new Date(s.date + "T00:00:00");
+  const row = document.createElement("div");
+  row.className = "session" + (extraClass ? " " + extraClass : "");
+  row.innerHTML = `
+    <div>
+      <div class="d"><span class="wd">${WEEKDAY[d.getDay()]}</span>${fmtShort(d)}</div>
+      ${numStack(s.num)}
+    </div>
+    <div>
+      <div class="desc">${s.desc}</div>
+      <div class="synopsis">${s.synopsis}</div>
+      ${s.progress ? `<div class="synopsis"><strong>Avance:</strong> ${s.progress}</div>` : ""}
+    </div>
+  `;
+  return row;
+}
+
+function pastCard(pastSessions) {
+  const card = document.createElement("div");
+  card.className = "card past-card";
+
+  const btn = document.createElement("button");
+  btn.className = "past-toggle";
+  btn.setAttribute("aria-expanded", "false");
+  btn.innerHTML = `
+    <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+    <span class="label">Ensayos anteriores</span>
+    <span class="past-count">${pastSessions.length}</span>
+  `;
+
+  const list = document.createElement("div");
+  list.className = "past-list";
+  list.hidden = true;
+  pastSessions.forEach(s => list.appendChild(sessionRow(s, "past")));
+
+  btn.addEventListener("click", () => {
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", String(!expanded));
+    list.hidden = expanded;
+  });
+
+  card.appendChild(btn);
+  card.appendChild(list);
+  return card;
+}
+
 function render(data) {
   document.getElementById("rehearsalTime").textContent = data.rehearsalTime;
   document.getElementById("premierePill").textContent = fmtPremiere(data.premiere, data.premiereConfirmed);
@@ -115,9 +182,16 @@ function render(data) {
 
   scheduleEl.innerHTML = "";
   let lastPhase = null;
-  let nextSession = null;
 
-  data.sessions.forEach(s => {
+  const pastSessions = data.sessions.filter(s => s.date < todayStr);
+  const upcomingSessions = data.sessions.filter(s => s.date >= todayStr);
+  const nextSession = upcomingSessions[0] || null;
+
+  if (pastSessions.length) {
+    scheduleEl.appendChild(pastCard(pastSessions));
+  }
+
+  upcomingSessions.forEach(s => {
     if (s.phase !== lastPhase) {
       const h = document.createElement("h2");
       h.className = "section-title";
@@ -125,25 +199,8 @@ function render(data) {
       scheduleEl.appendChild(h);
       lastPhase = s.phase;
     }
-    const isPast = s.date < todayStr;
     const isToday = s.date === todayStr;
-    if (!isPast && !nextSession) nextSession = s;
-
-    const d = new Date(s.date + "T00:00:00");
-    const row = document.createElement("div");
-    row.className = "session" + (isPast ? " past" : "") + (isToday ? " today" : "");
-    row.innerHTML = `
-      <div>
-        <div class="d"><span class="wd">${WEEKDAY[d.getDay()]}</span>${fmtShort(d)}</div>
-        ${numStack(s.num)}
-      </div>
-      <div>
-        <div class="desc">${s.desc}</div>
-        <div class="synopsis">${s.synopsis}</div>
-        ${s.progress ? `<div class="synopsis"><strong>Avance:</strong> ${s.progress}</div>` : ""}
-      </div>
-    `;
-    scheduleEl.appendChild(row);
+    scheduleEl.appendChild(sessionRow(s, isToday ? "today" : ""));
   });
 
   if (nextSession) {
