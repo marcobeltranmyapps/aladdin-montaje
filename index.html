@@ -27,8 +27,8 @@
   .lede h1 { font-size: clamp(34px, 8vw, 54px); color: var(--ink); font-weight: 700; }
   .lede p { margin: 12px 0 0; color: var(--ink-soft); font-size: 15px; }
 
-  .menu { position: relative; z-index: 1; width: 100%; max-width: 780px; display: grid; gap: 16px; grid-template-columns: 1fr 1fr 1fr; }
-  @media (max-width: 680px) { .menu { grid-template-columns: 1fr; max-width: 420px; } }
+  .menu { position: relative; z-index: 1; width: 100%; max-width: 560px; display: grid; gap: 16px; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 480px) { .menu { grid-template-columns: 1fr; max-width: 420px; } }
 
   .tile {
     position: relative; display: block; text-decoration: none;
@@ -51,11 +51,13 @@
   }
   .tile.alt .icon { color: var(--teal); }
   .tile.prog .icon { color: var(--terracotta); }
+  .tile.songs .icon { color: var(--violet); }
   .tile h2 { font-size: 20px; color: var(--ink); margin-bottom: 6px; }
   .tile p { margin: 0; font-size: 13.5px; color: var(--ink-soft); }
   .tile .go { margin-top: 16px; font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--brass); }
   .tile.alt .go { color: var(--teal); }
   .tile.prog .go { color: var(--terracotta); }
+  .tile.songs .go { color: var(--violet); }
 
   .tile.soon { opacity: 0.5; pointer-events: none; }
   .tile.soon .go { color: var(--ink-faint); }
@@ -105,6 +107,17 @@
       <h2>Progreso</h2>
       <p>Qué escenas y canciones ya están ensambladas.</p>
       <div class="go">Ver avance →</div>
+    </a>
+
+    <a class="tile songs" href="canciones.html">
+      <svg class="arch" viewBox="0 0 150 190" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 188V95C8 45 37 8 75 8C113 8 142 45 142 95V188" stroke="var(--violet)" stroke-width="2"/>
+        <path d="M28 188V98C28 58 48 30 75 30C102 30 122 58 122 98V188" stroke="var(--violet)" stroke-width="1.2" opacity="0.6"/>
+      </svg>
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+      <h2>Canciones</h2>
+      <p>Videos de referencia para aprenderse cada número musical.</p>
+      <div class="go">Ver canciones →</div>
     </a>
   </div>
 

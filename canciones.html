@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canciones — ALADDÍN</title>
+<meta name="description" content="Canciones del musical ALADDÍN con video de referencia — B612 Audiovisual">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Vazirmatn:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .act-block { margin-bottom: 40px; }
+  .act-title { font-size: 15px; margin-bottom: 16px; }
+
+  .song-grid { display: grid; gap: 16px; }
+
+  .song-card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    box-shadow: var(--shadow); overflow: hidden;
+  }
+  .song-card .video {
+    position: relative; width: 100%; aspect-ratio: 16 / 9; background: var(--surface-2);
+  }
+  .song-card .video iframe {
+    position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+  }
+  .song-card .video.empty {
+    display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 8px;
+    color: var(--ink-faint); font-size: 12.5px; text-align: center; padding: 20px;
+  }
+  .song-card .video.empty svg { width: 26px; height: 26px; opacity: 0.6; }
+
+  .song-card .video.thumb {
+    display: block; text-decoration: none; position: relative;
+  }
+  .song-card .video.thumb img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  }
+  .song-card .video.thumb .play {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    flex-direction: column; gap: 8px;
+    background: linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.45));
+  }
+  .song-card .video.thumb .play svg { width: 44px; height: 44px; color: #fff; filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5)); }
+  .song-card .video.thumb .play span {
+    font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: #fff;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.6);
+  }
+
+  .song-card .meta { padding: 12px 16px 15px; }
+  .song-card h3 { font-family: var(--font-display); font-size: 16px; color: var(--ink); }
+  .song-card .scene { margin: 3px 0 0; font-size: 12.5px; color: var(--violet); font-weight: 600; }
+
+  .loading, .error { text-align: center; color: var(--ink-soft); padding: 40px 0; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <a class="crumb" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    Inicio
+  </a>
+
+  <header class="masthead">
+    <div class="brand">B612 Audiovisual</div>
+    <h1>Canciones</h1>
+    <p class="sub">Videos de referencia para escuchar y aprenderse cada canción del musical.</p>
+  </header>
+
+  <div class="note"><strong>Importante:</strong> estos videos son solo una referencia musical (melodía, ritmo, puesta en escena de otras producciones). La letra que se canta en nuestro musical es la del libreto — guíense por ese texto, no por lo que se escucha en el video.</div>
+
+  <div id="acts">
+    <div class="loading">Cargando canciones…</div>
+  </div>
+
+  <footer class="site">B612 Audiovisual · se irán agregando videos a medida que estén disponibles.</footer>
+</div>
+
+<script>
+function extractYoutubeId(url) {
+  if (!url) return null;
+  const patterns = [
+    /youtu\.be\/([\w-]{11})/,
+    /youtube\.com\/watch\?v=([\w-]{11})/,
+    /youtube\.com\/embed\/([\w-]{11})/,
+    /youtube\.com\/shorts\/([\w-]{11})/
+  ];
+  for (const re of patterns) {
+    const m = url.match(re);
+    if (m) return m[1];
+  }
+  return null;
+}
+
+function renderSong(song) {
+  const card = document.createElement("div");
+  card.className = "song-card";
+
+  const videoId = extractYoutubeId(song.youtubeUrl);
+  let video;
+  if (videoId && song.embeddable === false) {
+    video = document.createElement("a");
+    video.className = "video thumb";
+    video.href = song.youtubeUrl;
+    video.target = "_blank";
+    video.rel = "noopener";
+    video.innerHTML = `<img src="https://img.youtube.com/vi/${videoId}/hqdefault.jpg" alt="${song.title}" loading="lazy">
+      <div class="play">
+        <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="11" fill="rgba(0,0,0,0.35)"/><path d="M10 8l6 4-6 4V8z" fill="#fff"/></svg>
+        <span>Ver en YouTube ↗</span>
+      </div>`;
+  } else if (videoId) {
+    video = document.createElement("div");
+    video.className = "video";
+    video.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${videoId}" title="${song.title}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+  } else {
+    video = document.createElement("div");
+    video.className = "video empty";
+    video.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><span>Video pendiente</span>`;
+  }
+  card.appendChild(video);
+
+  const meta = document.createElement("div");
+  meta.className = "meta";
+  meta.innerHTML = `<h3>${song.title}</h3><p class="scene">${song.scene}</p>`;
+  card.appendChild(meta);
+
+  return card;
+}
+
+fetch("data/canciones.json")
+  .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+  .then(data => {
+    const container = document.getElementById("acts");
+    container.innerHTML = "";
+    data.acts.forEach(act => {
+      const block = document.createElement("div");
+      block.className = "act-block";
+
+      const title = document.createElement("h2");
+      title.className = "act-title section-title";
+      title.textContent = act.name;
+      block.appendChild(title);
+
+      const grid = document.createElement("div");
+      grid.className = "song-grid";
+      act.songs.forEach(song => grid.appendChild(renderSong(song)));
+      block.appendChild(grid);
+
+      container.appendChild(block);
+    });
+  })
+  .catch(err => {
+    document.getElementById("acts").innerHTML = `<div class="error">No se pudieron cargar las canciones (${err.message}).<br>Si estás probando esto localmente, ábrelo desde un servidor (no directamente como archivo).</div>`;
+  });
+</script>
+</body>
+</html>

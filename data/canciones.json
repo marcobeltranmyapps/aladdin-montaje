@@ -1,0 +1,30 @@
+{
+  "note": "youtubeUrl: pega aqui el link completo de YouTube (watch?v=... o youtu.be/...) cuando lo tengan. Dejar en null mientras no haya video.",
+  "acts": [
+    {
+      "name": "Acto I",
+      "songs": [
+        { "title": "Noche de Arabia", "scene": "Escena Uno: Mercado", "youtubeUrl": null },
+        { "title": "Un Salto Adelante", "scene": "Escena Uno: Mercado", "youtubeUrl": "https://www.youtube.com/watch?v=h1QQL1oZLuk" },
+        { "title": "Orgullosa de Mí", "scene": "Escena Uno: Mercado", "youtubeUrl": null },
+        { "title": "Estos Muros de Palacio", "scene": "Escena Dos: Palacio", "youtubeUrl": "https://youtu.be/-wRzTcfQ8Xk", "embeddable": false },
+        { "title": "Babkak, Omar, Kassim, Aladdin", "scene": "Escena Tres: Mercado", "youtubeUrl": "https://www.youtube.com/watch?v=wJdjfA-R190", "embeddable": false },
+        { "title": "A mil kilómetros de aquí", "scene": "Escena Tres: Mercado", "youtubeUrl": "https://www.youtube.com/watch?v=EtmDn4EA27s" },
+        { "title": "Un Amigo Fiel en Mí", "scene": "Escena Cinco: La Cueva de las Maravillas", "youtubeUrl": null },
+        { "title": "Orgullosa de Mí (Reprise)", "scene": "Escena Seis: Viaje fuera del desierto", "youtubeUrl": null }
+      ]
+    },
+    {
+      "name": "Acto II",
+      "songs": [
+        { "title": "Príncipe Alí", "scene": "Escena Siete: Palacio (Príncipe Alí)", "youtubeUrl": null },
+        { "title": "Un Mundo Ideal", "scene": "Escena Ocho: Balcón de Jasmine", "youtubeUrl": null },
+        { "title": "Orgullosa de Mí (Reprise)", "scene": "Escena Doce: Habitación del Palacio", "youtubeUrl": null },
+        { "title": "Príncipe Alí / Jafar (Reprise)", "scene": "Escena Trece: La Boda", "youtubeUrl": null },
+        { "title": "Callar", "scene": "Escena Trece: La Boda", "youtubeUrl": null },
+        { "title": "El Poder", "scene": "Escena Trece: La Boda", "youtubeUrl": null },
+        { "title": "Un Mundo Ideal (Finale)", "scene": "Escena Trece: La Boda", "youtubeUrl": null }
+      ]
+    }
+  ]
+}
