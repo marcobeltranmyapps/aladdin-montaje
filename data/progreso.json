@@ -13,7 +13,8 @@
             { "code": "C3", "title": "Orgullosa de Mí", "line": 478 }
           ],
           "segments": [
-            { "from": 146, "to": 280, "status": 0, "label": "Apertura (Noche de Arabia)" },
+            { "from": 146, "to": 176, "status": 2, "label": "Repaso vocal (sin coreografía): apertura del Narrador + 1er verso de Noche de Arabia" },
+            { "from": 177, "to": 280, "status": 0, "label": "Resto de apertura (Noche de Arabia)" },
             { "from": 281, "to": 365, "status": 2, "label": "Cierre de apertura + arranque de la persecución" },
             { "from": 366, "to": 431, "status": 0, "label": "Persecución (resto)" },
             { "from": 432, "to": 522, "status": 0, "label": "Cierre de escena (incl. Orgullosa de Mí)" }
@@ -22,8 +23,9 @@
         { "code": "E2", "title": "Escena Dos: Palacio", "lines": [523, 736],
           "songs": [ { "code": "C4", "title": "Estos Muros de Palacio", "line": 621 } ],
           "segments": [
-            { "from": 523, "to": 619, "status": 1, "label": "Apertura: Jafar, Iago, Sultán y corte" },
-            { "from": 620, "to": 692, "status": 0, "label": "Canción de Jazmín + transición" },
+            { "from": 523, "to": 619, "status": 2, "label": "Apertura: Jafar, Iago, Sultán y corte" },
+            { "from": 620, "to": 685, "status": 2, "label": "Canción de Jazmín (Estos Muros de Palacio)" },
+            { "from": 686, "to": 692, "status": 0, "label": "Transición + canción pendiente (por escribir)" },
             { "from": 693, "to": 736, "status": 1, "label": "Cierre: plan de Jafar e Iago" }
           ]
         },
@@ -46,8 +48,8 @@
           "songs": [ { "code": "C1", "title": "Príncipe Alí", "line": 1404 } ] },
         { "code": "E2", "title": "Escena Ocho: Balcón de Jasmine", "lines": [1615, 1828], "status": 0,
           "songs": [ { "code": "C2", "title": "Un Mundo Ideal", "line": 1691 } ] },
-        { "code": "E3", "title": "Escena Nueve: Mercado", "lines": [1829, 1882], "status": 0, "songs": [] },
-        { "code": "E4", "title": "Escena Diez: Viaje al Palacio", "lines": [1883, 1906], "status": 0, "songs": [] },
+        { "code": "E3", "title": "Escena Nueve: Mercado", "lines": [1829, 1882], "status": 2, "songs": [] },
+        { "code": "E4", "title": "Escena Diez: Viaje al Palacio", "lines": [1883, 1906], "status": 2, "songs": [] },
         { "code": "E5", "title": "Escena Once: Palacio", "lines": [1907, 1932], "status": 0, "songs": [] },
         { "code": "E6", "title": "Entrada de Genio 2", "lines": [1933, 1976], "status": 0, "songs": [] },
         { "code": "E7", "title": "Escena Doce: Habitación del Palacio", "lines": [1977, 2063], "status": 0,
