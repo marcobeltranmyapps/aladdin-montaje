@@ -1,0 +1,354 @@
+{
+  "song": "Un Salto Adelante",
+  "scene": "Escena Uno: Mercado",
+  "versiones": [
+    {
+      "id": "montaje",
+      "nombre": "Nuestro montaje",
+      "descripcion": "Blocking real acordado en ensayo, con nuestro elenco. Se edita a mano en este archivo a medida que se ajusta en sala.",
+      "orientacion": { "izq": "IZQ. (público)", "der": "DER. (público)" },
+      "leyenda": [
+        { "type": "aladdin", "label": "Aladdín" },
+        { "type": "antagonista", "label": "Guardia 1 / Guardia 2 / Mercader" },
+        { "type": "ensamble", "label": "Chicas, Narradoras, Mujeres, Vendedores, Amigos" },
+        { "type": "prop", "label": "Utilería / set (carreta, puesto-tejado, atrapasueños)" }
+      ],
+      "cues": [
+        { "tag": "1", "label": "Kassim, Babkak y Omar se dispersan", "desc": "\"¡Hora de correr!\" — Kassim sale corriendo por la izquierda. Babkak y Omar salen corriendo juntos por la derecha.",
+          "positions": [
+            { "id": "kassim", "type": "ensamble", "label": "Kassim", "x": 10, "y": 60 },
+            { "id": "babkak", "type": "ensamble", "label": "Babkak", "x": 86, "y": 58 },
+            { "id": "omar", "type": "ensamble", "label": "Omar", "x": 92, "y": 60 },
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 55 }
+          ] },
+        { "tag": "2", "label": "Aladdín duda", "desc": "Empieza a seguir a Babkak y Omar hacia la derecha; se frena al notar que Kassim se fue solo por la izquierda.",
+          "positions": [ { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 66, "y": 55 } ] },
+        { "tag": "3", "label": "Ve a los guardias, corre a la derecha", "desc": "Abandona la duda al ver entrar a los Guardias; corre hacia la derecha perseguido por ambos.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 85, "y": 50 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 58, "y": 28 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 64, "y": 30 }
+          ] },
+        { "tag": "4", "label": "Se esconde tras Chica 1, 2 y 3", "desc": "Cruza de nuevo hacia la izquierda en plena huida. Entran Chica 1, Chica 2 y Chica 3 por la izquierda con telas; Aladdín se esconde detrás de ellas.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín (escondido)", "x": 15, "y": 56 },
+            { "id": "chica1", "type": "ensamble", "label": "Chica 1", "x": 11, "y": 58 },
+            { "id": "chica2", "type": "ensamble", "label": "Chica 2", "x": 17, "y": 60 },
+            { "id": "chica3", "type": "ensamble", "label": "Chica 3", "x": 22, "y": 57 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 45, "y": 35 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 55, "y": 35 }
+          ] },
+        { "tag": "5", "label": "Los guardias no lo encuentran", "desc": "Los Guardias cruzan buscándolo por el fondo del escenario y salen sin verlo.",
+          "positions": [
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 30, "y": 15 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 70, "y": 15 },
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín (escondido)", "x": 15, "y": 56 },
+            { "id": "chica1", "type": "ensamble", "label": "Chica 1", "x": 11, "y": 58 },
+            { "id": "chica2", "type": "ensamble", "label": "Chica 2", "x": 17, "y": 60 },
+            { "id": "chica3", "type": "ensamble", "label": "Chica 3", "x": 22, "y": 57 }
+          ] },
+        { "tag": "6", "label": "Las chicas salen suspirando", "desc": "Diálogo Aladdín–Chicas. Las tres salen suspirando por la derecha; Aladdín se queda solo.",
+          "positions": [
+            { "id": "chica1", "type": "ensamble", "label": "Chica 1", "x": 80, "y": 60 },
+            { "id": "chica2", "type": "ensamble", "label": "Chica 2", "x": 85, "y": 60 },
+            { "id": "chica3", "type": "ensamble", "label": "Chica 3", "x": 90, "y": 60 },
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 20, "y": 55 }
+          ] },
+        { "tag": "7", "label": "Choca con un guardia de espaldas", "desc": "Camina cauteloso, se topa de espaldas con un Guardia que recién vuelve a entrar, lo golpea sin querer y escapa un par de pasos.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 35, "y": 55 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 38, "y": 52 }
+          ] },
+        { "tag": "8", "label": "Lo enmarcan desde el fondo", "desc": "Los 2 Guardias y el Mercader lo enmarcan señalando desde el fondo (izquierda-fondo, centro-fondo, derecha-fondo) mientras entra más gente al mercado.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 60 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 20, "y": 15 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 80, "y": 15 },
+            { "id": "mercader", "type": "antagonista", "label": "Mercader", "x": 50, "y": 12 },
+            { "id": "grupoEntra", "type": "ensamble", "label": "Grupo entrando (Chicas, Narradoras, Mujeres)", "count": 8, "spreadX": 70, "x": 50, "y": 25 }
+          ] },
+        { "tag": "9", "label": "El tiempo se congela", "desc": "Se congela todo el mundo. Una sola luz aísla a Aladdín en el centro; el resto queda fijo señalando.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín (foco)", "x": 50, "y": 65 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1 (congelado)", "x": 20, "y": 15 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2 (congelado)", "x": 80, "y": 15 },
+            { "id": "mercader", "type": "antagonista", "label": "Mercader (congelado)", "x": 50, "y": 12 },
+            { "id": "grupoEntra", "type": "ensamble", "label": "Grupo (congelado)", "count": 8, "spreadX": 70, "x": 50, "y": 25 }
+          ] },
+        { "tag": "10", "label": "Aparece el vendedor de atrapasueños", "desc": "\"Tengo que saltar, tomar la ventaja, rehuir...\" — dentro de la burbuja de tiempo detenido aparece el Vendedor/a de atrapasueños con el soporte al hombro; Aladdín se pone delante, tapándose de los Guardias congelados al fondo.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 45, "y": 55 },
+            { "id": "vendedorAtrapasuenos", "type": "ensamble", "label": "Vendedor(a) de atrapasueños", "x": 45, "y": 50 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1 (congelado)", "x": 20, "y": 15 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2 (congelado)", "x": 80, "y": 15 },
+            { "id": "mercader", "type": "antagonista", "label": "Mercader (congelado)", "x": 50, "y": 12 }
+          ] },
+        { "tag": "11", "label": "El vendedor gira sobre su eje", "desc": "El vendedor gira sobre su propio eje; Aladdín, de espaldas, sigue el giro para seguir escondido — pero va quedando expuesto hacia los Guardias.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 45, "y": 52 },
+            { "id": "vendedorAtrapasuenos", "type": "ensamble", "label": "Vendedor(a) de atrapasueños (girando)", "x": 45, "y": 48 }
+          ] },
+        { "tag": "12", "label": "\"Probar que no tengo ni un dinar\"", "desc": "Justo antes de quedar totalmente expuesto, voltea al público, hace a un lado los atrapasueños con la mano y dice la línea directo a la sala.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 45, "y": 70 },
+            { "id": "vendedorAtrapasuenos", "type": "ensamble", "label": "Vendedor(a) de atrapasueños", "x": 45, "y": 48 }
+          ] },
+        { "tag": "13", "label": "Se rompe el freeze", "desc": "Gira y corre hacia el fondo; con ese movimiento se rompe el freeze y todo vuelve a moverse de golpe.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 25 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 25, "y": 22 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 75, "y": 22 }
+          ] },
+        { "tag": "14", "label": "\"¡RATA!\" — salto sobre la espada", "desc": "Guardia 1 aparece con la espada; Aladdín la esquiva saltando por encima.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 35, "y": 48 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 30, "y": 45 }
+          ] },
+        { "tag": "15", "label": "\"¡PILLO!\" — de costado ante el sable", "desc": "Guardia 2 aparece con un sable en vertical; Aladdín se pone de costado para pasar sin tocarlo.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 55, "y": 48 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 65, "y": 45 }
+          ] },
+        { "tag": "16", "label": "\"¡VAGO!\" — bullet-time y pirueta", "desc": "Ambos guardias atacan juntos al centro; Aladdín hace el quiebre en bullet-time (estilo Matrix) esquivando ambas armas a la vez y remata con una pirueta.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 52 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 40, "y": 50 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 60, "y": 50 }
+          ] },
+        { "tag": "17", "label": "Se acerca la vendedora de pan", "desc": "Se acerca la Vendedora de pan; Aladdín toma dos piezas al pasar.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 58, "y": 58 },
+            { "id": "vendedoraPan", "type": "ensamble", "label": "Vendedora de pan", "x": 65, "y": 60 }
+          ] },
+        { "tag": "18", "label": "\"¡TOMEN!\" / \"Es solo un bocadillo\"", "desc": "Le lanza un pan a un Guardia, tirándole la espada de la mano; al otro Guardia le da un mordisco (o se lo mete en la boca) a media frase.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 58 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1 (desarmado)", "x": 35, "y": 52 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2 (mordisco)", "x": 62, "y": 55 }
+          ] },
+        { "tag": "19", "label": "\"Hay que hacerlo picadillo\"", "desc": "El Guardia desarmado recoge su espada (o agarra un palo de un puesto cercano); ambos cierran filas y avanzan amenazantes desde ambos lados.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 58 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 30, "y": 50 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 70, "y": 50 }
+          ] },
+        { "tag": "20", "label": "\"¿Mis amigos dónde están?\"", "desc": "Se palpa el cuerpo comprobando que está entero, mira hacia la izquierda y la derecha buscando a sus amigos, se encoge de hombros al público: sigue solo.",
+          "positions": [ { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 62 } ] },
+        { "tag": "21", "label": "Coro Mujeres (diagonal derecha)", "desc": "\"Pobre chico me da tanta pena...\" — Chica 1, Chica 2, Chica 3 y las 2 Narradoras, ya mezcladas en el gentío, se agrupan en diagonal derecha, mano al pecho, gesto compasivo.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 58 },
+            { "id": "grupoMujeres", "type": "ensamble", "label": "Chica 1, 2, 3 + Narradora 1, 2", "count": 5, "spreadX": 26, "x": 74, "y": 38 }
+          ] },
+        { "tag": "22", "label": "Coro Mercaderes (diagonal izquierda)", "desc": "\"...a los padres culpo aunque no tenga\" — Mujer 1, 2, 3 y el Mercader se agrupan en diagonal izquierda, brazos cruzados, gesto de reproche.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 58 },
+            { "id": "grupoMercaderes", "type": "ensamble", "label": "Mujer 1, 2, 3 + Mercader", "count": 4, "spreadX": 22, "x": 24, "y": 40 }
+          ] },
+        { "tag": "23", "label": "Aladdín zigzaguea entre los dos coros", "desc": "\"Brincar, quitarme los golpes... huir, de mi perdición...\" — pasa entre ambos grupos usándolos de obstáculo; de paso cruza otra vez frente al vendedor de atrapasueños, que sigue girando al fondo.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 50 },
+            { "id": "grupoMujeres", "type": "ensamble", "label": "Chica 1, 2, 3 + Narradora 1, 2", "count": 5, "spreadX": 26, "x": 74, "y": 38 },
+            { "id": "grupoMercaderes", "type": "ensamble", "label": "Mujer 1, 2, 3 + Mercader", "count": 4, "spreadX": 22, "x": 24, "y": 40 },
+            { "id": "vendedorAtrapasuenos", "type": "ensamble", "label": "Vendedor(a) de atrapasueños", "x": 50, "y": 25 }
+          ] },
+        { "tag": "24", "label": "\"¡Tras él! ¡Atrápenlo!\" — el cerco converge", "desc": "Todo el elenco cierra un semicírculo sobre Aladdín — ya no solo Guardias y Mercader, sino todo el gentío.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 58 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 30, "y": 45 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 70, "y": 45 },
+            { "id": "grupoMujeres", "type": "ensamble", "label": "Grupo Mujeres", "count": 5, "spreadX": 26, "x": 75, "y": 62 },
+            { "id": "grupoMercaderes", "type": "ensamble", "label": "Grupo Mercaderes", "count": 4, "spreadX": 22, "x": 25, "y": 62 }
+          ] },
+        { "tag": "25", "label": "\"Cálmense un instante\" — freeze de Aladdín", "desc": "Aladdín congela a todos otra vez, pero ahora es él quien lo ordena (espejo invertido del freeze inicial). La luz se abre un poco más ancha.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 58 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1 (congelado)", "x": 30, "y": 45 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2 (congelado)", "x": 70, "y": 45 },
+            { "id": "grupoMujeres", "type": "ensamble", "label": "Grupo Mujeres (congelado)", "count": 5, "spreadX": 26, "x": 75, "y": 62 },
+            { "id": "grupoMercaderes", "type": "ensamble", "label": "Grupo Mercaderes (congelado)", "count": 4, "spreadX": 22, "x": 25, "y": 62 }
+          ] },
+        { "tag": "26", "label": "\"¡Pienso que es muy exitante!\"", "desc": "Solo las Mujeres rompen el freeze medio segundo (se abanican, risita) y se congelan de nuevo enseguida.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 58 },
+            { "id": "grupoMujeres", "type": "ensamble", "label": "Grupo Mujeres", "count": 5, "spreadX": 26, "x": 76, "y": 60 },
+            { "id": "grupoMercaderes", "type": "ensamble", "label": "Grupo Mercaderes (congelado)", "count": 4, "spreadX": 22, "x": 25, "y": 62 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1 (congelado)", "x": 30, "y": 45 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2 (congelado)", "x": 70, "y": 45 }
+          ] },
+        { "tag": "27", "label": "\"...mejor yo ya me voy\" / \"¡No!\"", "desc": "El cerco se abre en línea recta hacia el fondo; Aladdín sale disparado por ahí, los Guardias reaccionan un beat tarde.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 40 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 35, "y": 50 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 65, "y": 50 },
+            { "id": "grupoMujeres", "type": "ensamble", "label": "Grupo Mujeres", "count": 5, "spreadX": 26, "x": 80, "y": 65 },
+            { "id": "grupoMercaderes", "type": "ensamble", "label": "Grupo Mercaderes", "count": 4, "spreadX": 22, "x": 20, "y": 65 }
+          ] },
+        { "tag": "28", "label": "Persecución instrumental", "desc": "El elenco se convierte en obstáculos móviles (puestos, telas, canastas). Babkak, Omar y Kassim no están en escena en este tramo.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 50 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 25, "y": 48 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 75, "y": 42 },
+            { "id": "obstaculo1", "type": "prop", "label": "Puesto / tela (obstáculo)", "x": 30, "y": 58 },
+            { "id": "obstaculo2", "type": "prop", "label": "Canasta / tela (obstáculo)", "x": 68, "y": 62 }
+          ] },
+        { "tag": "29", "label": "Reprise — diagonal larga", "desc": "\"Burlar a los que me siguen... dejar a todos atrás... Volar, adiós amigos...\" — diagonal larga desde el fondo-izquierda hacia el proscenio-derecha.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 30, "y": 35 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 15, "y": 30 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 45, "y": 55 }
+          ] },
+        { "tag": "30", "label": "\"...¡saltar!\" — remate del combo", "desc": "Repite el combo de esquives (espada saltada + sable de costado + bullet-time + pirueta), ahora más grande y más rápido, como climax reconocible.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 55, "y": 55 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 40, "y": 50 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 70, "y": 50 }
+          ] },
+        { "tag": "31", "label": "\"Cae de un tejado\"", "desc": "Salto desde el elemento elevado (el mismo puesto/carreta usado como \"tejado\"); aterriza en el centro, adelante.",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 75 },
+            { "id": "tejado", "type": "prop", "label": "Puesto / carreta (\"tejado\")", "x": 50, "y": 40 }
+          ] },
+        { "tag": "32", "label": "\"¡A veces esto es demasiado fácil!\"", "desc": "Pose triunfal, centro. Los Guardias llegan medio beat tarde y frenan en seco justo antes de alcanzarlo (casi chocan entre ellos).",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 80 },
+            { "id": "guardia1", "type": "antagonista", "label": "Guardia 1", "x": 35, "y": 65 },
+            { "id": "guardia2", "type": "antagonista", "label": "Guardia 2", "x": 65, "y": 65 }
+          ] },
+        { "tag": "33", "label": "Vuelven Kassim, Babkak y Omar", "desc": "Entran Kassim por la izquierda y Babkak + Omar por la derecha — los mismos lados por donde salieron corriendo al principio, agotados. Sigue el diálogo hablado hacia \"Orgullosa de Mí\".",
+          "positions": [
+            { "id": "aladdin", "type": "aladdin", "label": "Aladdín", "x": 50, "y": 78 },
+            { "id": "kassim", "type": "ensamble", "label": "Kassim", "x": 15, "y": 55 },
+            { "id": "babkak", "type": "ensamble", "label": "Babkak", "x": 82, "y": 55 },
+            { "id": "omar", "type": "ensamble", "label": "Omar", "x": 88, "y": 58 }
+          ] }
+      ]
+    },
+    {
+      "id": "referencia",
+      "nombre": "Referencia (video DCA)",
+      "descripcion": "Puesta en escena de otra producción (Disney California Adventure), usada solo como inspiración de formaciones y movimiento escénico. No es blocking oficial de nuestro montaje.",
+      "orientacion": { "izq": "IZQ. (actor)", "der": "DER. (actor)" },
+      "videoUrl": "https://www.youtube.com/watch?v=dhItE-0lk0A",
+      "videoTitulo": "[2016] One Jump Ahead - Aladdin: A Musical Spectacular - DCA",
+      "leyenda": [
+        { "type": "aladdin", "label": "Aladdín" },
+        { "type": "guard", "label": "Guardia" },
+        { "type": "crowd", "label": "Grupo / multitud (aprox.)" },
+        { "type": "prop", "label": "Utilería (carreta, etc.)" },
+        { "type": "extra", "label": "Otro personaje individual" }
+      ],
+      "cues": [
+        { "tag": "0:39", "time": 39, "label": "Apertura — encuentro frente a la carpa",
+          "desc": "Tres personajes conversan frente al telón a rayas rojo y blanco: entrada al número.",
+          "positions": [
+            { "id": "p1", "type": "extra", "label": "Turbante verde", "x": 28, "y": 60 },
+            { "id": "p2", "type": "extra", "label": "Túnica dorada", "x": 50, "y": 55 },
+            { "id": "p3", "type": "extra", "label": "Velo azul", "x": 70, "y": 58 }
+          ] },
+        { "tag": "0:47", "time": 47, "label": "Tableau completo del mercado",
+          "desc": "Se revela el set completo: guardias entran al fondo, carreta al centro, multitud repartida por todo el ancho del escenario.",
+          "positions": [
+            { "id": "g1", "type": "guard", "label": "Guardia 1", "x": 22, "y": 18 },
+            { "id": "g2", "type": "guard", "label": "Guardia 2", "x": 30, "y": 20 },
+            { "id": "cart", "type": "prop", "label": "Carreta", "x": 50, "y": 42 },
+            { "id": "c1", "type": "crowd", "label": "Grupo derecha", "count": 4, "x": 15, "y": 68 },
+            { "id": "c2", "type": "crowd", "label": "Grupo izquierda", "count": 4, "x": 83, "y": 66 },
+            { "id": "c3", "type": "crowd", "label": "Grupo centro", "count": 3, "x": 50, "y": 72 }
+          ] },
+        { "tag": "0:55", "time": 55, "label": "Corrillo alrededor de Aladdín",
+          "desc": "El grupo se cierra en torno a Aladdín, reaccionando (manos al rostro, señalando).",
+          "positions": [
+            { "id": "ala", "type": "aladdin", "label": "Aladdín", "x": 48, "y": 58 },
+            { "id": "c1", "type": "crowd", "label": "Corrillo alrededor", "count": 6, "x": 52, "y": 50 }
+          ] },
+        { "tag": "1:03", "time": 63, "label": "Verso solista de Aladdín",
+          "desc": "Aladdín queda solo, adelante y centro, mientras el resto sale de escena al fondo.",
+          "positions": [
+            { "id": "ala", "type": "aladdin", "label": "Aladdín", "x": 42, "y": 75 },
+            { "id": "c1", "type": "crowd", "label": "Grupo saliendo (fondo)", "count": 3, "x": 70, "y": 30 }
+          ] },
+        { "tag": "1:11", "time": 71, "label": "Carreta y bullicio del mercado",
+          "desc": "La carreta vuelve a ser foco: una figura reclinada en ella, guardia y grupo alrededor.",
+          "positions": [
+            { "id": "cart", "type": "prop", "label": "Carreta", "x": 48, "y": 45 },
+            { "id": "p1", "type": "extra", "label": "Figura en la carreta", "x": 52, "y": 42 },
+            { "id": "g1", "type": "guard", "label": "Guardia", "x": 18, "y": 60 },
+            { "id": "c1", "type": "crowd", "label": "Grupo izquierda", "count": 3, "x": 80, "y": 55 }
+          ] },
+        { "tag": "1:19", "time": 79, "label": "Aladdín acorralado junto a la carreta",
+          "desc": "Aladdín arrodillado junto a la carreta; guardias armados entran por la derecha.",
+          "positions": [
+            { "id": "ala", "type": "aladdin", "label": "Aladdín", "x": 45, "y": 62 },
+            { "id": "cart", "type": "prop", "label": "Carreta", "x": 48, "y": 40 },
+            { "id": "g1", "type": "guard", "label": "Guardias", "count": 2, "x": 75, "y": 45 },
+            { "id": "c1", "type": "crowd", "label": "Grupo derecha", "count": 3, "x": 15, "y": 40 }
+          ] },
+        { "tag": "1:27", "time": 87, "label": "Break de baile — grupo cerrado",
+          "desc": "Formación compacta al centro, brazos arriba, unísono.",
+          "positions": [ { "id": "c1", "type": "crowd", "label": "Grupo compacto", "count": 5, "x": 50, "y": 55 } ] },
+        { "tag": "1:35", "time": 95, "label": "Break de baile — formación abierta",
+          "desc": "El grupo se abre en línea, usando todo el ancho del escenario.",
+          "positions": [ { "id": "c1", "type": "crowd", "label": "Fila abierta", "count": 6, "x": 50, "y": 55, "spreadX": 60 } ] },
+        { "tag": "1:43", "time": 103, "label": "Transición — cambio de set/luces",
+          "desc": "Escenario casi vacío durante un cambio de ambientación (arco/telón en penumbra).",
+          "positions": [ { "id": "p1", "type": "extra", "label": "Figura lejana", "x": 85, "y": 15 } ] },
+        { "tag": "1:51", "time": 111, "label": "Pose final del coro + aplauso",
+          "desc": "Todo el elenco en semicírculo con un bailarín en salto al centro; remate del número principal.",
+          "positions": [
+            { "id": "jump", "type": "extra", "label": "Bailarín en salto", "x": 50, "y": 45 },
+            { "id": "c1", "type": "crowd", "label": "Semicírculo completo", "count": 9, "x": 50, "y": 62, "spreadX": 70 }
+          ] },
+        { "tag": "1:59", "time": 119, "label": "Reprise solista — Aladdín solo",
+          "desc": "Aladdín queda solo en escena, agachado, momento reflexivo del reprise.",
+          "positions": [ { "id": "ala", "type": "aladdin", "label": "Aladdín", "x": 35, "y": 68 } ] },
+        { "tag": "2:07", "time": 127, "label": "Reprise — reingresa la persecución",
+          "desc": "Vuelve la carreta y otra figura; se retoma el movimiento.",
+          "positions": [
+            { "id": "ala", "type": "aladdin", "label": "Aladdín", "x": 40, "y": 55 },
+            { "id": "cart", "type": "prop", "label": "Carreta", "x": 20, "y": 50 },
+            { "id": "p1", "type": "extra", "label": "Figura extra", "x": 60, "y": 50 }
+          ] },
+        { "tag": "2:15", "time": 135, "label": "Persecución — salto grupal",
+          "desc": "Aladdín en el aire (salto), grupo alrededor en movimiento.",
+          "positions": [
+            { "id": "ala", "type": "aladdin", "label": "Aladdín (salto)", "x": 45, "y": 45 },
+            { "id": "c1", "type": "crowd", "label": "Grupo alrededor", "count": 5, "x": 50, "y": 55, "spreadX": 50 }
+          ] },
+        { "tag": "2:23", "time": 143, "label": "Persecución — caída/rodada de Aladdín",
+          "desc": "Aladdín rueda por el suelo; el grupo corre hacia la derecha.",
+          "positions": [
+            { "id": "ala", "type": "aladdin", "label": "Aladdín (rodando)", "x": 35, "y": 55 },
+            { "id": "c1", "type": "crowd", "label": "Grupo corriendo", "count": 4, "x": 70, "y": 50, "spreadX": 30 }
+          ] },
+        { "tag": "2:31", "time": 151, "label": "Tropiezo cómico",
+          "desc": "Una figura cae en primer plano izquierda; otra escapa por la derecha.",
+          "positions": [
+            { "id": "p1", "type": "extra", "label": "Figura que cae", "x": 25, "y": 55 },
+            { "id": "p2", "type": "extra", "label": "Figura que escapa", "x": 85, "y": 45 }
+          ] },
+        { "tag": "2:39", "time": 159, "label": "Escenario casi vacío — transición",
+          "desc": "Solo dos figuras lejanas al fondo derecha; momento de calma antes del cierre.",
+          "positions": [ { "id": "c1", "type": "crowd", "label": "Figuras lejanas", "count": 2, "x": 15, "y": 20 } ] },
+        { "tag": "2:47", "time": 167, "label": "Transición — arco vacío",
+          "desc": "Escenario prácticamente vacío, solo arquitectura del set.",
+          "positions": [ { "id": "p1", "type": "extra", "label": "Figura diminuta al fondo", "x": 85, "y": 15 } ] },
+        { "tag": "2:55", "time": 175, "label": "Aladdín corre solo por el arco",
+          "desc": "Aladdín cruza corriendo, solo, por debajo del arco.",
+          "positions": [ { "id": "ala", "type": "aladdin", "label": "Aladdín (corriendo)", "x": 25, "y": 45 } ] },
+        { "tag": "3:03", "time": 183, "label": "Persecución final — guardias flanquean",
+          "desc": "Aladdín al centro, un guardia a cada lado, remate de la persecución.",
+          "positions": [
+            { "id": "ala", "type": "aladdin", "label": "Aladdín", "x": 45, "y": 45 },
+            { "id": "g1", "type": "guard", "label": "Guardia derecha", "x": 15, "y": 50 },
+            { "id": "g2", "type": "guard", "label": "Guardia izquierda", "x": 80, "y": 48 }
+          ] },
+        { "tag": "3:10", "time": 190, "label": "Pose triunfal",
+          "desc": "Aladdín solo, centro, brazos abiertos — comienza el aplauso.",
+          "positions": [ { "id": "ala", "type": "aladdin", "label": "Aladdín", "x": 45, "y": 55 } ] },
+        { "tag": "3:13", "time": 193, "label": "Pose final / saludo",
+          "desc": "Aladdín de pie, centro, bajo luz puntual — cierre del número.",
+          "positions": [ { "id": "ala", "type": "aladdin", "label": "Aladdín", "x": 48, "y": 60 } ] }
+      ]
+    }
+  ]
+}
