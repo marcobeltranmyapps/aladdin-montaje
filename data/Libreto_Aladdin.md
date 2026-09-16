@@ -17,13 +17,14 @@
 13. Sultán
 14. Príncipe Abdullah
 15. Razoul
-16. Narrador
-17. Primer guardia
-18. Segundo guardia
-19. Naima (madre de Aladdín — solo aparece en el Prólogo)
-20. Halima (vendedora de pan — solo aparece en el Prólogo)
-21. Cobrador (recaudador de impuestos — solo aparece en el Prólogo)
-22. Niños
+16. Samira
+17. Soraya
+18. Primer guardia
+19. Segundo guardia
+20. Naima (madre de Aladdín — solo aparece en el Prólogo)
+21. Halima (vendedora de pan — solo aparece en el Prólogo)
+22. Cobrador (recaudador de impuestos — solo aparece en el Prólogo)
+23. Niños
 
 *Nota: en el Prólogo, los actores de Aladdín, Babkak, Omar y Kassim interpretan versiones niño de sus propios personajes.*
 
@@ -146,17 +147,17 @@ Orgullosa de ti...
 
 ## ESCENA UNO: MERCADO
 
-*(OVERTURA / NOCHES DE ARABIA. NARRADOR se dirige a la audiencia con telón cerrado)*
+*(OVERTURA / NOCHES DE ARABIA. SAMIRA y SORAYA se dirigen a la audiencia con telón cerrado)*
 
-**NARRADOR:** ¡Salaam y buenas noches a ustedes, dignos amigos! ¡Bienvenidos... a la legendaria ciudad de Agrabah!
+**SAMIRA:** ¡Salaam y buenas noches a ustedes, dignos amigos! ¡Bienvenidos... a la legendaria ciudad de Agrabah!
 
-**NARRADOR:** Ciudad de alfombras voladoras, grandes héroes, promesas de amor y más brillo y glamour que cualquier otra ciudad ficticia en el mundo.
+**SAMIRA:** Ciudad de alfombras voladoras, grandes héroes, promesas de amor y más brillo y glamour que cualquier otra ciudad ficticia en el mundo.
 
 *(Surgen varios AGRABAHNS y también se dirigen a la audiencia)*
 
 ### CANCIÓN: NOCHE DE ARABIA
 
-**Solistas:**  
+**ELENCO:**  
 Imagina un lugar
 Una tierra sin par  
 Donde ves caravanas pasar  
@@ -170,13 +171,21 @@ Yo te invito a pasear
 En la alfombra volar  
 Y una noche de Arabia estar  
 
-**NARRADOR:** Y por supuesto, ¿saben por qué esta ciudad es tan famosa? Por eso...
+**SORAYA:** Y por supuesto, ¿saben por qué esta ciudad es tan famosa? Por esto...
 
-**NARRADOR:** Pero no se dejen engañar por su apariencia común, como en muchas cosas lo de afuera no es importante, lo de adentro es lo que cuenta.
+*(SORAYA saca un cucharón de sopa en vez de la lámpara)*
 
-**NARRADOR:** Wow, llegamos a un punto importante, esta lámpara puso a Agrabah en el mapa ¿nunca han estado ahí? Eso lo podemos arreglar *(se abre telón)*
+**SORAYA:** Lo siento, estaba cocinando.
 
-**SOLISTAS:**  
+*(SORAYA guarda el cucharón y saca la lámpara)*
+
+**SORAYA:** ¡POR ESTO!
+
+**SORAYA:** Pero no se dejen engañar por su apariencia común, como en muchas cosas lo de afuera no es importante, lo de adentro es lo que cuenta.
+
+**SAMIRA:** Wow, llegamos a un punto importante, esta lámpara puso a Agrabah en el mapa ¿nunca han estado ahí? Eso lo podemos arreglar *(se abre telón)*
+
+**ELENCO:**  
 En las calles andar  
 De un viejo bazar  
 Donde todo podrás comprar  
@@ -207,7 +216,7 @@ A un genio que quiere salir
 Piensa bien 3 deseos  
 Cuál va a ser primero  
 
-**NARRADOR:**  
+**SORAYA:**  
 Es demandante pero es lo que hay
 
 **CORO:**  
@@ -218,7 +227,7 @@ Ven a la ciudad
 Donde montañas ves que se moverán  
 Donde en la calle ves ladrones, poetas, serpientes, profetas, 
 
-**NARRADOR:**  
+**SAMIRA:**  
 No tengo pruebas pero tampoco dudas!
 
 **CORO:**  
@@ -227,44 +236,44 @@ De Arabia son!
 
 *(CUERPO DE BAILE ENTRA)*
 
-**NARRADOR:** Agrabah, ciudad ESPECTACULAR, donde hasta la gente más pobre parece fabulosa...
+**SORAYA:** Agrabah, ciudad ESPECTACULAR, donde hasta la gente más pobre parece fabulosa...
 
 *(CUERPO DE BAILE)*
 
-**NARRADOR:** Ciudad donde todo mundo baila. Y ahora vean el lado más agradable de Agrabah.
+**SAMIRA:** Ciudad donde todo mundo baila. Y ahora vean el lado más agradable de Agrabah.
 
 *(Amigas de Jasmine)*
 
 **CORO:**  
 De Arabia son. De Arabia son
 
-**NARRADOR:** Aquí les aconsejo vigilar sus pasos, ya que el peligro acecha en cada esquina. Cuiden sus billeteras...
+**SORAYA:** Aquí les aconsejo vigilar sus pasos, ya que el peligro acecha en cada esquina. Cuiden sus billeteras...
 
 *(JAFAR e IAGO aparecen y se congelan)*
 
 **CORO:**  
 De Arabia son
 
-**NARRADOR:** Una ciudad donde un don nadie puede convertirse en alguien...
+**SAMIRA:** Una ciudad donde un don nadie puede convertirse en alguien...
 
 *(ALADDIN aparece y se congela)*
 
 **CORO:**  
 De Arabia son
 
-**NARRADOR:** Un lugar donde una princesa renunciaría a su corona por el amor verdadero.
+**SORAYA:** Un lugar donde una princesa renunciaría a su corona por el amor verdadero.
 
 *(JASMINE aparece y se congela)*
 
-**NARRADOR:** Excepto que su padre, el Sultán, es un fanático de las formas antiguas.
+**SAMIRA:** Excepto que su padre, el Sultán, es un fanático de las formas antiguas.
 
 *(El SULTÁN aparece y se congela)*
 
-**NARRADOR:** Aquí los amigos de nuestro héroe son unos ladronzuelos, adorables pero pirañas.
+**SORAYA:** Aquí los amigos de nuestro héroe son unos ladronzuelos, adorables pero pirañas.
 
 *(Los amigos de ALADDIN aparecen y se congelan)*
 
-**NARRADOR:** Ohhh! Y por si no lo mencioné, aquí todo el mundo canta.
+**SAMIRA:** Ohhh! Y por si no lo mencioné, aquí todo el mundo canta.
 
 **CORO:**  
 De Arabia son  
@@ -281,7 +290,7 @@ Al desierto cruel
 **CORO:**  
 De Arabia son (x5)  
 
-**NARRADOR:** Y la historia empieza.
+**SAMIRA y SORAYA:** Y la historia empieza!
 
 *(ALADDIN es empujado en el escenario por un dueño de la tienda enojado)*
 
@@ -481,7 +490,7 @@ Sólo tengo que... ¡saltar!
 **ALADDIN** *(a él mismo)*:  
 Vago, pillo, eso es falso  
 Si miran más cerca  
-¿Verían un niño pobre? No señor  
+¿Verían un chico pobre? No señor  
 Descubrirían que hay mucho más en mí  
 Me dicen rata callejera, me juzgan sin saber realmente como soy  
 *(mira hacia arriba)*  
@@ -701,7 +710,7 @@ Ya no habrá más jaulas para mi.
 **RAJAH, MANAL, ISIR, LAYLA:**  
 Ya no habrá más jaulas para ti.  
 
-*(JASMINE se pone una capucha en la cabeza y sale corriendo, seguida de RAJAH, MANAL e ISIR)*
+*(JASMINE se pone una capucha en la cabeza y sale corriendo, seguida de RAJAH, MANAL, ISIR y LAYLA)*
 
 ### CANCIÓN PENDIENTE (título y letra por escribir)
 
@@ -1370,21 +1379,21 @@ orgullosa de mi
 
 **JASMINE:** Padre, ¿tienes idea de cómo viven tus súbditos en las calles?
 
-**SULTÁN:** ¡Jasmine, no deberías haber estado sola en el mercado!
+**SULTÁN:** ¡Jasmine, no deberías estar paseando sola en el mercado!
 
 **JASMINE:** No estaba sola. Te lo dije, estaba con un chico llamado Aladdin, y los guardias...
 
 *(IAGO y JAFAR entran y se paran al otro lado de SULTÁN, que termina en el medio de un partido de tenis entre su asesor y su hija)*
 
-**SULTÁN:** Ah, Jafar, ahí estás. ¿Conoces a un niño arrestado en el mercado?
+**SULTÁN:** Ah, Jafar, ahí estás. ¿Conoces a un chico arrestado en el mercado?
 
-**JAFAR:** Sí, su Majestad. Razoul me trajo el secuestrador de la princesa.
+**JAFAR:** Sí, su Majestad. Razoul me trajo al secuestrador de la princesa.
 
 **JASMINE:** Aladdin no me secuestró. Me escapé-
 
 **SULTÁN:** ¿¿Te escapaste?!
 
-**JAFAR:** Oh señor. No se preocupe, me temo que la sentencia del niño ya se ha cumplido.
+**JAFAR:** Oh señor. No se preocupe, me temo que la sentencia del chico ya se ha cumplido.
 
 **JASMINE:** ¿Sentencia?
 
@@ -1575,7 +1584,9 @@ Al Príncipe Alí!
 
 **ISIR:** Yo diría que sí te preocupes.
 
-**RAJAH:** Por favor, piensa antes de hablar.
+**MANAL:** ¿Acaso está prohibido usar el cerebro en Ababwa?
+
+**LAYLA:** Eres tan romántico... y tan torpe...
 
 **GENIO** *(a ALADDIN)*: Quiero regresarme a la lámpara...
 
@@ -1631,7 +1642,11 @@ Al Príncipe Alí!
 
 ## ESCENA OCHO: PALACIO - BALCÓN DE JASMINE
 
-*(JASMINE camina furiosamente, seguido de MANAL, RAJAH e ISIR)*
+*(JASMINE camina furiosamente, seguido de MANAL, RAJAH, ISIR y LAYLA)*
+
+**JASMINE:** ¡Es un tonto! ¡Otro príncipe pretencioso! *(pausada y reflexiva)* Tengo que salir de aquí...
+
+**LAYLA:** A mí me parece muy tierno... *(mirando a JASMINE, rectificándose)* ¡muy torpe! Quise decir... muy torpe.
 
 **MANAL:** ¡Pero Jasmine, no puedes irte!
 
@@ -1653,6 +1668,8 @@ Al Príncipe Alí!
 
 **JASMINE:** Tranquilas, chicas. Príncipe Ali, ¿cómo entraste aquí?
 
+*(LAYLA aparece detrás de ALADDIN haciendo una mueca de gesto tierno; sus amigas la jalan hacia atrás)*
+
 **ALADDIN:** Emmm... ¿Alfombra mágica?
 
 **RAJAH** *(camina hacia ALADDIN asertivamente)*: Entonces, ¿cuáles son realmente tus intenciones con nuestra princesa?
@@ -1665,7 +1682,9 @@ Al Príncipe Alí!
 
 **ISIR:** Estaremos justo afuera si necesitas algo. *(a RAJAH y MANAL)* Vámonos. *(aparte, a ALADDIN)* ¿Tienes un hermano?
 
-*(RAJAH vuelve por ISIR y salen)*
+**LAYLA** *(llevándose a empujones a ISIR)*: O un primo...
+
+*(RAJAH y MANAL vuelven por ISIR y LAYLA, y salen)*
 
 **ALADDIN:** ¡Uf! Al fin solos.
 
@@ -1677,7 +1696,7 @@ Al Príncipe Alí!
 
 **JASMINE:** Espera un momento. ¿Te conozco?
 
-**ALADDIN:** Uh... *(reemplaza rápidamente su turbante y se aleja)* ¡Eso es imposible!
+**ALADDIN:** Uh... *(se coloca rápidamente su turbante y se aleja)* ¡Eso es imposible!
 
 **JASMINE:** Me recuerdas a alguien que conocí en el mercado.
 
@@ -1795,7 +1814,7 @@ Tú junto a mí.
 
 **ALADDIN:** ¡Bueno, eso también fue genial! *(se da cuenta)*
 
-**JASMINE:** ¿Creías que realmente iría a una alfombra mágica con un completo desconocido? ¿Por qué mentiste a mí? La verdad, esta vez.
+**JASMINE:** ¿Creías que realmente iría de paseo en una alfombra mágica con un completo desconocido? ¿Por qué me mentiste? ...Esta vez quiero solo la verdad.
 
 **ALADDIN:** ¿La verdad? La verdad es que... a veces me visto como un plebeyo y salgo al mercado para experimentar cómo viven las "personas normales". ¿Suena familiar?
 
@@ -1993,13 +2012,15 @@ Tú junto a mí.
 
 ## ESCENA DOCE: HABITACIÓN DEL PALACIO
 
-*(SULTÁN y JASMINE entran. MANAL, ISIR y RAJAH lo siguen ansiosamente)*
+*(SULTÁN y JASMINE entran. MANAL, ISIR, RAJAH y LAYLA lo siguen ansiosamente)*
 
 **SULTÁN:** No sabes cuán feliz me hace tu decisión, Jasmine.
 
 **JASMINE:** Sé que parece tan repentino, pero es como si lo hubiera conocido toda mi vida.
 
 **RAJAH** *(sacudiendo la cabeza, a MANAL e ISIR)*: Creo que ya lo veía venir...
+
+**LAYLA:** Yo lo supe desde que lo vi. Así es el destino, ¿no?
 
 *(ALADDIN entra)*
 
@@ -2023,7 +2044,7 @@ Tú junto a mí.
 
 **ISIR:** ¡Tenemos mucho que hacer!
 
-*(JASMINE sale con MANAL, RAJAH e ISIR. GENIO entra con la lámpara)*
+*(JASMINE sale con MANAL, RAJAH, ISIR y LAYLA. GENIO entra con la lámpara)*
 
 **GENIO:** ¡Estoy todo lleno! ¿Cómo te fue con la princesa?
 
@@ -2096,7 +2117,7 @@ Tu orgullo seré
 
 ### PRÍNCIPE ALI / JAFAR REPRISE
 
-*(JAFAR ingresa con la lámpara en mano junto al GENIO. JASMINE, MANAL, ISIR y RAJAH entran custodiadas por guardias)*
+*(JAFAR ingresa con la lámpara en mano junto al GENIO. JASMINE, MANAL, ISIR, RAJAH y LAYLA entran custodiadas por guardias)*
 
 **SULTÁN:** Jafar, ¿qué significa esto? ¡Liberen a mi hija en este instante!
 
@@ -2293,7 +2314,7 @@ Ya no quedan aquí más personas,
 
 **JAFAR:** ¡Al final! ¡Todo el poder me pertenece! *(siente un tirón hacia abajo)* Espera... espera, ¿qué está pasando? ¡Noooooooooooo!
 
-*(JAFAR desaparece en una lámpara negra. Las cadenas se caen: BABKAK, OMAR, KASSIM, MANAL, ISIR, RAJAH y JASMINE. Los GUARDIAS liberan a ALADDIN y al SULTÁN. ALADDIN toma la lámpara negra, junto con la lámpara dorada de GENIO)*
+*(JAFAR desaparece en una lámpara negra. Las cadenas se caen: BABKAK, OMAR, KASSIM, MANAL, ISIR, RAJAH, LAYLA y JASMINE. Los GUARDIAS liberan a ALADDIN y al SULTÁN. ALADDIN toma la lámpara negra, junto con la lámpara dorada de GENIO)*
 
 **ALADDIN:** ¡Jafar quería ser un genio y lo consiguió! ¡Y todo lo que conlleva!
 
@@ -2351,7 +2372,7 @@ Ya no quedan aquí más personas,
 
 **SULTÁN:** Y como gobernante de Agrabah, ella un día nos guiará con justicia y compasión, tal como una vez su madre lo hizo.
 
-*(Sin creer lo que oyen, MANAL, ISIR y RAJAH se acurrucan y se toman de la mano)*
+*(Sin creer lo que oyen, MANAL, ISIR y RAJAH se acurrucan y se toman de la mano; LAYLA ya está llorando de la emoción, secándose las lágrimas con dramatismo)*
 
 **JASMINE:** ¿En serio padre?
 
@@ -2379,7 +2400,7 @@ Ya no quedan aquí más personas,
 
 **BABKAK:** Estoy seguro de que necesitarás un Catador de comida Real...
 
-*(ALADDIN mira a JASMINE, MANAL, ISIR y RAJAH para su aprobación. Dan un pulgares hacia arriba)*
+*(ALADDIN mira a JASMINE, MANAL, ISIR, RAJAH y LAYLA para su aprobación. Dan un pulgares hacia arriba)*
 
 **ALADDIN:** ¡Por supuesto!
 
@@ -2393,7 +2414,7 @@ Ya no quedan aquí más personas,
 
 **BABKAK:** ¡Parece que vamos a ser legítimos, muchachos!
 
-*(MANAL, ISIR y RAJAH traen a BABKAK, OMAR y KASSIM al redil del palacio. Todos se dirigen a la audiencia)*
+*(MANAL, ISIR, RAJAH y LAYLA traen a BABKAK, OMAR y KASSIM al redil del palacio. Todos se dirigen a la audiencia)*
 
 ### CANCIÓN FINALE: UN MUNDO IDEAL (REPRISE)
 
