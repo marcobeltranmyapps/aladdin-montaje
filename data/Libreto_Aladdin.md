@@ -11,18 +11,19 @@
 7. Rajah
 8. Manal
 9. Isir
-10. Iago
-11. Jafar
-12. Sultán
-13. Príncipe Abdullah
-14. Razoul
-15. Narrador
-16. Primer guardia
-17. Segundo guardia
-18. Naima (madre de Aladdín — solo aparece en el Prólogo)
-19. Halima (vendedora de pan — solo aparece en el Prólogo)
-20. Cobrador (recaudador de impuestos — solo aparece en el Prólogo)
-21. Niños
+10. Layla
+11. Iago
+12. Jafar
+13. Sultán
+14. Príncipe Abdullah
+15. Razoul
+16. Narrador
+17. Primer guardia
+18. Segundo guardia
+19. Naima (madre de Aladdín — solo aparece en el Prólogo)
+20. Halima (vendedora de pan — solo aparece en el Prólogo)
+21. Cobrador (recaudador de impuestos — solo aparece en el Prólogo)
+22. Niños
 
 *Nota: en el Prólogo, los actores de Aladdín, Babkak, Omar y Kassim interpretan versiones niño de sus propios personajes.*
 
@@ -608,7 +609,7 @@ Orgullosa de mí
 
 **IAGO:** Uhh... pensar... eso es nuevo...
 
-*(JASMINE entra desde la dirección opuesta con sus asistentes: RAJAH, MANAL e ISIR)*
+*(JASMINE entra desde la dirección opuesta con sus asistentes: RAJAH, MANAL, ISIR y LAYLA)*
 
 **ISIR:** ¿Qué dijo el sultán?
 
@@ -618,6 +619,20 @@ Orgullosa de mí
 
 **MANAL:** Sí, no veo que eso vaya bien.
 
+**LAYLA** *(con las manos en el pecho, soñadora)*: O tal vez... ¡el destino elige por ti! Así empiezan todas las mejores historias de amor.
+
+**RAJAH:** Layla, no toda historia empieza con un ultimátum de tu padre.
+
+**LAYLA:** Layla y Majnún empezó peor, y mira cómo se recuerda.
+
+**ISIR:** Cariño, los recuerdan porque los dos terminan muertos.
+
+**LAYLA** *(pensándolo)*: ...Ese detalle se me había olvidado.
+
+**MANAL:** Qué hermoso. ¿Alguien tiene una idea que no involucre morir de amor?
+
+**RAJAH** *(con firmeza y con cariño)*: Así son las reglas, princesa. Una princesa debe aceptar su deber.
+
 ### CANCIÓN: ESTOS MUROS DE PALACIO ("These Palace Walls")
 
 **JASMINE:**  
@@ -626,7 +641,7 @@ Orgullosa de mí
 ¡Es absurdo!  
 Pretendientes hablan de amor  
 Quieren engañarme  
-¿Cómo puede alguien conquistar sin hablarme?  
+¿Cómo es que me quieren conquistar sin hablarme?  
 Quieren tener tesoros al pretenderme a mí.  
 Es hora de tomar medidas.  
 Me pregunto…  
@@ -639,25 +654,27 @@ una jaula son.
 
 **JASMINE:** ¿Eso es un reto?
 
-**MANAL:** Creo que podría ser bueno para ti.
+**MANAL:** Yo creo que podría ser bueno para ti.
 
 **JASMINE:** ¿Tú lo harías?
 
 **ISIR:** Cariño, nunca he visto a alguien que necesite salir más que tú.
 
-**RAJAH, MANAL, ISIR:**  
-Siempre te dijeron qué hacer.  
-Has de obedecerles.  
+**LAYLA:** Siempre te dijeron qué hacer.
+
+**RAJAH:** Has de obedecerles.
 
 **JASMINE:** ¿Y si siento algo en mi interior?
 
-**RAJAH, MANAL, ISIR:** ¡Lo retienes!
+**MANAL, ISIR:** ¡Lo retienes!
 
 **JASMINE:** ¿Qué es lo que me sugieres?
 
 **MANAL:** ¡Tienes que arriesgar!
 
-**RAJAH, MANAL, ISIR:** ¿Por qué será que cada día te preguntas..?
+**RAJAH, MANAL, LAYLA:** Por qué será que cada día...
+
+**ISIR:** ¡te preguntas!
 
 **JASMINE:**  
 ¿Qué debo hacer? ¿Salir volando?  
@@ -667,10 +684,10 @@ Seguir mi sueño hasta alcanzarlo
 
 **JASMINE, RAJAH, MANAL, ISIR:** ¿Qué hay más allá de estas paredes?
 
-**RAJAH, MANAL, ISIR:** Un gran amor quizá encuentres.
+**LAYLA:** Un gran amor quizá encuentres.
 
 **JASMINE:**  
-En estos muros del palacio no.  
+En estos muros del palacio ¡no!  
 Voy a cruzar.  
 Voy a arriesgar.  
 ¿Qué va a ocurrir?  
@@ -681,7 +698,7 @@ ya no serán más jaulas para mí
 **JASMINE:**  
 Ya no habrá más jaulas para mi.  
 
-**RAJAH, MANAL, ISIR:**  
+**RAJAH, MANAL, ISIR, LAYLA:**  
 Ya no habrá más jaulas para ti.  
 
 *(JASMINE se pone una capucha en la cabeza y sale corriendo, seguida de RAJAH, MANAL e ISIR)*

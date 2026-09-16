@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Personajes — ALADDÍN</title>
+<meta name="description" content="Fichas de personaje del musical ALADDÍN: arquetipo, motivación y notas de actuación — B612 Audiovisual">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Vazirmatn:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* ---------- Lista de personajes ---------- */
+  .personaje-row {
+    position: relative;
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 14px 16px; margin-bottom: 8px; text-decoration: none; color: inherit;
+    transition: transform 120ms ease, border-color 120ms ease;
+  }
+  .personaje-row:hover { border-color: var(--border-strong); }
+  .personaje-row:active { transform: scale(0.99); }
+  .personaje-row .nombre { font-family: var(--font-display); font-size: 15.5px; color: var(--ink); }
+  .personaje-row .arquetipo { display: block; font-size: 12px; color: var(--ink-faint); margin-top: 2px; }
+  .personaje-row .chev { color: var(--ink-faint); flex-shrink: 0; }
+
+  /* ---------- Vista de ficha ---------- */
+  .personaje-header { position: relative; margin-bottom: 22px; }
+  .personaje-header h1 { font-size: clamp(24px, 6vw, 32px); margin-top: 4px; }
+  .personaje-header .pill { margin-top: 10px; }
+
+  .field-block { margin-bottom: 22px; }
+  .field-block h3 {
+    font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;
+    color: var(--teal); margin-bottom: 6px;
+  }
+  .field-block p { margin: 0; font-size: 15px; color: var(--ink); line-height: 1.6; }
+
+  blockquote.cita {
+    margin: 26px 0 0; padding: 14px 18px; border-left: 3px solid var(--brass);
+    background: var(--brass-soft); border-radius: 0 10px 10px 0;
+  }
+  blockquote.cita p { font-style: italic; font-size: 15px; color: var(--ink); margin: 0; }
+  blockquote.cita cite {
+    display: block; margin-top: 8px; font-style: normal; font-size: 12px;
+    color: var(--ink-soft); font-weight: 600;
+  }
+
+  /* ---------- Navegación entre fichas (calcada de libreto.html) ---------- */
+  .personaje-nav { display: flex; align-items: stretch; gap: 10px; margin: 10px 0 22px; }
+  .personaje-nav .nav-link {
+    flex: 1; display: flex; flex-direction: column; gap: 2px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 10px 14px; text-decoration: none; color: inherit; min-width: 0;
+  }
+  .personaje-nav .nav-link:hover { border-color: var(--border-strong); }
+  .personaje-nav .nav-link.prev { text-align: left; }
+  .personaje-nav .nav-link.next { text-align: right; }
+  .personaje-nav .nav-link .lbl {
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--ink-faint);
+  }
+  .personaje-nav .nav-link .ttl {
+    font-family: var(--font-display); font-size: 14px; color: var(--ink);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .personaje-nav .nav-link.index {
+    flex: 0 0 auto; align-items: center; justify-content: center; flex-direction: row; gap: 6px;
+  }
+  .personaje-nav .nav-link.index svg { width: 16px; height: 16px; flex-shrink: 0; }
+  .personaje-nav.bottom { margin-top: 26px; margin-bottom: 0; }
+
+  @media (max-width: 480px) {
+    .personaje-nav { flex-wrap: wrap; }
+    .personaje-nav .nav-link.prev, .personaje-nav .nav-link.next { flex: 1 1 100%; }
+    .personaje-nav .nav-link.index { flex: 1 1 100%; order: -1; }
+  }
+
+  .loading, .error { text-align: center; color: var(--ink-soft); padding: 40px 0; font-size: 14px; }
+
+  #gate {
+    position: fixed; inset: 0; z-index: 50; display: flex; align-items: center; justify-content: center;
+    background: var(--bg); padding: 20px;
+  }
+  #gate .card { max-width: 340px; width: 100%; padding: 30px 26px; text-align: center; }
+  #gate .brand { font-family: var(--font-display); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); margin-bottom: 8px; }
+  #gate h1 { font-size: 20px; margin-bottom: 8px; }
+  #gate p.hint { color: var(--ink-soft); font-size: 13.5px; margin: 0 0 18px; }
+  #gate .field { text-align: left; margin-bottom: 14px; }
+  #gate label {
+    display: block; font-size: 12.5px; font-weight: 600; color: var(--ink-soft);
+    margin-bottom: 6px;
+  }
+  #gate input {
+    width: 100%; padding: 11px 13px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--surface-2); color: var(--ink); font-size: 15px;
+    font-family: var(--font-body);
+  }
+  #gate .err { color: var(--terracotta); font-size: 12.5px; margin-top: 6px; min-height: 16px; text-align: left; }
+  #gate button {
+    width: 100%; padding: 11px 13px; border-radius: 8px; border: none;
+    background: var(--brass); color: var(--brass-ink); font-weight: 700; font-size: 14px; cursor: pointer;
+    transition: transform 120ms ease;
+  }
+  #gate button:active { transform: scale(0.97); }
+  .shell[hidden] { display: none; }
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <form class="card" id="gate-form">
+    <div class="brand">B612 Audiovisual</div>
+    <h1>Zona del elenco — acceso restringido</h1>
+    <p class="hint">Esta sección es solo para el elenco y el equipo de producción.</p>
+    <div class="field">
+      <label for="gate-input">Contraseña</label>
+      <input type="password" id="gate-input" autocomplete="off" autofocus>
+      <div class="err" id="gate-err"></div>
+    </div>
+    <button type="submit">Entrar</button>
+  </form>
+</div>
+
+<div class="shell" id="shell" hidden>
+  <a class="crumb" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    Inicio
+  </a>
+
+  <div id="root">
+    <div class="loading">Cargando personajes…</div>
+  </div>
+
+  <footer class="site">B612 Audiovisual · fichas para construir personaje — arquetipo, motivación y notas de actuación.</footer>
+</div>
+
+<script>
+const root = document.getElementById("root");
+let DATA = null;   // { categorias: [...], notaConjunto }
+let FLAT = null;   // lista plana de personajes en orden, para prev/siguiente
+
+function escapeHtml(text) {
+  return String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+function personajeRowHtml(p) {
+  return `
+    <a class="personaje-row" href="#${p.id}">
+      <span>
+        <span class="nombre">${escapeHtml(p.nombre)}</span>
+        ${p.arquetipo ? `<span class="arquetipo">${escapeHtml(p.arquetipo)}</span>` : ""}
+      </span>
+      <svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+    </a>
+  `;
+}
+
+function renderList() {
+  let html = `
+    <header class="masthead" style="text-align:left; padding-bottom:4px;">
+      <div class="brand">B612 Audiovisual</div>
+      <h1>Personajes</h1>
+      <p class="sub">Toca un personaje para ver su arquetipo, motivación y notas de actuación.<br>Este documento está en constante actualización.</p>
+    </header>
+  `;
+  DATA.categorias.forEach(cat => {
+    html += `<h2 class="section-title">${escapeHtml(cat.nombre)}</h2>`;
+    cat.personajes.forEach(p => { html += personajeRowHtml(p); });
+  });
+  if (DATA.notaConjunto) {
+    html += `<div class="note"><strong>Papeles de conjunto:</strong> ${escapeHtml(DATA.notaConjunto)}</div>`;
+  }
+  root.innerHTML = html;
+}
+
+const INDEX_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>`;
+
+function personajeNav(p) {
+  const idx = FLAT.indexOf(p);
+  const prev = idx > 0 ? FLAT[idx - 1] : null;
+  const next = idx < FLAT.length - 1 ? FLAT[idx + 1] : null;
+
+  const prevHtml = prev
+    ? `<a class="nav-link prev" href="#${prev.id}"><span class="lbl">← Anterior</span><span class="ttl">${escapeHtml(prev.nombre)}</span></a>`
+    : "";
+  const nextHtml = next
+    ? `<a class="nav-link next" href="#${next.id}"><span class="lbl">Siguiente →</span><span class="ttl">${escapeHtml(next.nombre)}</span></a>`
+    : "";
+
+  return `
+    <div class="personaje-nav">
+      ${prevHtml}
+      <a class="nav-link index" href="#" onclick="location.hash=''; return false;">${INDEX_ICON}Índice</a>
+      ${nextHtml}
+    </div>
+  `;
+}
+
+function field(label, value) {
+  if (!value) return "";
+  return `<div class="field-block"><h3>${escapeHtml(label)}</h3><p>${escapeHtml(value)}</p></div>`;
+}
+
+function renderPersonaje(id) {
+  const p = FLAT.find(x => x.id === id);
+  if (!p) { renderList(); return; }
+
+  const nav = personajeNav(p);
+  let html = `
+    ${nav}
+    <div class="personaje-header">
+      <div class="eyebrow">${escapeHtml(p.categoria)}</div>
+      <h1>${escapeHtml(p.nombre)}</h1>
+      ${p.arquetipo ? `<div class="pill">${escapeHtml(p.arquetipo)}</div>` : ""}
+    </div>
+  `;
+
+  html += field("Rol en la historia", p.rol);
+  html += field("Motivación", p.motivacion);
+  html += field("Forma de hablar y pensar", p.formaDeHablar);
+  html += field("Notas para el actor", p.notasParaElActor);
+  html += field("Arco", p.arco);
+
+  if (p.cita) {
+    html += `<blockquote class="cita"><p>"${escapeHtml(p.cita)}"</p>${p.citaRef ? `<cite>${escapeHtml(p.citaRef)}</cite>` : ""}</blockquote>`;
+  }
+
+  html += nav.replace('class="personaje-nav"', 'class="personaje-nav bottom"');
+
+  root.innerHTML = html;
+  window.scrollTo(0, 0);
+}
+
+function route() {
+  if (!DATA) return;
+  const id = location.hash.replace(/^#/, "");
+  if (id) renderPersonaje(id); else renderList();
+}
+
+window.addEventListener("hashchange", route);
+
+function loadPersonajes() {
+  fetch("data/personajes.json", { cache: "no-store" })
+    .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(data => {
+      DATA = data;
+      FLAT = [];
+      data.categorias.forEach(cat => {
+        cat.personajes.forEach(p => { p.categoria = cat.nombre; FLAT.push(p); });
+      });
+      route();
+    })
+    .catch(err => {
+      root.innerHTML = `<div class="error">No se pudieron cargar los personajes (${err.message}).<br>Si estás probando esto localmente, ábrelo desde un servidor (no directamente como archivo).</div>`;
+    });
+}
+
+// ---------- Candado de acceso (mismo que libreto.html) ----------
+// Aviso honesto: esto es disuasorio, no seguridad real. Cualquiera que vea
+// el código fuente encuentra la contraseña, y data/personajes.json sigue
+// siendo descargable directamente por su URL.
+const PASSWORD = "aladd1n";
+const gate = document.getElementById("gate");
+const shell = document.getElementById("shell");
+const gateForm = document.getElementById("gate-form");
+const gateInput = document.getElementById("gate-input");
+const gateErr = document.getElementById("gate-err");
+
+function unlock() {
+  sessionStorage.setItem("libreto_ok", "1");
+  gate.remove();
+  shell.hidden = false;
+  loadPersonajes();
+}
+
+if (sessionStorage.getItem("libreto_ok") === "1") {
+  unlock();
+} else {
+  gateForm.addEventListener("submit", e => {
+    e.preventDefault();
+    if (gateInput.value === PASSWORD) {
+      unlock();
+    } else {
+      gateErr.textContent = "Contraseña incorrecta.";
+      gateInput.value = "";
+      gateInput.focus();
+    }
+  });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+{
+  "categorias": [
+    {
+      "nombre": "Protagonistas",
+      "personajes": [
+        {
+          "id": "aladdin",
+          "nombre": "Aladdín",
+          "rol": "El protagonista: un ladrón callejero de buen corazón que se hace pasar por príncipe para ganarse a Jasmine, hasta que aprende que ser honesto consigo mismo vale más que aparentar.",
+          "arquetipo": "El pícaro de buen corazón",
+          "motivacion": "Quiere demostrarle a su madre (fallecida) que valió la pena, y que la gente deje de verlo como \"una rata callejera\". Teme que si Jasmine descubre quién es en verdad, se ría de él en su cara — por eso prefiere sostener la mentira de \"Príncipe Ali\" antes que arriesgarse a eso.",
+          "formaDeHablar": "Rápido e ingenioso, sabe improvisar bajo presión (los interrogatorios de los guardias, hacerse pasar por sobrino de un \"tío\" desconocido). Con Jasmine se vuelve más honesto y vulnerable; consigo mismo, en las reprises de \"Orgullosa de Mí\", es autocrítico casi hasta el castigo.",
+          "notasParaElActor": "Su bravuconería en el mercado (\"Un Salto Adelante\") es una máscara, no arrogancia real: nunca improvisa por maldad, siempre para sobrevivir o proteger a alguien (el mendigo, Kassim). No lo juegues como un estafador cínico — su \"corazón de oro\" es literal, se lo dicen a la cara. Cuidado con la reprise final de \"Orgullosa de Mí\": no es autocompasión, es una decisión.",
+          "arco": "Empieza escondiendo quién es (ladrón) detrás de la bravuconería; luego se esconde detrás de \"Príncipe Ali\"; termina eligiendo ser él mismo sin disfraz, y usa su último deseo para liberar al Genio en vez de protegerse a sí mismo.",
+          "cita": "Le prometí a mi madre, antes de que muriera, que nunca robaría otra vez.",
+          "citaRef": "Escena Uno: Mercado"
+        },
+        {
+          "id": "jasmine",
+          "nombre": "Jasmine",
+          "rol": "La princesa que se niega a ser una posesión más del reino; motor de la subtrama de libertad y autodeterminación.",
+          "arquetipo": "La princesa rebelde",
+          "motivacion": "Quiere decidir su propia vida — a quién ama, qué hace con su libertad — y no ser \"entregada\" al mejor pretendiente. Teme quedar atrapada, \"enjaulada\" (su propia palabra) detrás de las formas antiguas de su padre.",
+          "formaDeHablar": "Directa y mordaz con los pretendientes y con Jafar, pero cálida y protectora con sus damas y con Aladdín. No pide permiso para opinar — corrige a su padre, desafía a Jafar en su cara.",
+          "notasParaElActor": "Su ternura (con Rajah/Manal/Isir/Layla, con Aladdín) y su filo (con Jafar, con los pretendientes) deben sentirse como la MISMA persona, no dos modos distintos — es cálida porque elige serlo, no porque no sepa defenderse. En \"Callar\" no es solo desafío político: le está devolviendo el favor a Razoul apelando a su lealtad, no solo dándole una orden.",
+          "arco": "De sentirse atrapada por la ley y por su padre, a usar su propia voz para cambiar la ley misma — termina siendo quien decide con quién casarse y, algún día, cómo gobernar.",
+          "cita": "Si tengo que casarme con alguien que no amo, entonces tal vez ya no quiera ser una princesa.",
+          "citaRef": "Escena Dos: Palacio"
+        },
+        {
+          "id": "genio",
+          "nombre": "Genio",
+          "rol": "El comic relief con más corazón de la obra; concede los deseos de Aladdín mientras anhela su propia libertad.",
+          "arquetipo": "El sabio bufón",
+          "motivacion": "Quiere ser libre, \"su propio amo\" — pero no se atreve a esperarlo para sí mismo hasta que Aladdín se lo promete. Teme quedar olvidado o reemplazado (\"Estaba empezando a sentirme excluido\").",
+          "formaDeHablar": "Ritmo de stand-up, chistes y referencias fuera de lugar a propósito, rompe la cuarta pared, cambia de voz y de personaje todo el tiempo — pero cuando habla en serio (la regla de los deseos, \"Yo preferiría la verdad\") se detiene en seco, y ese contraste debe notarse.",
+          "notasParaElActor": "No juegues cada línea como chiste — el Genio funciona porque el público (y Aladdín) confían en que cuando deja de bromear, es cuando de verdad importa. Su dolor cuando Aladdín no lo libera debe leerse genuino, no exagerado para la comedia.",
+          "arco": "De ser escéptico de que alguien lo libere de verdad (\"siempre quieren más\"), a confiar en Aladdín, a ser decepcionado, a finalmente ser libre.",
+          "cita": "Estoy atrapado, Al. Poderes cósmicos fenomenales... espacio vital minúsculo.",
+          "citaRef": "Escena Seis: Viaje fuera del desierto"
+        }
+      ]
+    },
+    {
+      "nombre": "Antagonistas",
+      "personajes": [
+        {
+          "id": "jafar",
+          "nombre": "Jafar",
+          "rol": "El visir que manipula al Sultán y trama todo el conflicto de la obra para hacerse con el trono — y luego con poderes de genio.",
+          "arquetipo": "El manipulador ambicioso",
+          "motivacion": "Quiere el trono de Agrabah y no soporta ser \"segundo\" ante nadie — su humillación pública lo mueve tanto como su ambición.",
+          "formaDeHablar": "Cortesía envenenada con el Sultán (\"Su Majestad\" mientras miente en su cara), desprecio directo con Iago, grandilocuencia creciente a medida que gana poder.",
+          "notasParaElActor": "Jafar no se cree malvado — se cree el único competente en la sala. Juega la superioridad intelectual antes que la villanía de caricatura; el \"villano de opereta\" solo aparece de verdad en \"El Poder\", cuando ya no tiene que fingir cortesía con nadie.",
+          "arco": "De consejero que trama en las sombras, a Sultán, a genio todopoderoso — cada deseo lo acerca más al poder total y más lejos de cualquier límite, hasta que lo pierde todo.",
+          "cita": "¿Quién decide lo justo o lo impuro? El pasado ya es solo un muro, y hoy el amo supremo... soy yo.",
+          "citaRef": "Canción \"El Poder\""
+        },
+        {
+          "id": "iago",
+          "nombre": "Iago",
+          "rol": "El cómplice de Jafar; alivio cómico que también hace de \"coro\" diciendo en voz alta lo que Jafar no admite.",
+          "arquetipo": "El bufón cobarde",
+          "motivacion": "Sobrevivir y quedar del lado ganador — no tiene ambición propia más allá de eso, por eso se desliga de Jafar sin culpa apenas este cae.",
+          "formaDeHablar": "Comentarios \"aparte\" constantes, se corrige rápido cuando Jafar lo regaña, adula en exceso cuando tiene miedo.",
+          "notasParaElActor": "Su humor viene del contraste entre lo que dice a la cara de Jafar (adulación) y lo que dice \"aparte\" (la verdad sin filtro). Marca ese cambio de registro con claridad física — postura, volumen — para que el público note el aparte.",
+          "cita": "¡Adiós, tonto!",
+          "citaRef": "Escena Dos: Palacio (aparte, sobre el Príncipe Abdullah)"
+        }
+      ]
+    },
+    {
+      "nombre": "Los Cuatro Amigos",
+      "personajes": [
+        {
+          "id": "omar",
+          "nombre": "Omar",
+          "rol": "El amigo soñador y sensible del trío; suele ser la voz de la esperanza — a veces ingenua — del grupo.",
+          "arquetipo": "El tierno despistado",
+          "motivacion": "Solo quiere que las cosas salgan bien para todos. Llora con facilidad, se asusta con facilidad, pero es el primero en correr a pedir ayuda cuando Aladdín la necesita.",
+          "formaDeHablar": "Se distrae fácil (confunde \"karma\" con \"shawarma\"), toma las cosas literalmente, pregunta lo obvio en voz alta (\"¿Ya llegamos?\").",
+          "notasParaElActor": "No lo juegues como \"el tonto del grupo\" — Omar es el más emocionalmente honesto de los tres: llora de verdad viendo al mendigo, entra en pánico de verdad por Aladdín. Su comedia sale de la sinceridad, no de la torpeza.",
+          "cita": "Puede ser emocionante obtener alguna atención positiva por una vez.",
+          "citaRef": "Escena Tres: Mercado"
+        },
+        {
+          "id": "kassim",
+          "nombre": "Kassim",
+          "rol": "El líder práctico del trío; el primero en defender a Aladdín y el primero en dudar del plan del \"Príncipe Ali\".",
+          "arquetipo": "El leal escéptico",
+          "motivacion": "Proteger a sus amigos y sobrevivir el día a día — desconfía de los planes grandes porque ya ha visto salir mal cosas más pequeñas.",
+          "formaDeHablar": "Directo, un poco mandón (organiza al grupo, cuenta los tiempos de un número), no le tiembla la voz para decirle a Aladdín una verdad incómoda en la cara.",
+          "notasParaElActor": "Su enojo con el engaño de \"Príncipe Ali\" no es celos — es sentirse reemplazado por un \"amigo fiel\" (el Genio) después de años de ser él quien cuidaba a Aladdín. Juega la herida detrás del portazo, no solo el enojo.",
+          "cita": "Le dije a Aladdin que la estafa del Príncipe Ali le explotaría en la cara y ahora lo ha hecho.",
+          "citaRef": "Escena Nueve: Mercado"
+        },
+        {
+          "id": "babkak",
+          "nombre": "Babkak",
+          "rol": "El corazón hambriento y sentimental del trío; casi siempre habla de comida, pero es el primero en llorar por los demás.",
+          "arquetipo": "El glotón sentimental",
+          "motivacion": "Comer, sí — pero sobre todo, que nadie en su grupo pase hambre ni pena. Su humor sobre comida es también su forma de procesar todo lo demás.",
+          "formaDeHablar": "Todo lo compara con comida (el karma, el amor), remata casi cada escena con una línea de hambre o de consuelo.",
+          "notasParaElActor": "El chiste de comida solo funciona si también juegas la ternura genuina debajo — de niño no roba del todo (le da el pan al mendigo), y de adulto se ofrece como \"Catador de Comida Real\" con total sinceridad, no como broma vacía.",
+          "cita": "¡Si nos necesita, buscaremos un lugar donde morir de hambre!",
+          "citaRef": "Escena Uno: Mercado"
+        }
+      ]
+    },
+    {
+      "nombre": "Las Damas de Jasmine",
+      "personajes": [
+        {
+          "id": "rajah",
+          "nombre": "Rajah",
+          "rol": "La mayor y más protectora de las asistentes de Jasmine; la voz de la cautela dentro de su círculo cercano.",
+          "arquetipo": "La guardiana cautelosa",
+          "motivacion": "Proteger a Jasmine, incluso de sí misma — teme que su impulsividad la lastime, por eso frena antes de alentar.",
+          "formaDeHablar": "Habla en términos de reglas y consecuencias, interroga antes de confiar, pero su firmeza siempre tiene una base de cariño real, nunca frialdad.",
+          "notasParaElActor": "Rajah no es la \"aguafiestas\" del grupo — es la que más ha visto (reconoce el patrón antes que las demás). Jugarla como alguien que ya se equivocó cuidando antes, no como alguien controladora por naturaleza.",
+          "cita": "Así son las reglas, princesa. Una princesa debe aceptar su deber. (con firmeza y con cariño)",
+          "citaRef": "Escena Dos: Palacio"
+        },
+        {
+          "id": "manal",
+          "nombre": "Manal",
+          "rol": "La que empuja a Jasmine a arriesgarse; equilibrio directo a la cautela de Rajah.",
+          "arquetipo": "La atrevida frontal",
+          "motivacion": "Que Jasmine viva su vida en vez de solo obedecerla — el riesgo no le da miedo, la resignación sí.",
+          "formaDeHablar": "Corta y sin rodeos, no adorna sus opiniones, defiende con humor cortante en vez de con ternura evidente.",
+          "notasParaElActor": "Su bluntness es lealtad disfrazada de sarcasmo, no indiferencia — remátala siempre mirando directo a Jasmine, nunca de forma distraída.",
+          "cita": "Qué hermoso. ¿Alguien tiene una idea que no involucre morir de amor?",
+          "citaRef": "Escena Dos: Palacio"
+        },
+        {
+          "id": "isir",
+          "nombre": "Isir",
+          "rol": "El alivio cómico del cuarteto; la más mundana y coqueta, la que dice en voz alta lo que las otras piensan.",
+          "arquetipo": "La ingeniosa coqueta",
+          "motivacion": "Disfrutar la vida y que las demás también lo hagan — su humor es su forma de quitarle peso a cualquier crisis de palacio.",
+          "formaDeHablar": "Llama \"cariño\" a casi todo el mundo, remata con la verdad incómoda con total naturalidad, pregunta lo pícaro en el peor momento.",
+          "notasParaElActor": "El timing es todo — sus mejores líneas son remates de una sola frase después de que otra dice algo serio o dramático. No te adelantes al chiste; deja que el silencio previo lo arme.",
+          "cita": "Cariño, nunca he visto a alguien que necesite salir más que tú.",
+          "citaRef": "Escena Dos: Palacio, canción \"Estos Muros de Palacio\""
+        },
+        {
+          "id": "layla",
+          "nombre": "Layla",
+          "rol": "La romántica incorregible del grupo; ve incluso los peores augurios como el inicio de una gran historia de amor.",
+          "arquetipo": "La romántica soñadora",
+          "motivacion": "Cree en el amor verdadero sin ironía — quiere que Jasmine (y en el fondo, ella misma) tenga su propia gran historia, aunque el mundo real rara vez coopere.",
+          "formaDeHablar": "Cita \"grandes historias de amor\" para todo, se deja llevar por la emoción antes de pensar en las consecuencias, se corrige a sí misma cuando la realidad le gana.",
+          "notasParaElActor": "No la juegues tonta — Layla sabe perfectamente que \"Layla y Majnún\" termina mal; simplemente elige quedarse con la parte bonita de la historia. Es una decisión de optimismo, no ingenuidad real.",
+          "cita": "O tal vez... ¡el destino elige por ti! Así empiezan todas las mejores historias de amor.",
+          "citaRef": "Escena Dos: Palacio"
+        }
+      ]
+    },
+    {
+      "nombre": "La Corte",
+      "personajes": [
+        {
+          "id": "sultan",
+          "nombre": "Sultán",
+          "rol": "El padre bienintencionado pero anticuado de Jasmine; atrapado entre las \"formas antiguas\" y su amor genuino por su hija.",
+          "arquetipo": "El padre protector fuera de época",
+          "motivacion": "Asegurarse de que Jasmine esté \"cuidada\" antes de que él falte — confunde control con protección, hasta que aprende la diferencia.",
+          "formaDeHablar": "Cariñoso con Jasmine (\"calabacita\"), fácilmente manipulable por la adulación de Jafar, se pone firme casi por accidente cuando de verdad se enoja.",
+          "notasParaElActor": "Su comedia (ser manipulado, repetir frases sin escuchar) no debe eclipsar que su arco termina en un cambio real y valiente: cambiar la ley él mismo. Juega su ternura con Jasmine como el ancla emocional de todas sus escenas.",
+          "arco": "De un padre que \"reinará con puño de hierro\" sobre su hija, a un Sultán que le devuelve la decisión por completo.",
+          "cita": "Solo deseo la felicidad para mi hija. Bueno, ¿soy Sultán o no? A partir de este día, declaro que la princesa se casará con quien ella lo considere digno.",
+          "citaRef": "Escena Trece: La Boda"
+        },
+        {
+          "id": "principe-abdullah",
+          "nombre": "Príncipe Abdullah",
+          "rol": "El primer pretendiente rechazado de Jasmine; establece de entrada que ella no se deja \"domar\".",
+          "arquetipo": "El noble ofendido",
+          "motivacion": "Busca una esposa obediente y se ofende genuinamente al no encontrarla — no es cruel, solo tiene expectativas que Jasmine hace pedazos en segundos.",
+          "formaDeHablar": "Formal, indignado, se retira con dignidad herida en vez de con enojo ruidoso.",
+          "notasParaElActor": "Es un papel corto pero funciona como \"chiste de apertura\" del tema central de la obra. Juega la sorpresa genuina, no el desprecio; él de verdad esperaba otra cosa.",
+          "cita": "¡Nunca me he encontrado con tanta impertinencia en toda mi vida!",
+          "citaRef": "Escena Dos: Palacio"
+        },
+        {
+          "id": "razoul",
+          "nombre": "Razoul",
+          "rol": "El capitán de la guardia; representa la autoridad que debe decidir a quién sirve de verdad cuando Jafar se corrompe.",
+          "arquetipo": "El soldado leal a prueba",
+          "motivacion": "Cumplir su deber — su conflicto real es descubrir que \"deber\" y \"obedecer a quien manda\" no siempre son lo mismo.",
+          "formaDeHablar": "Cortante y funcional con los prisioneros, pero se vuelve humano en el instante en que Jasmine le habla como persona y no como princesa.",
+          "notasParaElActor": "Su arrodillamiento ante Jasmine en la boda es el clímax de todo su arco — no lo apures. Todo lo anterior (su dureza con Aladdín, su obediencia a Jafar) debe leerse como el camino hacia esa decisión, no como un personaje plano que cambia de la nada.",
+          "cita": "Mi princesa. Perdóneme.",
+          "citaRef": "Escena Trece: La Boda (tras la canción \"Callar\")"
+        }
+      ]
+    },
+    {
+      "nombre": "Narrador",
+      "personajes": [
+        {
+          "id": "narrador",
+          "nombre": "Narrador",
+          "rol": "Guía a la audiencia dentro y fuera de la historia; abre la obra y marca sus giros principales.",
+          "arquetipo": "El maestro de ceremonias cómplice",
+          "motivacion": "Que el público disfrute el cuento — coquetea directamente con la audiencia, se divierte anticipando lo que va a pasar.",
+          "formaDeHablar": "Directo a la audiencia, tono de showman, mezcla lo formal con comentarios sueltos y modernos.",
+          "notasParaElActor": "Nunca pierdas el contacto con el público — el Narrador no es un personaje de la trama, es el anfitrión de la función. Cada línea debe sentirse dirigida a alguien específico en la sala, no al aire.",
+          "cita": "¡Bienvenidos... a la legendaria ciudad de Agrabah!",
+          "citaRef": "Escena Uno: Mercado"
+        }
+      ]
+    },
+    {
+      "nombre": "Prólogo",
+      "personajes": [
+        {
+          "id": "naima",
+          "nombre": "Naima",
+          "rol": "La madre de Aladdín; solo aparece en el Prólogo, pero su lección es el motor emocional de toda la obra.",
+          "arquetipo": "La madre sabia",
+          "notasParaElActor": "Su enseñanza (\"actuar con la cabeza y el corazón juntos\") es literalmente lo que Aladdín tarda toda la obra en aprender — juega esta escena sabiendo que es una semilla, no un momento aislado. Su cariño es firme, nunca sentimental de más.",
+          "cita": "Estoy orgullosa de que veas la injusticia y quieras hacer algo. No todos tienen eso, mi cielo. Pero también tengo miedo.",
+          "citaRef": "Prólogo: Mercado de Agrabah"
+        },
+        {
+          "id": "halima",
+          "nombre": "Halima",
+          "rol": "La vendedora de pan a quien el pequeño Aladdín ayuda sin que nadie lo note; dispara la primera decisión moral de la obra.",
+          "arquetipo": "La anciana vulnerable",
+          "notasParaElActor": "Su gratitud silenciosa (el gesto de darle pan a Aladdín después) dice más que cualquier línea — no necesita más que una mirada sostenida.",
+          "cita": "¡Es todo lo que tengo! ¡Mis nietos comen de esto!",
+          "citaRef": "Prólogo: Mercado de Agrabah"
+        },
+        {
+          "id": "cobrador",
+          "nombre": "Cobrador",
+          "rol": "El recaudador que amenaza a Halima; el primer \"problema\" que un Aladdín niño decide resolver por su cuenta.",
+          "arquetipo": "El poder pequeño y sin empatía",
+          "notasParaElActor": "No hace falta jugarlo como villano — es más efectivo como alguien que solo repite el sistema (\"las reglas son las reglas\") sin pensarlo dos veces. Es burocracia con cara, no maldad.",
+          "cita": "Eso no es mi problema.",
+          "citaRef": "Prólogo: Mercado de Agrabah"
+        }
+      ]
+    }
+  ],
+  "notaConjunto": "Guardias (Primero y Segundo), Niños del Prólogo, y el coro de Agrabahns/mercaderes/mujeres no tienen arco propio — existen para que Agrabah se sienta viva. Los guardias son funcionarios de la ley, no villanos personales: la misma energía \"neutral\" del Cobrador (cumplen órdenes, no cargan rencor). El coro reacciona como reaccionaría una comunidad real — cada actor puede construirle una micro-intención propia a su momento en escena (curiosidad, miedo, chisme, orgullo del lugar), pero sin robarle foco a la escena principal."
+}

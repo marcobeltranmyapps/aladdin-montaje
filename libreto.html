@@ -342,7 +342,7 @@ function route() {
 window.addEventListener("hashchange", route);
 
 function loadLibreto() {
-  fetch("data/Libreto_Aladdin.md")
+  fetch("data/Libreto_Aladdin.md", { cache: "no-store" })
     .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); })
     .then(text => {
       SCENES = LibretoParser.parse(text).scenes;
