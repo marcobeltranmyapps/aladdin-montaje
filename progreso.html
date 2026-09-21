@@ -13,11 +13,20 @@
     --prog-0: var(--surface-2);
     --prog-1: #a8c98a;
     --prog-2: #4f8f3f;
+    --song-0: rgba(13,89,85,0.16);
+    --song-1: #5fa39d;
+    --song-2: var(--teal);
   }
   @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) { --prog-1: #4f6b3a; --prog-2: #7ac257; }
+    :root:not([data-theme="light"]) {
+      --prog-1: #4f6b3a; --prog-2: #7ac257;
+      --song-0: rgba(75,182,171,0.18); --song-1: #3f7d76; --song-2: var(--teal);
+    }
   }
-  :root[data-theme="dark"] { --prog-1: #4f6b3a; --prog-2: #7ac257; }
+  :root[data-theme="dark"] {
+    --prog-1: #4f6b3a; --prog-2: #7ac257;
+    --song-0: rgba(75,182,171,0.18); --song-1: #3f7d76; --song-2: var(--teal);
+  }
 
   .act-block { margin-bottom: 46px; }
   .act-title { font-size: 15px; margin-bottom: 20px; }
@@ -33,9 +42,12 @@
   .seg { height: 100%; background: var(--prog-0); }
   .seg.s1 { background: var(--prog-1); }
   .seg.s2 { background: var(--prog-2); }
+  .seg.song.s0 { background: var(--song-0); }
+  .seg.song.s1 { background: var(--song-1); }
+  .seg.song.s2 { background: var(--song-2); }
   .seg + .seg { border-left: 1px solid var(--bg); }
 
-  .tick { position: absolute; top: 0; width: 1px; height: 12px; background: var(--border-strong); }
+  .tick { position: absolute; bottom: 14px; width: 1px; height: 12px; background: var(--border-strong); }
   .tick-label {
     position: absolute; top: 0; transform: translateX(-50%);
     font-family: var(--font-display); font-size: 10.5px; font-weight: 700; color: var(--ink-faint);
@@ -44,17 +56,39 @@
     position: absolute; bottom: 0; transform: translateX(-50%);
     font-family: var(--font-display); font-size: 11.5px; font-weight: 700; color: var(--ink);
   }
-  .song-tick { background: var(--teal); height: 16px; }
-  .song-label { color: var(--teal); top: 14px; font-size: 9.5px; }
+  .song-label { color: var(--song-2); top: 3px; font-size: 9.5px; }
 
   .legend h3 { font-size: 13px; margin: 22px 0 10px; color: var(--ink-soft); }
-  .legend-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px 16px; font-size: 12.5px; }
+  .legend-grid { columns: 220px; column-gap: 16px; font-size: 12.5px; }
+  .legend-grid > div { break-inside: avoid; -webkit-column-break-inside: avoid; margin-bottom: 6px; }
   .legend-grid .code { font-family: var(--font-display); font-weight: 700; color: var(--ink); margin-right: 6px; }
   .legend-grid.songs .code { color: var(--teal); }
 
-  .status-key { display: flex; gap: 18px; flex-wrap: wrap; margin: 22px 0 30px; font-size: 12.5px; color: var(--ink-soft); }
-  .status-key span { display: inline-flex; align-items: center; gap: 6px; }
-  .swatch { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+  .legend-key {
+    background: var(--surface); border: 1.5px solid var(--brass); border-radius: 12px;
+    box-shadow: var(--shadow); padding: 16px 18px 14px; margin: 22px 0 30px;
+  }
+  .legend-key-title {
+    display: flex; align-items: center; gap: 8px;
+    font-family: var(--font-display); font-size: 13.5px; font-weight: 700;
+    color: var(--brass); text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 14px;
+  }
+  .legend-key-title svg { width: 15px; height: 15px; flex-shrink: 0; }
+  .legend-key-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 24px; }
+  @media (max-width: 520px) { .legend-key-cols { grid-template-columns: 1fr; } }
+  .legend-key-heading {
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;
+    color: var(--ink-faint); margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border);
+  }
+  .legend-key-row {
+    display: flex; align-items: flex-start; gap: 9px; font-size: 13px; color: var(--ink-soft);
+    padding: 4px 0; line-height: 1.4;
+  }
+  .legend-key-row .swatch {
+    width: 20px; height: 20px; border-radius: 5px; flex-shrink: 0; margin-top: 1px;
+    border: 1px solid var(--border-strong);
+  }
+  .legend-key-row .hint { display: block; font-size: 11px; color: var(--ink-faint); margin-top: 1px; }
 
   .loading, .error { text-align: center; color: var(--ink-soft); padding: 40px 0; font-size: 14px; }
 </style>
@@ -69,14 +103,27 @@
   <header class="masthead">
     <div class="brand">B612 Audiovisual</div>
     <h1>Progreso</h1>
-    <p class="sub">Qué tanto de cada escena ya está ensamblado, escena por escena y canción por canción.</p>
   </header>
 
-  <div class="status-key">
-    <span><span class="swatch" style="background:var(--prog-0)"></span> No ensayado</span>
-    <span><span class="swatch" style="background:var(--prog-1)"></span> Primer ensamble / ensayo inicial</span>
-    <span><span class="swatch" style="background:var(--prog-2)"></span> Repasado / reforzado</span>
-    <span><span class="swatch" style="background:var(--teal)"></span> Número musical</span>
+  <div class="legend-key">
+    <div class="legend-key-title">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+      Cómo leer esta línea de tiempo
+    </div>
+    <div class="legend-key-cols">
+      <div>
+        <div class="legend-key-heading">Diálogo y actuación</div>
+        <div class="legend-key-row"><span class="swatch" style="background:var(--prog-0)"></span> No ensayado</div>
+        <div class="legend-key-row"><span class="swatch" style="background:var(--prog-1)"></span> Primer ensamble / ensayo inicial</div>
+        <div class="legend-key-row"><span class="swatch" style="background:var(--prog-2)"></span> Repasado / reforzado</div>
+      </div>
+      <div>
+        <div class="legend-key-heading">🎵 Canciones</div>
+        <div class="legend-key-row"><span class="swatch" style="background:var(--song-0)"></span> <span>Sin practicar / ensamblar<span class="hint">(bloque transparente = todavía vacío)</span></span></div>
+        <div class="legend-key-row"><span class="swatch" style="background:var(--song-1)"></span> En ensamble</div>
+        <div class="legend-key-row"><span class="swatch" style="background:var(--song-2)"></span> Repasada</div>
+      </div>
+    </div>
   </div>
 
   <div id="acts">
@@ -87,6 +134,46 @@
 </div>
 
 <script>
+const STATUS_LABEL = ["No ensayado", "Primer ensamble", "Repasado / reforzado"];
+
+function songBlocks(scene) {
+  const out = [];
+  (scene.songs || []).forEach(song => {
+    if (!song.lines) return;
+    if (song.segments) {
+      song.segments.forEach(sub => out.push({
+        from: sub.from, to: sub.to, status: sub.status, type: "song",
+        label: song.title + (sub.label ? " — " + sub.label : "")
+      }));
+    } else {
+      out.push({ from: song.lines[0], to: song.lines[1], status: song.status || 0, type: "song", label: song.title });
+    }
+  });
+  return out.sort((a, b) => a.from - b.from);
+}
+
+// Merges the scene's spoken segments with its songs' own ranges into one
+// ordered, non-overlapping block list, so songs render as their own
+// (teal-scale) block inside the same bar instead of a separate row.
+function buildBlocks(scene) {
+  let blocks = scene.segments
+    ? scene.segments.map(s => ({ from: s.from, to: s.to, status: s.status, label: s.label, type: "spoken" }))
+    : [{ from: scene.lines[0], to: scene.lines[1], status: scene.status || 0, label: scene.title, type: "spoken" }];
+
+  const songs = songBlocks(scene);
+  songs.forEach(song => {
+    const next = [];
+    blocks.forEach(b => {
+      if (song.to <= b.from || song.from >= b.to) { next.push(b); return; }
+      if (b.from < song.from) next.push({ ...b, to: song.from });
+      if (b.to > song.to) next.push({ ...b, from: song.to });
+    });
+    blocks = next;
+  });
+
+  return blocks.concat(songs).sort((a, b) => a.from - b.from);
+}
+
 function renderAct(act, container) {
   const start = act.scenes[0].lines[0];
   const end = act.scenes[act.scenes.length - 1].lines[1];
@@ -117,13 +204,13 @@ function renderAct(act, container) {
     sceneEl.style.width = sceneWidthPct + "%";
     sceneEl.title = scene.title + (scene.note ? " — " + scene.note : "");
 
-    const segs = scene.segments || [{ from: scene.lines[0], to: scene.lines[1], status: scene.status || 0, label: scene.title }];
+    const blocks = buildBlocks(scene);
     const sceneLen = scene.lines[1] - scene.lines[0];
-    segs.forEach(seg => {
+    blocks.forEach(seg => {
       const segEl = document.createElement("div");
-      segEl.className = "seg s" + seg.status;
+      segEl.className = "seg " + (seg.type === "song" ? "song " : "") + "s" + seg.status;
       segEl.style.width = (((seg.to - seg.from) / sceneLen) * 100) + "%";
-      segEl.title = (seg.label || scene.title) + " — " + ["No ensayado", "Primer ensamble", "Repasado / reforzado"][seg.status];
+      segEl.title = (seg.type === "song" ? "🎵 " : "") + (seg.label || scene.title) + " — " + STATUS_LABEL[seg.status];
       sceneEl.appendChild(segEl);
     });
 
@@ -143,15 +230,11 @@ function renderAct(act, container) {
     wrap.appendChild(boundaryTick);
 
     (scene.songs || []).forEach(song => {
-      const t = document.createElement("div");
-      t.className = "tick song-tick";
-      t.style.left = pct(song.line) + "%";
-      t.title = song.title;
-      wrap.appendChild(t);
+      const songMid = song.lines ? (song.lines[0] + song.lines[1]) / 2 : song.line;
 
       const l = document.createElement("div");
       l.className = "tick-label song-label";
-      l.style.left = pct(song.line) + "%";
+      l.style.left = pct(songMid) + "%";
       l.textContent = song.code;
       l.title = song.title;
       wrap.appendChild(l);
