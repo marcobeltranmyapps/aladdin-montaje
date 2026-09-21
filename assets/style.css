@@ -34,6 +34,13 @@
   --num-ink: var(--ink);
 
   --shadow: 0 1px 2px rgba(36,26,16,0.06), 0 6px 20px -8px rgba(36,26,16,0.20);
+
+  /* Manto sobre fotos de fondo (.page-bg/.hero-bg): en claro es un lavado
+     CLARO (aclara la foto) para que el texto oscuro siga leyéndose; en
+     oscuro es un lavado oscuro para el texto claro. Un rgba(0,0,0,x) fijo
+     para ambos modos ensuciaba la paleta clara (parchment) con un gris
+     sucio en vez de mantenerla cálida. */
+  --photo-wash: rgba(255,255,255,0.4);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -65,6 +72,7 @@
     --num-ink: #ffffff;
 
     --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 10px 28px -10px rgba(0,0,0,0.55);
+    --photo-wash: rgba(0,0,0,0.4);
   }
 }
 :root[data-theme="dark"] {
@@ -88,6 +96,7 @@
   --violet-soft: #3a1f38;
   --num-ink: #ffffff;
   --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 10px 28px -10px rgba(0,0,0,0.55);
+  --photo-wash: rgba(0,0,0,0.4);
 }
 
 * { box-sizing: border-box; }
@@ -210,7 +219,7 @@ footer.site {
      claro) puede perder contraste según qué tan "ocupada" sea la foto de turno. */
   background:
     linear-gradient(to bottom, var(--bg) 0%, var(--bg) 8%, transparent 20%, transparent 72%, var(--bg) 100%),
-    rgba(0, 0, 0, 0.38);
+    var(--photo-wash);
 }
 
 /* ---------- Fondo "hero" para páginas de contenido (una sola foto) ---------- */
@@ -234,7 +243,7 @@ footer.site {
   content: ""; position: absolute; inset: 0;
   background:
     linear-gradient(to bottom, var(--bg) 0%, transparent 55%, var(--bg) 100%),
-    rgba(0, 0, 0, 0.38);
+    var(--photo-wash);
 }
 
 .bg-slide {
