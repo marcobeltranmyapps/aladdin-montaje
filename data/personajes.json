@@ -196,18 +196,29 @@
       ]
     },
     {
-      "nombre": "Narrador",
+      "nombre": "Narradoras",
       "personajes": [
         {
-          "id": "narrador",
-          "nombre": "Narrador",
-          "rol": "Guía a la audiencia dentro y fuera de la historia; abre la obra y marca sus giros principales.",
-          "arquetipo": "El maestro de ceremonias cómplice",
-          "motivacion": "Que el público disfrute el cuento — coquetea directamente con la audiencia, se divierte anticipando lo que va a pasar.",
-          "formaDeHablar": "Directo a la audiencia, tono de showman, mezcla lo formal con comentarios sueltos y modernos.",
-          "notasParaElActor": "Nunca pierdas el contacto con el público — el Narrador no es un personaje de la trama, es el anfitrión de la función. Cada línea debe sentirse dirigida a alguien específico en la sala, no al aire.",
-          "cita": "¡Bienvenidos... a la legendaria ciudad de Agrabah!",
+          "id": "samira",
+          "nombre": "Samira",
+          "rol": "Abre la obra junto a Soraya como maestra de ceremonias de la audiencia; la mitad más compuesta y grandilocuente del dúo, hace las presentaciones \"oficiales\" de la historia y de la ciudad.",
+          "arquetipo": "La anfitriona grandilocuente",
+          "motivacion": "Que el público se enamore de Agrabah desde la primera línea — disfruta genuinamente presumir la ciudad y anticipar lo que se viene, sin necesitar el chiste para sostener el momento.",
+          "formaDeHablar": "Directa a la audiencia, tono de presentadora oficial, frases grandes y bien construidas (\"la legendaria ciudad de Agrabah\"); dispara el gancho de cada momento un segundo antes de que Soraya lo remate.",
+          "notasParaElActor": "Es la mitad \"seria\" del dúo, no la aburrida — su entusiasmo genuino por la ciudad es lo que le da permiso a Soraya de meter el chiste físico justo después. Nunca pierdas el contacto con el público: ambas son anfitrionas de la función, no personajes de la trama.",
+          "cita": "¡Salaam y buenas noches a ustedes, dignos amigos! ¡Bienvenidos... a la legendaria ciudad de Agrabah!",
           "citaRef": "Escena Uno: Mercado"
+        },
+        {
+          "id": "soraya",
+          "nombre": "Soraya",
+          "rol": "La compañera cómica de Samira en la apertura; remata sus presentaciones con humor físico y comentarios más traviesos.",
+          "arquetipo": "La cómplice traviesa",
+          "motivacion": "Sacarle la vuelta cómica a cada momento solemne de Samira — su gag de sacar un cucharón de sopa en vez de la lámpara es su carta de presentación ante el público.",
+          "formaDeHablar": "Comentarios más filosos y traviesos que los de Samira, remata con la verdad incómoda (\"cuiden sus billeteras\"), no le importa romper el tono elegante de su compañera si hay un chiste esperando ahí.",
+          "notasParaElActor": "El cucharón de sopa antes de la lámpara es un gag físico real, no solo una línea — dale a la audiencia el segundo de reacción antes de seguir. Igual que Samira, nunca pierdas el contacto con el público: son anfitrionas cómplices, no personajes de la trama.",
+          "cita": "Lo siento, estaba cocinando.",
+          "citaRef": "Escena Uno: Mercado (tras sacar un cucharón de sopa en vez de la lámpara)"
         }
       ]
     },
