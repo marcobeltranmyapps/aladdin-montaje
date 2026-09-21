@@ -42,6 +42,13 @@
   .session .synopsis { color: var(--ink-soft); font-size: 13px; margin-top: 4px; line-height: 1.5; }
   .session.past .d::after { content: " ✓"; color: var(--teal); }
   .session.today { border-color: var(--terracotta); }
+  .session.tbd { border-style: dashed; border-color: var(--border-strong); }
+  .session .d.tbd-date { color: var(--ink-faint); font-size: 13px; }
+  .tbd-note {
+    display: inline-block; font-size: 11.5px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.3px; color: var(--terracotta); background: var(--terracotta-soft);
+    border-radius: 6px; padding: 2px 8px; margin-bottom: 6px;
+  }
 
   .past-card { margin: 18px 0 22px; padding: 0; overflow: hidden; }
   .past-toggle {
@@ -64,8 +71,56 @@
   .past-list .session { margin-bottom: 8px; }
   .past-list .session:last-child { margin-bottom: 0; }
 
+  .pool-card {
+    background: #f4d729; border: 1.5px solid #c9ab00; border-radius: 10px;
+    margin: 0 0 8px; overflow: hidden; color: #211c00;
+  }
+  .pool-toggle {
+    display: flex; align-items: center; gap: 10px; width: 100%;
+    background: none; border: none; cursor: pointer; text-align: left;
+    padding: 13px 16px; font: inherit; color: #211c00;
+  }
+  .pool-toggle .chev {
+    width: 13px; height: 13px; color: #211c00; flex-shrink: 0;
+    transition: transform 0.15s ease;
+  }
+  .pool-toggle[aria-expanded="true"] .chev { transform: rotate(90deg); }
+  .pool-toggle .label { flex: 1; font-weight: 700; font-size: 14.5px; }
+  .pool-toggle .pool-count {
+    font-family: var(--font-display); font-weight: 700; font-size: 11.5px;
+    background: rgba(33,28,0,0.14); color: #211c00; border-radius: 999px;
+    padding: 2px 9px; font-variant-numeric: tabular-nums;
+  }
+  .pool-body { padding: 0 16px 14px; }
+  .pool-note {
+    font-size: 12.5px; color: #211c00; line-height: 1.55;
+    margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed rgba(33,28,0,0.28);
+  }
+  .pool-item {
+    display: grid; grid-template-columns: 88px 1fr; gap: 14px; align-items: start;
+    padding: 10px 0; font-size: 14px;
+  }
+  .pool-item + .pool-item { border-top: 1px dashed rgba(33,28,0,0.22); }
+  .pool-item .num-stack { flex-direction: row; flex-wrap: wrap; margin-top: 0; }
+  .pool-item .num-pill { background: rgba(33,28,0,0.14); color: #211c00; }
+  .pool-item .desc { color: #211c00; font-weight: 600; }
+  .pool-item .synopsis { color: #3d3400; font-size: 13px; margin-top: 4px; line-height: 1.5; }
+  .pool-item .activity-scene { color: #6b4e00; }
+  .pool-item .activity-group li { color: #3d3400; }
+
+  .activities { margin-top: 8px; }
+  .activity-group { margin-bottom: 8px; }
+  .activity-group:last-child { margin-bottom: 0; }
+  .activity-scene {
+    font-family: var(--font-display); font-weight: 700; font-size: 12.5px;
+    color: var(--brass); margin-bottom: 2px;
+  }
+  .activity-group ul { margin: 0; padding-left: 18px; }
+  .activity-group li { font-size: 13px; color: var(--ink-soft); line-height: 1.5; }
+
   @media (max-width: 420px) {
     .session { grid-template-columns: 70px 1fr; gap: 10px; padding: 10px 12px; }
+    .pool-item { grid-template-columns: 70px 1fr; gap: 10px; }
   }
 
   .loading, .error { text-align: center; color: var(--ink-soft); padding: 40px 0; font-size: 14px; }
@@ -128,22 +183,79 @@ function fmtPremiere(dateStr, confirmed) {
   return `${label}: ${d.getDate()} de ${m} de ${d.getFullYear()}`;
 }
 
+function renderActivities(activities) {
+  if (!activities || !activities.length) return "";
+  return `<div class="activities">${activities.map(a => `
+    <div class="activity-group">
+      <div class="activity-scene">${a.scene} · ${a.name}</div>
+      <ul>${a.tasks.map(t => `<li>${t}</li>`).join("")}</ul>
+    </div>
+  `).join("")}</div>`;
+}
+
 function sessionRow(s, extraClass) {
-  const d = new Date(s.date + "T00:00:00");
   const row = document.createElement("div");
-  row.className = "session" + (extraClass ? " " + extraClass : "");
+  row.className = "session" + (extraClass ? " " + extraClass : "") + (!s.date ? " tbd" : "");
+
+  const dateHtml = s.date
+    ? (() => { const d = new Date(s.date + "T00:00:00"); return `<span class="wd">${WEEKDAY[d.getDay()]}</span>${fmtShort(d)}`; })()
+    : `<span class="wd">Ensayo extra</span>Por confirmar`;
+
   row.innerHTML = `
     <div>
-      <div class="d"><span class="wd">${WEEKDAY[d.getDay()]}</span>${fmtShort(d)}</div>
+      <div class="d${!s.date ? " tbd-date" : ""}">${dateHtml}</div>
       ${numStack(s.num)}
     </div>
     <div>
+      ${!s.date ? `<div class="tbd-note">Fecha por confirmar</div>` : ""}
       <div class="desc">${s.desc}</div>
-      <div class="synopsis">${s.synopsis}</div>
+      ${s.objective ? `<div class="synopsis"><strong>Objetivo:</strong> ${s.objective}</div>` : (s.synopsis ? `<div class="synopsis">${s.synopsis}</div>` : "")}
+      ${renderActivities(s.activities)}
       ${s.progress ? `<div class="synopsis"><strong>Avance:</strong> ${s.progress}</div>` : ""}
     </div>
   `;
   return row;
+}
+
+function poolCard(s) {
+  const card = document.createElement("div");
+  card.className = "pool-card";
+
+  const btn = document.createElement("button");
+  btn.className = "pool-toggle";
+  btn.setAttribute("aria-expanded", "false");
+  btn.innerHTML = `
+    <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+    <span class="label">${s.desc}</span>
+    <span class="pool-count">${s.items.length}</span>
+  `;
+
+  const body = document.createElement("div");
+  body.className = "pool-body";
+  body.hidden = true;
+  body.innerHTML = `
+    <div class="pool-note">${s.note || ""}</div>
+    ${s.items.map(it => `
+      <div class="pool-item">
+        ${numStack(it.num)}
+        <div>
+          <div class="desc">${it.desc}</div>
+          ${renderActivities(it.activities)}
+          ${it.note ? `<div class="synopsis" style="font-weight:600;">${it.note}</div>` : ""}
+        </div>
+      </div>
+    `).join("")}
+  `;
+
+  btn.addEventListener("click", () => {
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", String(!expanded));
+    body.hidden = expanded;
+  });
+
+  card.appendChild(btn);
+  card.appendChild(body);
+  return card;
 }
 
 function pastCard(pastSessions) {
@@ -183,12 +295,16 @@ function render(data) {
   scheduleEl.innerHTML = "";
   let lastPhase = null;
 
-  const pastSessions = data.sessions.filter(s => s.date < todayStr);
-  const upcomingSessions = data.sessions.filter(s => s.date >= todayStr);
-  const nextSession = upcomingSessions[0] || null;
+  const pastSessions = data.sessions.filter(s => s.date && s.date < todayStr);
+  const poolSession = data.sessions.find(s => s.pool) || null;
+  const upcomingSessions = data.sessions.filter(s => !s.pool && (!s.date || s.date >= todayStr));
+  const nextSession = data.sessions.find(s => !s.pool && s.date && s.date >= todayStr) || null;
 
   if (pastSessions.length) {
     scheduleEl.appendChild(pastCard(pastSessions));
+  }
+  if (poolSession) {
+    scheduleEl.appendChild(poolCard(poolSession));
   }
 
   upcomingSessions.forEach(s => {
@@ -210,7 +326,8 @@ function render(data) {
       <div class="date">${fmtLong(d)}</div>
       ${numStack(nextSession.num)}
       <div class="desc">${nextSession.desc}</div>
-      <div class="synopsis">${nextSession.synopsis}</div>
+      ${nextSession.objective ? `<div class="synopsis"><strong>Objetivo:</strong> ${nextSession.objective}</div>` : (nextSession.synopsis ? `<div class="synopsis">${nextSession.synopsis}</div>` : "")}
+      ${renderActivities(nextSession.activities)}
     `;
   } else {
     nextEl.innerHTML = `
