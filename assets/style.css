@@ -101,6 +101,12 @@ body {
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
+  /* Crea un stacking context propio (sin afectar el containing block de los
+     descendientes con position:absolute, a diferencia de position:relative)
+     para que .page-bg pueda usar z-index:-1 y quedar siempre debajo de TODO
+     el contenido de la página, sea o no "position"-ado. Ver nota junto a
+     .page-bg más abajo. */
+  isolation: isolate;
 }
 
 :root {
@@ -182,10 +188,90 @@ footer.site {
   opacity: var(--arch-opacity);
 }
 
+/* ---------- Fondo de página (foto fija o carrusel) ---------- */
+/* z-index:-1 (no 0): varias páginas tienen elementos con position:relative/absolute
+   sueltos en su contenido (.video, .num-badge, #next, etc.) que sin z-index propio
+   igual entran en la misma "capa" que un .page-bg con z-index:0, y el orden del DOM
+   decide quién gana — fragil, ya que ganaría lo que venga después en el HTML, no
+   necesariamente el contenido real de la página. Con z-index:-1 relativo al stacking
+   context propio de <body> (ver isolation:isolate arriba), .page-bg queda SIEMPRE
+   por debajo de cualquier contenido, esté o no position-ado. */
+.page-bg { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+.bg-slide {
+  position: absolute; inset: 0;
+  /* "center 22%" en vez de "center": sesga el recorte hacia arriba para no
+     perder cabezas/rostros cuando la imagen es más alta que ancha. */
+  background-size: cover; background-position: center 22%; background-repeat: no-repeat;
+}
+.page-bg::after {
+  content: ""; position: absolute; inset: 0;
+  /* La capa rgba() final es un manto oscuro uniforme sobre TODA la foto (no solo
+     los bordes) — sin él, el texto claro (modo oscuro) o el texto oscuro (modo
+     claro) puede perder contraste según qué tan "ocupada" sea la foto de turno. */
+  background:
+    linear-gradient(to bottom, var(--bg) 0%, var(--bg) 8%, transparent 20%, transparent 72%, var(--bg) 100%),
+    rgba(0, 0, 0, 0.38);
+}
+
+/* ---------- Fondo "hero" para páginas de contenido (una sola foto) ---------- */
+/* A diferencia de .page-bg (fixed, pensado para el carrusel del home), este es
+   position:absolute con una altura acotada: vive al inicio del documento, detrás
+   del masthead, y se va con el scroll como cualquier otro contenido — no se queda
+   fijo tapando lo que venga después. Así evitamos que una franja "transparente"
+   del scrim reaparezca detrás de contenido más abajo en la página (encabezados de
+   canción, leyendas, notas sueltas) — el problema real que tenía la primera
+   versión de este mecanismo con .page-bg a full-viewport en TODAS las páginas. */
+.hero-bg {
+  position: absolute; top: 0; left: 0; right: 0;
+  height: min(46vh, 340px);
+  z-index: -1; pointer-events: none; overflow: hidden;
+}
+.hero-bg-img {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center; background-repeat: no-repeat;
+}
+.hero-bg::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    linear-gradient(to bottom, var(--bg) 0%, transparent 55%, var(--bg) 100%),
+    rgba(0, 0, 0, 0.38);
+}
+
+.bg-slide {
+  opacity: 0;
+  animation: bg-crossfade 36s infinite ease-in-out backwards;
+}
+.bg-slide:nth-child(1) { animation-delay: 0s; }
+.bg-slide:nth-child(2) { animation-delay: 6s; }
+.bg-slide:nth-child(3) { animation-delay: 12s; }
+.bg-slide:nth-child(4) { animation-delay: 18s; }
+.bg-slide:nth-child(5) { animation-delay: 24s; }
+.bg-slide:nth-child(6) { animation-delay: 30s; }
+
+@keyframes bg-crossfade {
+  0%    { opacity: 0; }
+  4.2%  { opacity: 1; }
+  12.5% { opacity: 1; }
+  16.7% { opacity: 0; }
+  100%  { opacity: 0; }
+}
+
+/* Red de seguridad barata para texto flotando sin tarjeta propia sobre la foto.
+   .masthead * (no solo h1/brand/sub) porque algunas páginas insertan contenido
+   dinámico extra ahí (ej. ensayos.html agrega un <p class="premiere-note">) que
+   también queda sin tarjeta propia. Inocuo en páginas sin fondo o sobre texto que
+   ya vive dentro de una tarjeta opaca (.pill, etc.): la sombra queda del mismo
+   color que su propio fondo, invisible. */
+.masthead, .masthead *, .crumb, footer.site {
+  text-shadow: 0 1px 3px var(--bg), 0 0 10px var(--bg);
+}
+
 @media (max-width: 560px) {
   .shell { padding: 20px 14px 56px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  .bg-slide { animation: none !important; opacity: 0; }
+  .bg-slide:first-child { opacity: 1; }
 }

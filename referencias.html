@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Referencias — ALADDÍN</title>
+<meta name="description" content="Galería de fotos de referencia (vestuario, escenografía, puesta en escena) del musical ALADDÍN — B612 Audiovisual">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Vazirmatn:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .ref-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+
+  .ref-card {
+    position: relative; display: block; width: 100%; padding: 0; border: none; cursor: zoom-in;
+    border-radius: 12px; overflow: hidden; background: var(--surface-2);
+    aspect-ratio: 3 / 4; box-shadow: var(--shadow);
+  }
+  .ref-card img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    transition: transform 200ms ease;
+  }
+  .ref-card:hover img { transform: scale(1.05); }
+  .ref-card .cap {
+    position: absolute; left: 0; right: 0; bottom: 0; padding: 18px 10px 8px;
+    background: linear-gradient(to top, rgba(0,0,0,0.72), transparent);
+    color: #fff; font-size: 11.5px; line-height: 1.35; text-align: left;
+  }
+
+  .loading, .error { text-align: center; color: var(--ink-soft); padding: 40px 0; font-size: 14px; }
+
+  #lightbox {
+    position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 14px; padding: 24px;
+    background: rgba(10, 7, 3, 0.92); cursor: zoom-out;
+  }
+  #lightbox[hidden] { display: none; }
+  #lightbox img {
+    max-width: 100%; max-height: 78vh; border-radius: 8px; cursor: default;
+    box-shadow: 0 20px 60px -10px rgba(0,0,0,0.6);
+  }
+  #lightbox .cap {
+    color: #f3e7c9; font-size: 13.5px; text-align: center; max-width: 560px; cursor: default;
+  }
+  #lightbox .close {
+    position: absolute; top: 16px; right: 16px; width: 38px; height: 38px; border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.08); color: #fff;
+    display: flex; align-items: center; justify-content: center; cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+  <a class="crumb" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    Inicio
+  </a>
+
+  <header class="masthead">
+    <div class="brand">B612 Audiovisual</div>
+    <h1>Referencias</h1>
+    <p class="sub">Fotos de vestuario, escenografía y puesta en escena de otras producciones de Aladdín, para usar como guía visual del montaje.</p>
+  </header>
+
+  <div class="note"><strong>Importante:</strong> son fotos de referencia de otras producciones (Broadway y afines) — sirven para inspirar vestuario, escenografía y blocking, no son un calco obligatorio de cómo debe verse nuestro montaje.</div>
+
+  <div class="ref-grid" id="grid">
+    <div class="loading">Cargando fotos…</div>
+  </div>
+
+  <footer class="site">B612 Audiovisual · esta galería crece a medida que se sumen más fotos de referencia.</footer>
+</div>
+
+<div id="lightbox" hidden>
+  <button class="close" id="lightbox-close" aria-label="Cerrar" type="button">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <img id="lightbox-img" src="" alt="">
+  <p class="cap" id="lightbox-cap"></p>
+</div>
+
+<script>
+const grid = document.getElementById("grid");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const lightboxCap = document.getElementById("lightbox-cap");
+
+function escapeHtml(text) {
+  return String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+
+function openLightbox(src, caption) {
+  lightboxImg.src = src;
+  lightboxImg.alt = caption;
+  lightboxCap.textContent = caption;
+  lightbox.hidden = false;
+}
+
+function closeLightbox() {
+  lightbox.hidden = true;
+  lightboxImg.src = "";
+}
+
+lightbox.addEventListener("click", e => {
+  if (e.target === lightbox) closeLightbox();
+});
+document.getElementById("lightbox-close").addEventListener("click", closeLightbox);
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
+});
+
+fetch("data/referencias.json")
+  .then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+  .then(data => {
+    grid.innerHTML = "";
+    data.fotos.forEach(foto => {
+      const src = "assets/img/" + foto.archivo;
+      const card = document.createElement("button");
+      card.type = "button";
+      card.className = "ref-card";
+      card.innerHTML = `<img src="${src}" alt="${escapeHtml(foto.caption)}" loading="lazy"><span class="cap">${escapeHtml(foto.caption)}</span>`;
+      card.addEventListener("click", () => openLightbox(src, foto.caption));
+      grid.appendChild(card);
+    });
+  })
+  .catch(err => {
+    grid.innerHTML = `<div class="error">No se pudieron cargar las fotos (${err.message}).<br>Si estás probando esto localmente, ábrelo desde un servidor (no directamente como archivo).</div>`;
+  });
+</script>
+</body>
+</html>

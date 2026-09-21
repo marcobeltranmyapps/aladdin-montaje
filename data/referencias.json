@@ -1,0 +1,23 @@
+{
+  "fotos": [
+    { "archivo": "alfombra-luna.jpg", "caption": "Aladdín y Jasmín volando en la alfombra mágica" },
+    { "archivo": "principe-ali-jasmine.jpeg", "caption": "Aladdín (Príncipe Alí) y Jasmín bajo la luna" },
+    { "archivo": "principe-ali.jpg", "caption": "Aladdín vestido como el Príncipe Alí" },
+    { "archivo": "aladdin-jasmine-sultan.jpg", "caption": "Aladdín, Jasmín y el Sultán" },
+    { "archivo": "aladdin-mercado.jpg", "caption": "Aladdín en el mercado de Agrabah" },
+    { "archivo": "aladdin-lampara.jpeg", "caption": "Aladdín frota la lámpara en la Cueva de las Maravillas" },
+    { "archivo": "cueva-de-las-maravillas.jpeg", "caption": "Escenografía: la Cueva de las Maravillas" },
+    { "archivo": "jaffar.jpg", "caption": "Jafar — vestuario de gran vizier" },
+    { "archivo": "guardias.jpg", "caption": "Guardias del palacio" },
+    { "archivo": "los-cuatro-amigos.jpg", "caption": "Aladdín con Babkak, Omar y Kasim" },
+    { "archivo": "genio-vestuario.jpg", "caption": "Genio — vestuario completo" },
+    { "archivo": "genio-diseno-vestuario.jpg", "caption": "Genio — lámina de diseño de vestuario (concepto)" },
+    { "archivo": "jasmine-damas.jpg", "caption": "Jasmín con sus damas, en el palacio" },
+    { "archivo": "jasmine-damas-2.jpg", "caption": "Jasmín con sus damas" },
+    { "archivo": "jasmine-aladdin-mercado.jpg", "caption": "Jasmín y Aladdín bailando en el mercado" },
+    { "archivo": "noches-de-arabia.jpg", "caption": "Número \"Noches de Arabia\" — ensamble" },
+    { "archivo": "noches-de-arabia-2.jpg", "caption": "Número \"Noches de Arabia\" — salto de ensamble" },
+    { "archivo": "banner-aladdin.jpeg", "caption": "Aladdín frente al palacio" },
+    { "archivo": "banner-mercado-agrabah.jpeg", "caption": "Número de baile en el mercado de Agrabah" }
+  ]
+}
