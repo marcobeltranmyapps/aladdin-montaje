@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>ALADDÍN — B612</title>
 <meta name="description" content="Portal del montaje ALADDÍN — B612 Audiovisual">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aladdin.b612.org.pe/index.html">
+<meta property="og:title" content="ALADDÍN — B612 Audiovisual">
+<meta property="og:description" content="Portal del montaje ALADDÍN — B612 Audiovisual">
+<meta property="og:image" content="https://aladdin.b612.org.pe/assets/img/principe-ali-jasmine.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ALADDÍN — B612 Audiovisual">
+<meta name="twitter:description" content="Portal del montaje ALADDÍN — B612 Audiovisual">
+<meta name="twitter:image" content="https://aladdin.b612.org.pe/assets/img/principe-ali-jasmine.jpeg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Vazirmatn:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="assets/style.css">
@@ -12,7 +21,7 @@
   body { min-height: 100vh; }
   .stage {
     position: relative; min-height: 100vh; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; padding: 40px 18px 56px; overflow: hidden;
+    align-items: center; padding: 56px 18px 24px; overflow: hidden;
   }
   .glow {
     position: absolute; inset: -10%; z-index: 0; pointer-events: none;
@@ -24,19 +33,38 @@
 
   .lede { position: relative; z-index: 1; text-align: center; max-width: 480px; margin-bottom: 40px; }
   .lede .brand { font-family: var(--font-display); font-size: 14px; letter-spacing: 3px; text-transform: uppercase; color: var(--teal); margin-bottom: 10px; }
-  .lede h1 { font-size: clamp(34px, 8vw, 54px); color: var(--ink); font-weight: 700; }
+  .lede h1 { font-size: clamp(26px, 6vw, 40px); color: var(--ink); font-weight: 700; line-height: 1.15; }
   .lede p { margin: 12px 0 0; color: var(--ink-soft); font-size: 15px; }
 
-  .menu { position: relative; z-index: 1; width: 100%; max-width: 560px; display: grid; gap: 16px; grid-template-columns: 1fr 1fr; }
-  @media (max-width: 480px) { .menu { grid-template-columns: 1fr; max-width: 420px; } }
+  /* Barra fija abajo (siempre visible, sin drawer): el menú deja de vivir en el
+     flujo de .stage y pasa a ser un panel fijo pegado al borde inferior, para
+     que la foto de fondo se vea completa arriba en vez de compartir scroll
+     con las tarjetas. */
+  .menu {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 2;
+    display: flex; justify-content: center;
+    padding: 14px 18px calc(14px + env(safe-area-inset-bottom, 0px));
+    background: color-mix(in srgb, var(--surface) 60%, transparent);
+    -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -10px 30px -12px rgba(0,0,0,0.3);
+  }
+  .menu-grid {
+    width: 100%; max-width: 560px; display: grid; gap: 8px; grid-template-columns: 1fr 1fr;
+    max-height: 48vh; overflow-y: auto;
+  }
+  /* A propósito NO colapsa a 1 columna en mobile: con los tiles ya reducidos a
+     ícono + título (sin descripción), 2 columnas siguen siendo cómodas de
+     tocar y evitan que la barra fija necesite 7 filas en vez de 4. */
+  @media (max-width: 340px) { .menu-grid { gap: 6px; } }
 
   /* Tiles tipo botón: compactos y horizontales (icono + texto + flecha) en vez
      de tarjetas altas — así el menú tapa menos foto de fondo y todas las filas
      terminan con la misma altura sin necesitar reglas de alineación aparte. */
   .tile {
-    position: relative; display: flex; align-items: center; gap: 14px;
-    text-decoration: none; padding: 14px 16px; border-radius: 16px;
-    background: color-mix(in srgb, var(--surface) 70%, transparent);
+    position: relative; display: flex; align-items: center; gap: 10px;
+    text-decoration: none; padding: 10px 12px; border-radius: 14px;
+    background: color-mix(in srgb, var(--surface) 52%, transparent);
     -webkit-backdrop-filter: blur(7px); backdrop-filter: blur(7px);
     border: 1px solid var(--border);
     box-shadow: var(--shadow);
@@ -45,18 +73,18 @@
   }
   .tile:hover { transform: translateY(-2px); border-color: var(--border-strong); }
   .tile:active { transform: translateY(0) scale(0.98); }
-  .tile .icon { width: 28px; height: 28px; flex-shrink: 0; color: var(--brass); }
+  .tile .icon { width: 22px; height: 22px; flex-shrink: 0; color: var(--brass); }
   .tile.alt .icon { color: var(--teal); }
   .tile.prog .icon { color: var(--terracotta); }
   .tile.songs .icon { color: var(--violet); }
   .tile.pos .icon { color: var(--ink-soft); }
 
   .tile .body { flex: 1; min-width: 0; }
-  .tile h2 { font-size: 15.5px; color: var(--ink); margin-bottom: 1px; }
-  .tile p {
-    margin: 0; font-size: 12px; color: var(--ink-soft);
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-  }
+  .tile h2 { font-size: 13.5px; color: var(--ink); }
+  /* Sin descripción en la barra fija: el espacio es limitado y el título ya
+     basta para identificar cada sección — la descripción larga queda para
+     cuando el usuario entra a la sección. */
+  .tile p { display: none; }
   .tile .chev { width: 17px; height: 17px; flex-shrink: 0; color: var(--ink-faint); }
 
   .tile.soon { opacity: 0.5; pointer-events: none; }
@@ -64,13 +92,12 @@
   .tile.featured { grid-column: 1 / -1; }
   .tile-collage { display: flex; flex-shrink: 0; }
   .tile-collage img {
-    width: 38px; height: 50px; object-fit: cover; border-radius: 8px;
+    width: 26px; height: 34px; object-fit: cover; border-radius: 6px;
     border: 2px solid var(--surface); box-shadow: var(--shadow);
-    margin-left: -14px;
+    margin-left: -12px;
   }
   .tile-collage img:first-child { margin-left: 0; }
 
-  footer.site { position: relative; z-index: 1; }
 </style>
 </head>
 <body>
@@ -87,11 +114,12 @@
 
   <div class="lede">
     <div class="brand">B612 Audiovisual</div>
-    <h1>Aladdín</h1>
-    <p>Portal del montaje: cronograma de ensayos y libreto siempre actualizados.</p>
+    <h1>Aladdin y la lámpara maravillosa</h1>
+    <p>Taller Montaje de Teatro Musical</p>
   </div>
 
   <div class="menu">
+   <div class="menu-grid">
     <a class="tile" href="ensayos.html">
       <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 2v4M16 2v4M3 9h18M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/><path d="M8 13h3M8 17h5"/></svg>
       <div class="body">
@@ -158,9 +186,8 @@
       </div>
       <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
     </a>
+   </div>
   </div>
-
-  <footer class="site">B612 Audiovisual · el libreto se actualiza automáticamente desde la fuente original.</footer>
 </div>
 </body>
 </html>
