@@ -1,45 +1,164 @@
 {
   "premiere": "2026-12-13",
   "premiereConfirmed": false,
-  "premiereNote": "Objetivo aproximado — la fecha confirmada la tendremos a fines de septiembre, según el avance de los ensayos.",
+  "premiereNote": "Objetivo aproximado. 'Ensamble inicial' iba más lento de lo previsto (Escena Uno y Tres tomaron más sesiones de las planeadas), así que en vez de mover el estreno se agrupó lo pendiente en un bloque de ensayos extra (sin fecha fija) que se irá agendando y achicando según haga falta. La confirmación definitiva depende de cómo avance ese bloque.",
   "rehearsalTime": "Sábados, 10:30 a.m. – 2:00 p.m.",
   "sessions": [
     { "date": "2026-09-05", "phase": "Ensamble inicial", "num": "02·03·05", "desc": "Escena Uno (resto) + Escena Dos (Jafar/Iago/Sultán) + Escena Cuatro",
-      "synopsis": "Cerrar la Escena Uno: rematar la persecución de 'Un Salto Adelante' y el final con 'Orgullosa de Mí'. Ensamblar la apertura de la Escena Dos (Jafar, Iago y el Sultán): posiciones y entradas. Montar la Escena Cuatro completa (viaje de Jafar, Iago y Aladdín al desierto).",
+      "objective": "Cerrar Escena Uno, ensamblar la apertura de Escena Dos, y montar Escena Cuatro",
+      "activities": [
+        { "scene": "E1", "name": "Mercado", "tasks": [ "Cerrar: persecución de 'Un Salto Adelante' y el final con 'Orgullosa de Mí'" ] },
+        { "scene": "E2", "name": "Palacio", "tasks": [ "Ensamblar: apertura (Jafar, Iago y el Sultán) — posiciones y entradas" ] },
+        { "scene": "E4", "name": "Viaje al Desierto", "tasks": [ "Montar: completa (viaje de Jafar, Iago y Aladdín)" ] }
+      ],
       "progress": "Real: Escena Dos casi lista — dos tramos (apertura de Jafar/Iago/Sultán y cierre del plan de Jafar) con primer ensayo hecho; solo falta la canción de Jazmín. Escena Uno: se reforzó el tramo de transición hacia la persecución (2do repaso); el cierre de la escena aún no se ensaya. Escena Cuatro no se llegó a tocar, queda pendiente." },
     { "date": "2026-09-12", "phase": "Ensamble inicial", "num": "03·10·11", "desc": "Escena Dos (cierre completo) + Escena Nueve + Escena Diez",
-      "synopsis": "Cerrar la Escena Dos completa, incluida su canción 'Estos Muros de Palacio': marcar posiciones de Jazmín, sus damas y el corte de Jafar. Ensamblar la Escena Nueve y la Escena Diez (Babkak, Omar y Kassim): entradas, salidas y diálogo.",
+      "objective": "Cerrar Escena Dos completa y ensamblar Escena Nueve y Diez",
+      "activities": [
+        { "scene": "E2", "name": "Palacio", "tasks": [ "Cerrar: completa, incluida la canción 'Estos Muros de Palacio' — posiciones de Jazmín, sus damas y el corte de Jafar" ] },
+        { "scene": "E9", "name": "Mercado", "tasks": [ "Ensamblar: entradas, salidas y diálogo (Babkak, Omar y Kassim)" ] },
+        { "scene": "E10", "name": "Viaje al Palacio", "tasks": [ "Ensamblar: entradas, salidas y diálogo (Babkak, Omar y Kassim)" ] }
+      ],
       "progress": "Real: Escena Dos, repaso de principio a fin desde 'Tenemos problemas, señor' hasta el cierre de su canción ('Estos Muros de Palacio' completa) — el resto de la escena queda como ya estaba. Escena Nueve y Escena Diez, completas (ensamble y repaso). Además se aprovechó para repasar vocalmente (sin coreografía) el arranque de la Escena Uno, desde el saludo del Narrador hasta 'esta lámpara puso a Agrabah en el mapa', reforzando también el cierre de esa apertura ('De Arabia son (x5)' hasta 'Y la historia empieza'). Escena Tres y Escena Cuatro quedan pendientes de reprogramar para cuando Aladdín esté disponible." },
-    { "date": "2026-09-19", "phase": "Ensamble inicial", "num": "02·04", "desc": "Escena Uno (cierre: persecución final) + Escena Tres: Mercado",
-      "synopsis": "Cerrar la Escena Uno: rematar la persecución completa y el final. Montar la Escena Tres entera: coreografía y letra de 'Cuatro Amigos', posiciones de toda la multitud del mercado, ambas persecuciones, y el encuentro entre Aladdín y Jasmín.",
-      "progress": "11:00–12:00 Escena Uno: persecución 'Un Salto Adelante' (resto) + cierre con 'Orgullosa de Mí' · 12:00–13:30 Escena Tres completa (incluye sus 2 canciones y las 2 persecuciones) · 13:30–14:00 repaso. Escena Cuatro, Cinco y Seis (elenco reducido) quedan pendientes de reprogramar." },
-    { "date": "2026-09-26", "phase": "Ensamble inicial", "num": "08–14", "desc": "Escena Siete: Palacio (Príncipe Alí) + Escena Ocho: Balcón (Un Mundo Ideal) + Escenas Nueve, Diez, Once + Entrada de Genio 2 + Escena Doce",
-      "synopsis": "Montar la Escena Siete: entrada de 'Príncipe Alí' con posiciones del séquito y del Sultán. Montar la Escena Ocho: 'Un Mundo Ideal' y el vuelo en alfombra. Ensamblar las transiciones cortas (Nueve, Diez, Once) y la Entrada de Genio 2. Cerrar con la Escena Doce: entradas y salidas." },
-    { "date": "2026-10-03", "phase": "Ensamble inicial", "num": "15", "desc": "Escena Trece: La Boda — sesión completa",
-      "synopsis": "Montar la Escena Trece completa: posiciones de la boda, la traición de Jafar y sus tres deseos, las canciones 'Callar' y 'El Poder', y el desenlace final." },
+    { "date": "2026-09-19", "phase": "Ensamble inicial", "num": "02·03·10·11", "desc": "Escena Uno (acting y ensamble parcial) + Escena Dos (avance parcial) + Escena Nueve y Diez (repaso final)",
+      "objective": "Priorizar elenco grande para no dejar sentada a la mayoría del reparto",
+      "activities": [
+        { "scene": "E1", "name": "Mercado", "tasks": [ "Repasar: acting y ensamble" ] },
+        { "scene": "E2", "name": "Palacio", "tasks": [ "Repasar: avance del acting" ] },
+        { "scene": "E9", "name": "Mercado", "tasks": [ "Cerrar: repaso final" ] },
+        { "scene": "E10", "name": "Viaje al Palacio", "tasks": [ "Cerrar: repaso final" ] }
+      ],
+      "progress": "Real: Escena Nueve y Diez — repaso de acting completo, posiciones y marcas ya cerradas (no reprogramar hasta el ensayo final). Escena Uno — acting y posiciones repasados de principio a fin hasta 'Y la historia empieza' (sin baile); reconfirmado el tramo de la tienda + inicio de persecución (ya cerrado de antes); se avanzó el ensamble de 'Un Salto Adelante' (sin baile) hasta 'ya les contaré en otra ocasión'. Queda pendiente de reprogramar: el resto de 'Un Salto Adelante' + la persecución final, el acting de Omar/Kassim/Príncipe Abdullah, y la canción 'Orgullosa de Mí' (solo de Aladdín, la más simple de cerrar). Escena Dos — acting repasado hasta 'una princesa debe aceptar su deber', y repaso completo (sin baile) de 'Estos Muros de Palacio' ya con Layla incluida; queda pendiente de reprogramar el cierre del plan de Jafar e Iago. Escena Tres no se llegó a tocar." },
+    { "date": "2026-09-26", "phase": "Ensamble inicial", "num": "02·03·05", "desc": "Cierre Escena Uno + cierre Escena Dos + Escena Cuatro completa",
+      "objective": "Priorizar actings y escenas sin baile",
+      "activities": [
+        { "scene": "E1", "name": "Mercado", "tasks": [
+            "Cerrar: resto de 'Un Salto Adelante' sin baile + persecución final",
+            "Cerrar: acting de Omar/Kassim/Príncipe Abdullah",
+            "Cerrar: canción-solo 'Orgullosa de Mí'"
+          ] },
+        { "scene": "E2", "name": "Palacio", "tasks": [ "Cerrar: acting del plan de Jafar e Iago" ] },
+        { "scene": "E4", "name": "Viaje al Desierto", "tasks": [ "Montar: completa (viaje de Jafar, Iago y Aladdín)" ] }
+      ] },
+    { "phase": "Ensamble inicial", "pool": true, "desc": "Ensayos extra pendientes",
+      "note": "Este bloque se desprende de actividades que no se llegaron a completar en la programación regular de 'Ensamble inicial'. No tienen fecha fija todavía: se agendan aparte (fin de semana o entre semana) según disponibilidad, para no atrasar el estreno. La idea es que se vaya achicando — conforme la programación regular avance más rápido de lo previsto, sacamos actividades de aquí en vez de mantener siempre el mismo número de ensayos extra.",
+      "items": [
+        { "num": "04", "desc": "Escena Tres: Mercado — sesión completa",
+          "activities": [
+            { "scene": "E3", "name": "Mercado", "tasks": [
+                "Montar: coreografía y letra de 'Cuatro Amigos'",
+                "Montar: coreografía y letra de 'A mil kilómetros de aquí'",
+                "Montar: posiciones de toda la multitud del mercado y ambas persecuciones",
+                "Montar: encuentro entre Aladdín y Jasmín"
+              ] }
+          ] },
+        { "num": "08·14", "desc": "Escena Siete: Palacio (Príncipe Alí) + Escena Doce",
+          "activities": [
+            { "scene": "E7", "name": "Palacio (Príncipe Alí)", "tasks": [ "Montar: entrada con posiciones del séquito y del Sultán" ] },
+            { "scene": "E12", "name": "Habitación del Palacio", "tasks": [ "Montar: reprise de 'Orgullosa de Mí'" ] }
+          ] },
+        { "num": "09", "desc": "Escena Ocho: Balcón (Un Mundo Ideal) — sesión completa",
+          "activities": [
+            { "scene": "E8", "name": "Balcón de Jasmine", "tasks": [ "Montar: 'Un Mundo Ideal', incluido el vuelo en alfombra" ] }
+          ],
+          "note": "Pieza grande y técnica: conviene reservarle una sesión de duración completa." },
+        { "num": "15", "desc": "Escena Trece: La Boda — sesión completa",
+          "activities": [
+            { "scene": "E13", "name": "La Boda", "tasks": [
+                "Montar: posiciones de la boda y la traición de Jafar (sus tres deseos)",
+                "Montar: canción 'Callar'",
+                "Montar: canción 'El Poder'",
+                "Montar: desenlace final"
+              ] }
+          ],
+          "note": "Es la escena más grande de la obra (4 canciones): conviene reservarle una sesión de duración completa." }
+      ] },
+    { "date": "2026-10-03", "phase": "Ensamble inicial", "num": "06·07·12·13", "desc": "Escena Cinco: Cueva + Escena Seis: Viaje + Escena Once + Entrada de Genio 2",
+      "objective": "Montar Escena Cinco, Seis, Once y Entrada de Genio 2",
+      "activities": [
+        { "scene": "E5", "name": "La Cueva de las Maravillas", "tasks": [ "Montar: 'Un Amigo Fiel en Mí' (primera entrada del Genio)" ] },
+        { "scene": "E6", "name": "Viaje fuera del desierto", "tasks": [ "Montar: viaje de vuelta y reprise de 'Orgullosa de Mí'" ] },
+        { "scene": "E11", "name": "Palacio", "tasks": [ "Ensamblar: transición corta" ] },
+        { "scene": "G2", "name": "Entrada de Genio 2", "tasks": [ "Ensamblar: transición corta" ] }
+      ] },
 
     { "date": "2026-10-10", "phase": "Ensayo 1 (coreografía básica, sin libreto en mano)", "num": "01–04", "desc": "Repaso Acto I, primera mitad: Prólogo – Escena Tres",
-      "synopsis": "Repasar con coreografía básica y sin libreto en mano: Prólogo, Escena Uno, Escena Dos y Escena Tres." },
+      "objective": "Repasar con coreografía básica y sin libreto en mano, de Prólogo a Escena Tres",
+      "activities": [
+        { "scene": "P", "name": "Prólogo", "tasks": [ "Repasar" ] },
+        { "scene": "E1", "name": "Mercado", "tasks": [ "Repasar" ] },
+        { "scene": "E2", "name": "Palacio", "tasks": [ "Repasar" ] },
+        { "scene": "E3", "name": "Mercado", "tasks": [ "Repasar" ] }
+      ] },
     { "date": "2026-10-17", "phase": "Ensayo 1 (coreografía básica, sin libreto en mano)", "num": "05–08", "desc": "Repaso Acto I final + arranque Acto II: Escena Cuatro – Escena Siete",
-      "synopsis": "Repasar con coreografía básica y sin libreto en mano: Escena Cuatro, Cinco, Seis y Siete." },
+      "objective": "Repasar con coreografía básica y sin libreto en mano, de Escena Cuatro a Siete",
+      "activities": [
+        { "scene": "E4", "name": "Viaje al Desierto", "tasks": [ "Repasar" ] },
+        { "scene": "E5", "name": "La Cueva de las Maravillas", "tasks": [ "Repasar" ] },
+        { "scene": "E6", "name": "Viaje fuera del desierto", "tasks": [ "Repasar" ] },
+        { "scene": "E7", "name": "Palacio (Príncipe Alí)", "tasks": [ "Repasar" ] }
+      ] },
     { "date": "2026-10-24", "phase": "Ensayo 1 (coreografía básica, sin libreto en mano)", "num": "09–14", "desc": "Acto II: Escena Ocho – Escena Doce",
-      "synopsis": "Repasar con coreografía básica y sin libreto en mano: Escena Ocho, Nueve, Diez, Once, Entrada de Genio 2 y Doce." },
+      "objective": "Repasar con coreografía básica y sin libreto en mano, de Escena Ocho a Doce",
+      "activities": [
+        { "scene": "E8", "name": "Balcón de Jasmine", "tasks": [ "Repasar" ] },
+        { "scene": "E9", "name": "Mercado", "tasks": [ "Repasar" ] },
+        { "scene": "E10", "name": "Viaje al Palacio", "tasks": [ "Repasar" ] },
+        { "scene": "E11", "name": "Palacio", "tasks": [ "Repasar" ] },
+        { "scene": "G2", "name": "Entrada de Genio 2", "tasks": [ "Repasar" ] },
+        { "scene": "E12", "name": "Habitación del Palacio", "tasks": [ "Repasar" ] }
+      ] },
     { "date": "2026-10-31", "phase": "Ensayo 1 (coreografía básica, sin libreto en mano)", "num": "15", "desc": "Escena Trece: La Boda",
-      "synopsis": "Repasar con coreografía básica y sin libreto en mano la Escena Trece completa." },
+      "objective": "Repasar con coreografía básica y sin libreto en mano la Escena Trece completa",
+      "activities": [
+        { "scene": "E13", "name": "La Boda", "tasks": [ "Repasar: completa" ] }
+      ] },
 
     { "date": "2026-11-07", "phase": "Ensayo 2 (afinar coreografía, armonías, timing)", "num": "01–07", "desc": "Acto I completo (Prólogo – Escena Seis)",
-      "synopsis": "Afinar coreografía, armonías y timing de todo el Acto I, de principio a fin." },
+      "objective": "Afinar coreografía, armonías y timing de todo el Acto I",
+      "activities": [
+        { "scene": "P", "name": "Prólogo", "tasks": [ "Afinar" ] },
+        { "scene": "E1", "name": "Mercado", "tasks": [ "Afinar" ] },
+        { "scene": "E2", "name": "Palacio", "tasks": [ "Afinar" ] },
+        { "scene": "E3", "name": "Mercado", "tasks": [ "Afinar" ] },
+        { "scene": "E4", "name": "Viaje al Desierto", "tasks": [ "Afinar" ] },
+        { "scene": "E5", "name": "La Cueva de las Maravillas", "tasks": [ "Afinar" ] },
+        { "scene": "E6", "name": "Viaje fuera del desierto", "tasks": [ "Afinar" ] }
+      ] },
     { "date": "2026-11-14", "phase": "Ensayo 2 (afinar coreografía, armonías, timing)", "num": "08–12", "desc": "Escena Siete – Escena Once",
-      "synopsis": "Afinar coreografía, armonías y timing: Escena Siete, Ocho, Nueve, Diez y Once." },
+      "objective": "Afinar coreografía, armonías y timing, de Escena Siete a Once",
+      "activities": [
+        { "scene": "E7", "name": "Palacio (Príncipe Alí)", "tasks": [ "Afinar" ] },
+        { "scene": "E8", "name": "Balcón de Jasmine", "tasks": [ "Afinar" ] },
+        { "scene": "E9", "name": "Mercado", "tasks": [ "Afinar" ] },
+        { "scene": "E10", "name": "Viaje al Palacio", "tasks": [ "Afinar" ] },
+        { "scene": "E11", "name": "Palacio", "tasks": [ "Afinar" ] }
+      ] },
     { "date": "2026-11-21", "phase": "Ensayo 2 (afinar coreografía, armonías, timing)", "num": "13–15", "desc": "Entrada de Genio 2 – Escena Doce + repaso parcial de Escena Trece",
-      "synopsis": "Afinar coreografía, armonías y timing: Entrada de Genio 2, Escena Doce y repaso parcial de la Escena Trece." },
+      "objective": "Afinar Entrada de Genio 2 y Escena Doce, y repasar parcialmente Escena Trece",
+      "activities": [
+        { "scene": "G2", "name": "Entrada de Genio 2", "tasks": [ "Afinar" ] },
+        { "scene": "E12", "name": "Habitación del Palacio", "tasks": [ "Afinar" ] },
+        { "scene": "E13", "name": "La Boda", "tasks": [ "Repasar: parcial" ] }
+      ] },
 
     { "date": "2026-11-28", "phase": "Pulido (transiciones, entradas/salidas, ritmo)", "num": "01–15", "desc": "Pulido obra completa: Acto I, Acto II y Escena Trece — sesión intensiva única",
-      "synopsis": "Pulir transiciones, entradas y salidas, y ritmo general: repaso corrido de la obra completa, de principio a fin." },
+      "objective": "Pulir transiciones, entradas/salidas y ritmo general de la obra completa",
+      "activities": [
+        { "scene": "Acto I", "name": "completo", "tasks": [ "Pulir: de principio a fin" ] },
+        { "scene": "Acto II", "name": "completo", "tasks": [ "Pulir: de principio a fin" ] },
+        { "scene": "E13", "name": "La Boda", "tasks": [ "Pulir: transiciones y ritmo" ] }
+      ] },
 
     { "date": "2026-12-05", "phase": "Ensayos generales", "num": "01–15", "desc": "Ensayo general 1: obra completa de principio a fin",
-      "synopsis": "Correr la obra completa de principio a fin, sin pausas." },
+      "objective": "Correr la obra completa de principio a fin, sin pausas",
+      "activities": [
+        { "scene": "Obra", "name": "completa", "tasks": [ "Correr: de principio a fin, sin pausas" ] }
+      ] },
     { "date": "2026-12-12", "phase": "Ensayos generales", "num": "01–15", "desc": "Ensayo general 2: técnica, vestuario y último repaso — víspera del estreno",
-      "synopsis": "Último repaso general con técnica y vestuario, antes del estreno." }
+      "objective": "Último repaso general con técnica y vestuario, antes del estreno",
+      "activities": [
+        { "scene": "Obra", "name": "completa", "tasks": [ "Técnica", "Vestuario", "Último repaso corrido" ] }
+      ] }
   ]
 }
