@@ -11,16 +11,16 @@
             { "code": "C1", "title": "Noche de Arabia", "lines": [158, 291], "status": 1 },
             { "code": "C2", "title": "Un Salto Adelante", "lines": [367, 441],
               "segments": [
-                { "from": 367, "to": 403, "status": 1, "label": "ensamble en curso (sin baile)" },
-                { "from": 404, "to": 441, "status": 0, "label": "resto pendiente" }
+                { "from": 367, "to": 421, "status": 1, "label": "ensamble + coreografía en marcación (con el coreógrafo, 26-set)" },
+                { "from": 422, "to": 441, "status": 0, "label": "resto pendiente (falta coreografía)" }
               ] },
             { "code": "C3", "title": "Orgullosa de Mí", "lines": [488, 528], "status": 0 }
           ],
           "segments": [
             { "from": 148, "to": 293, "status": 2, "label": "Apertura (Samira y Soraya) + 'Noche de Arabia' — acting y posiciones repasados, falta coreografía" },
             { "from": 295, "to": 365, "status": 2, "label": "Tienda + inicio de persecución — cerrado, no reprogramar hasta el ensayo final" },
-            { "from": 366, "to": 403, "status": 1, "label": "'Un Salto Adelante' — ensamble de canción en curso (sin baile)" },
-            { "from": 404, "to": 442, "status": 0, "label": "Resto de 'Un Salto Adelante' + persecución final (pendiente)" },
+            { "from": 366, "to": 421, "status": 1, "label": "'Un Salto Adelante' — coreografía en marcación con el coreógrafo" },
+            { "from": 422, "to": 442, "status": 0, "label": "Resto de 'Un Salto Adelante' (coreografía) + persecución final (pendiente)" },
             { "from": 443, "to": 484, "status": 0, "label": "Encuentro con los amigos + Príncipe Abdullah (acting pendiente)" },
             { "from": 485, "to": 532, "status": 0, "label": "Canción 'Orgullosa de Mí' (solo de Aladdín, pendiente)" }
           ]
@@ -39,7 +39,7 @@
           ] },
         { "code": "E4", "title": "Escena Cuatro: Viaje al Desierto", "lines": [1086, 1141], "status": 0, "songs": [] },
         { "code": "E5", "title": "Escena Cinco: La Cueva de las Maravillas", "lines": [1142, 1270], "status": 0,
-          "songs": [ { "code": "C7", "title": "Un Amigo Fiel en Mí", "lines": [1196, 1251], "status": 0 } ] },
+          "songs": [ { "code": "C7", "title": "Un Amigo Fiel en Mí", "lines": [1196, 1251], "status": 1, "note": "Coreografía avanzada al 60% (con el coreógrafo, 26-set)" } ] },
         { "code": "E6", "title": "Escena Seis: Viaje fuera del desierto", "lines": [1271, 1375], "status": 0,
           "songs": [ { "code": "C8", "title": "Reprise Orgullosa de Mí", "lines": [1323, 1371], "status": 0 } ] }
       ]

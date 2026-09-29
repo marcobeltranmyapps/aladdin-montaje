@@ -158,7 +158,8 @@ function songBlocks(scene) {
         label: song.title + (sub.label ? " — " + sub.label : "")
       }));
     } else {
-      out.push({ from: song.lines[0], to: song.lines[1], status: song.status || 0, type: "song", label: song.title });
+      out.push({ from: song.lines[0], to: song.lines[1], status: song.status || 0, type: "song",
+        label: song.title + (song.note ? " — " + song.note : "") });
     }
   });
   return out.sort((a, b) => a.from - b.from);

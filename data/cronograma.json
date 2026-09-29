@@ -39,10 +39,22 @@
           ] },
         { "scene": "E2", "name": "Palacio", "tasks": [ "Cerrar: acting del plan de Jafar e Iago" ] },
         { "scene": "E4", "name": "Viaje al Desierto", "tasks": [ "Montar: completa (viaje de Jafar, Iago y Aladdín)" ] }
-      ] },
+      ],
+      "progress": "Real: vino el coreógrafo sin estar planeado, así que la sesión se dedicó por completo a coreografía en vez del plan original. Escena Cinco — 'Un Amigo Fiel en Mí': coreografía avanzada al 60%. Escena Uno — 'Un Salto Adelante': se sumó coreografía marcada desde 'Tengo que saltar, tomar la ventaja' hasta 'Pienso que es muy exitante!'. Faltó tiempo para el resto de esa canción y para todo lo demás planeado (cierre de Escena Uno y Dos, Escena Cuatro completa) — queda pendiente de reprogramar." },
     { "phase": "Ensamble inicial", "pool": true, "desc": "Ensayos extra pendientes",
       "note": "Este bloque se desprende de actividades que no se llegaron a completar en la programación regular de 'Ensamble inicial'. No tienen fecha fija todavía: se agendan aparte (fin de semana o entre semana) según disponibilidad, para no atrasar el estreno. La idea es que se vaya achicando — conforme la programación regular avance más rápido de lo previsto, sacamos actividades de aquí en vez de mantener siempre el mismo número de ensayos extra.",
       "items": [
+        { "num": "02·03·05", "desc": "Cierre Escena Uno + cierre Escena Dos + Escena Cuatro completa",
+          "activities": [
+            { "scene": "E1", "name": "Mercado", "tasks": [
+                "Cerrar: resto de la coreografía de 'Un Salto Adelante' (desde 'Pienso que es muy exitante!') + persecución final",
+                "Cerrar: acting de Omar/Kassim/Príncipe Abdullah",
+                "Cerrar: canción-solo 'Orgullosa de Mí'"
+              ] },
+            { "scene": "E2", "name": "Palacio", "tasks": [ "Cerrar: acting del plan de Jafar e Iago" ] },
+            { "scene": "E4", "name": "Viaje al Desierto", "tasks": [ "Montar: completa (viaje de Jafar, Iago y Aladdín)" ] }
+          ],
+          "note": "Quedó pendiente del 26-set: esa sesión se usó completa para coreografía con el coreógrafo en vez de este plan." },
         { "num": "04", "desc": "Escena Tres: Mercado — sesión completa",
           "activities": [
             { "scene": "E3", "name": "Mercado", "tasks": [
