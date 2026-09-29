@@ -383,19 +383,19 @@ Probar que no tengo ni un dinar
 
 **ALADDIN:**  
 ¡TOMEN!  
-Es solo un bocadillo.  
+Hay que ser más listos  
 
-**GUARDIAS:** Hay que hacerlo picadillo.
+**GUARDIAS:** ¡Atajemos su camino!
 
 **ALADDIN:**  
 Vaya insinuación, tengo que aceptar  
-Mis amigos dónde están!  
+Y mis amigos dónde están!  
 
-**MUJERES:**  
+**CHICAS:**  
 Pobre chico me da tanta pena  
 convertido en un vil ladrón  
 
-**MERCADERES:**  
+**MUJER:**  
 a los padres culpo aunque no tenga  
 
 **ALADDIN:**  
@@ -414,11 +414,11 @@ mejor será esconderme en un rincón
 
 **GUARDIAS:** Atrápenlo!
 
-**MUJERES:** Escándalo!
+**MERCADERES:** Escándalo!
 
 **ALADDIN:** Cálmense un instante
 
-**MUJERES:** Pienso que es muy exitante!
+**MUJER:** Pienso que es muy exitante!
 
 **ALADDIN:**  
 como por vivir, robo por comer  
@@ -477,7 +477,7 @@ Sólo tengo que... ¡saltar!
 
 *(El mendigo sale corriendo, Aladdin no se mueve. Los guardias sacan sus espadas. EL PRÍNCIPE ABDULLAH entra)*
 
-**PRÍNCIPE ABDULLAH:** Déjalo ser. Es demasiado insignificante para matarlo. Al palacio.
+**PRÍNCIPE ABDULLAH:** ¡Déjalo! Es demasiado insignificante para matarlo. ¡Al palacio!
 
 **GUARDIA 1:** Mejor quítate, rata callejera
 
@@ -1320,8 +1320,6 @@ Tiene un amigo fiel en mí
 
 *(GENIO corre tras ALADDIN)*
 
-### CANCIÓN: REPRISE ORGULLOSA DE MÍ
-
 **ALADDIN:** ¡Genio, deseo que me conviertas en un príncipe!
 
 **GENIO:**  
@@ -1343,7 +1341,8 @@ Estoy pensando en colores fuertes, intensos… que tengan presencia.
 O mejor todavía…  
 ¡podríamos llenarte de joyas!  
 ¡Ohhh, esto va a quedar perfecto!  
-¡Abran paso! ¡Es hora de transformar a este hombre!  
+¡Abran paso! ¡Es hora de transformar a este hombre!
+*(GENIO CANTA REPRISE AMIGO FIEL EN MI)*
 Mi amo, Aladdin, pide uno, dos y tres  
 Pues un amigo fiel, un amigo fiel tienes  
 Un amigo fiel, un amigo fiel tienes  
@@ -1356,6 +1355,8 @@ Un a-, migo-, fiel en mí
 **ALADDIN:** ¿Eh… una alfombra mágica?
 
 **GENIO:** Créeme, la vas a necesitar. ¡Ah, y Al! ¡Te va a ir genial!
+
+### CANCIÓN: REPRISE ORGULLOSA DE MÍ
 
 **ALADDIN:**  
 Es el momento de que tú puedas ver quien soy  
