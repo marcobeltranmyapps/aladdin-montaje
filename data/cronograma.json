@@ -44,26 +44,18 @@
     { "phase": "Ensamble inicial", "pool": true, "desc": "Ensayos extra pendientes",
       "note": "Este bloque se desprende de actividades que no se llegaron a completar en la programación regular de 'Ensamble inicial'. No tienen fecha fija todavía: se agendan aparte (fin de semana o entre semana) según disponibilidad, para no atrasar el estreno. La idea es que se vaya achicando — conforme la programación regular avance más rápido de lo previsto, sacamos actividades de aquí en vez de mantener siempre el mismo número de ensayos extra.",
       "items": [
-        { "num": "02·03·05", "desc": "Cierre Escena Uno + cierre Escena Dos + Escena Cuatro completa",
+        { "num": "03", "desc": "Cierre Escena Dos: acting del plan de Jafar e Iago",
           "activities": [
-            { "scene": "E1", "name": "Mercado", "tasks": [
-                "Cerrar: resto de la coreografía de 'Un Salto Adelante' (desde 'Pienso que es muy exitante!') + persecución final",
-                "Cerrar: acting de Omar/Kassim/Príncipe Abdullah",
-                "Cerrar: canción-solo 'Orgullosa de Mí'"
-              ] },
-            { "scene": "E2", "name": "Palacio", "tasks": [ "Cerrar: acting del plan de Jafar e Iago" ] },
-            { "scene": "E4", "name": "Viaje al Desierto", "tasks": [ "Montar: completa (viaje de Jafar, Iago y Aladdín)" ] }
+            { "scene": "E2", "name": "Palacio", "tasks": [ "Cerrar: acting del plan de Jafar e Iago" ] }
           ],
-          "note": "Quedó pendiente del 26-set: esa sesión se usó completa para coreografía con el coreógrafo en vez de este plan." },
-        { "num": "04", "desc": "Escena Tres: Mercado — sesión completa",
+          "note": "Quedó pendiente del 26-set (esa sesión se usó para coreografía con el coreógrafo); el resto de ese bloque —Escena Uno y Escena Cuatro— se completó el 3-oct." },
+        { "num": "07·12·13", "desc": "Escena Seis: Viaje + Escena Once + Entrada de Genio 2",
           "activities": [
-            { "scene": "E3", "name": "Mercado", "tasks": [
-                "Montar: coreografía y letra de 'Cuatro Amigos'",
-                "Montar: coreografía y letra de 'A mil kilómetros de aquí'",
-                "Montar: posiciones de toda la multitud del mercado y ambas persecuciones",
-                "Montar: encuentro entre Aladdín y Jasmín"
-              ] }
-          ] },
+            { "scene": "E6", "name": "Viaje fuera del desierto", "tasks": [ "Montar: viaje de vuelta y reprise de 'Orgullosa de Mí'" ] },
+            { "scene": "E11", "name": "Palacio", "tasks": [ "Ensamblar: transición corta" ] },
+            { "scene": "G2", "name": "Entrada de Genio 2", "tasks": [ "Ensamblar: transición corta" ] }
+          ],
+          "note": "Quedó pendiente del 3-oct: esa sesión se usó para cerrar Escena Uno y ensamblar Escena Cuatro y Cinco." },
         { "num": "08·14", "desc": "Escena Siete: Palacio (Príncipe Alí) + Escena Doce",
           "activities": [
             { "scene": "E7", "name": "Palacio (Príncipe Alí)", "tasks": [ "Montar: entrada con posiciones del séquito y del Sultán" ] },
@@ -92,15 +84,19 @@
         { "scene": "E6", "name": "Viaje fuera del desierto", "tasks": [ "Montar: viaje de vuelta y reprise de 'Orgullosa de Mí'" ] },
         { "scene": "E11", "name": "Palacio", "tasks": [ "Ensamblar: transición corta" ] },
         { "scene": "G2", "name": "Entrada de Genio 2", "tasks": [ "Ensamblar: transición corta" ] }
-      ] },
+      ],
+      "progress": "Real: la sesión se usó para cerrar lo pendiente de Escena Uno y ensamblar dos escenas del Acto I. Escena Uno — 'Un Salto Adelante': ensamble inicial terminado (con coreografía), solo falta una última repasada; acting final (la entrada del Príncipe Abdullah) terminado; 'Orgullosa de Mí': ensamble terminado, falta una última repasada. Escena Cuatro — ensamblada. Escena Cinco — ensamblada (la coreografía de 'Un Amigo Fiel en Mí' ya se había ensamblado la semana anterior con el coreógrafo); falta una repasada. Escena Seis, Escena Once y Entrada de Genio 2 no se llegaron a tocar — quedan pendientes de reprogramar." },
 
-    { "date": "2026-10-10", "phase": "Ensayo 1 (coreografía básica, sin libreto en mano)", "num": "01–04", "desc": "Repaso Acto I, primera mitad: Prólogo – Escena Tres",
-      "objective": "Repasar con coreografía básica y sin libreto en mano, de Prólogo a Escena Tres",
+    { "date": "2026-10-10", "phase": "Ensamble inicial", "num": "01·04", "desc": "Escena Tres: Mercado (sesión completa) + Prólogo desde 'El impuesto del mercado'",
+      "objective": "Ensamblar Escena Tres completa y avanzar el Prólogo (tomado del bloque de ensayos extra pendientes)",
       "activities": [
-        { "scene": "P", "name": "Prólogo", "tasks": [ "Repasar" ] },
-        { "scene": "E1", "name": "Mercado", "tasks": [ "Repasar" ] },
-        { "scene": "E2", "name": "Palacio", "tasks": [ "Repasar" ] },
-        { "scene": "E3", "name": "Mercado", "tasks": [ "Repasar" ] }
+        { "scene": "E3", "name": "Mercado", "tasks": [
+            "Montar: coreografía y letra de 'Cuatro Amigos'",
+            "Montar: coreografía y letra de 'A mil kilómetros de aquí'",
+            "Montar: posiciones de toda la multitud del mercado y ambas persecuciones",
+            "Montar: encuentro entre Aladdín y Jasmín"
+          ] },
+        { "scene": "P", "name": "Prólogo", "tasks": [ "Ensamblar: desde 'El impuesto del mercado, vieja. Hoy vencía.' hasta el final" ] }
       ] },
     { "date": "2026-10-17", "phase": "Ensayo 1 (coreografía básica, sin libreto en mano)", "num": "05–08", "desc": "Repaso Acto I final + arranque Acto II: Escena Cuatro – Escena Siete",
       "objective": "Repasar con coreografía básica y sin libreto en mano, de Escena Cuatro a Siete",
