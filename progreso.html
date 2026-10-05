@@ -83,6 +83,13 @@
     color: var(--brass); text-transform: uppercase; letter-spacing: 0.5px; margin: 0 0 14px;
   }
   .legend-key-title svg { width: 15px; height: 15px; flex-shrink: 0; }
+  .overall { display: flex; align-items: center; gap: 16px; margin: 0 0 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+  .overall-pct { font-family: var(--font-display); font-size: 38px; font-weight: 700; line-height: 1; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .overall-body { flex: 1; min-width: 0; }
+  .overall-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--ink-faint); margin-bottom: 7px; }
+  .overall-track { height: 10px; border-radius: 999px; background: var(--prog-0); border: 1px solid var(--border); overflow: hidden; }
+  .overall-fill { height: 100%; width: 0; background: var(--prog-2); border-radius: 999px; transition: width 0.4s ease; }
+  .overall-hint { font-size: 11px; color: var(--ink-faint); margin-top: 6px; line-height: 1.4; }
   .legend-key-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 24px; }
   @media (max-width: 520px) { .legend-key-cols { grid-template-columns: 1fr; } }
   .legend-key-heading {
@@ -121,6 +128,14 @@
     <div class="legend-key-title">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
       Cómo leer esta línea de tiempo
+    </div>
+    <div class="overall" id="overall" hidden>
+      <div class="overall-pct" id="overallPct">0%</div>
+      <div class="overall-body">
+        <div class="overall-label">Avance general de la obra</div>
+        <div class="overall-track"><div class="overall-fill" id="overallFill"></div></div>
+        <div class="overall-hint">Pondera por extensión del libreto: primer ensamble cuenta 50 %, repasado 100 %. Incluye canciones y el Prólogo (en pausa).</div>
+      </div>
     </div>
     <div class="legend-key-cols">
       <div>
@@ -286,6 +301,16 @@ fetch("data/progreso.json")
     const container = document.getElementById("acts");
     container.innerHTML = "";
     data.acts.forEach(act => renderAct(act, container));
+    let done = 0, total = 0;
+    data.acts.forEach(act => act.scenes.forEach(scene => buildBlocks(scene).forEach(b => {
+      const len = b.to - b.from;
+      total += len;
+      done += len * [0, 0.5, 1][b.status || 0];
+    })));
+    const pct = total ? Math.round((done / total) * 100) : 0;
+    document.getElementById("overallPct").textContent = pct + "%";
+    document.getElementById("overallFill").style.width = pct + "%";
+    document.getElementById("overall").hidden = false;
   })
   .catch(err => {
     document.getElementById("acts").innerHTML = `<div class="error">No se pudo cargar el progreso (${err.message}).<br>Si estás probando esto localmente, ábrelo desde un servidor (no directamente como archivo).</div>`;
