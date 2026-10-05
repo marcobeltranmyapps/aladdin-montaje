@@ -44,9 +44,9 @@
     { "phase": "Ensamble inicial", "pool": true, "desc": "Ensayos extra pendientes",
       "note": "Este bloque se desprende de actividades que no se llegaron a completar en la programación regular de 'Ensamble inicial'. No tienen fecha fija todavía: se agendan aparte (fin de semana o entre semana) según disponibilidad, para no atrasar el estreno. La idea es que se vaya achicando — conforme la programación regular avance más rápido de lo previsto, sacamos actividades de aquí en vez de mantener siempre el mismo número de ensayos extra.",
       "items": [
-        { "num": "03", "desc": "Cierre Escena Dos: acting del plan de Jafar e Iago",
+        { "num": "03", "desc": "Cierre Escena Dos: repaso del acting del plan de Jafar e Iago",
           "activities": [
-            { "scene": "E2", "name": "Palacio", "tasks": [ "Cerrar: acting del plan de Jafar e Iago" ] }
+            { "scene": "E2", "name": "Palacio", "tasks": [ "Repasar: acting del plan de Jafar e Iago (ya ensamblado, falta cerrarlo)" ] }
           ],
           "note": "Quedó pendiente del 26-set (esa sesión se usó para coreografía con el coreógrafo); el resto de ese bloque —Escena Uno y Escena Cuatro— se completó el 3-oct." },
         { "num": "07·12·13", "desc": "Escena Seis: Viaje + Escena Once + Entrada de Genio 2",

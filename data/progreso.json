@@ -24,7 +24,7 @@
           "songs": [ { "code": "C4", "title": "Estos Muros de Palacio", "lines": [645, 713], "status": 1 } ],
           "segments": [
             { "from": 533, "to": 644, "status": 2, "label": "Apertura: Jafar, Iago, Sultán, corte y asistentes de Jasmine — acting repasado" },
-            { "from": 714, "to": 762, "status": 0, "label": "Plan de Jafar e Iago — pendiente" }
+            { "from": 714, "to": 762, "status": 1, "label": "Plan de Jafar e Iago — ya ensamblado (5-sep), falta repasarlo" }
           ]
         },
         { "code": "E3", "title": "Escena Tres: Mercado", "lines": [763, 1085], "status": 0,
