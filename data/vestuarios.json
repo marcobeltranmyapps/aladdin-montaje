@@ -5,6 +5,7 @@
       "nombre": "Aladdín",
       "categoria": "Protagonistas",
       "grupo": false,
+      "cubre": [],
       "vestuarios": [
         {
           "letra": "A",
@@ -107,6 +108,7 @@
       "nombre": "Jasmine",
       "categoria": "Protagonistas",
       "grupo": false,
+      "cubre": [],
       "vestuarios": [
         {
           "letra": "A",
@@ -210,6 +212,7 @@
       "nombre": "Genio",
       "categoria": "Protagonistas",
       "grupo": false,
+      "cubre": [],
       "vestuarios": [
         {
           "letra": "A",
@@ -257,6 +260,7 @@
       "nombre": "Jafar",
       "categoria": "Antagonistas",
       "grupo": false,
+      "cubre": [],
       "vestuarios": [
         {
           "letra": "A",
@@ -298,6 +302,7 @@
       "nombre": "Iago",
       "categoria": "Antagonistas",
       "grupo": false,
+      "cubre": [],
       "vestuarios": [
         {
           "letra": "A",
@@ -332,6 +337,7 @@
       "nombre": "Sultán",
       "categoria": "La Corte",
       "grupo": false,
+      "cubre": [],
       "vestuarios": [
         {
           "letra": "A",
@@ -368,11 +374,72 @@
       "otras": []
     },
     {
-      "id": "amigos-aladdin",
-      "nombre": "Amigos Aladdin",
-      "categoria": "Grupos",
+      "id": "amigas-jasmine",
+      "nombre": "Amigas de Jasmine",
+      "categoria": "Las Damas de Jasmine",
       "grupo": true,
-      "vestuarios": [],
+      "cubre": [
+        "rajah",
+        "manal",
+        "isir",
+        "layla"
+      ],
+      "vestuarios": [
+        {
+          "letra": "A",
+          "titulo": "Amigas de Jasmine: versión para adolescentes",
+          "resumen": "Vestido largo lila con corpiño entallado decorado con pedrería y galones, mangas cortas suaves, panel ilusión color piel en escote y abdomen, falda fluida de varias capas, cinturón decorado y tiara ligera. La guía técnica lo plantea para intérpretes adolescentes: recato, comodidad y brillo controlado, con la misma base para todas y variantes de color (lila suave, lavanda rosada y periwinkle).",
+          "escena": "Escena Dos: Palacio, incluida la canción \"Estos Muros de Palacio\", junto a Jasmine.",
+          "guia": {
+            "archivo": "assets/vestuarios/amigas-jasmine/guia-tecnica-vestidos.webp",
+            "w": 1448,
+            "h": 1086
+          },
+          "fotos": [
+            {
+              "archivo": "assets/vestuarios/amigas-jasmine/vestuario-1a.webp",
+              "caption": "Producción teatral: Jasmine con sus tres amigas, en vestidos lila con corpiño de pedrería",
+              "w": 564,
+              "h": 820
+            },
+            {
+              "archivo": "assets/vestuarios/amigas-jasmine/vestuario-1b.webp",
+              "caption": "Producción teatral: corpiño con pedrería y flecos, y falda lila con diseño romboidal",
+              "w": 1200,
+              "h": 1600
+            }
+          ]
+        }
+      ],
+      "otras": []
+    },
+    {
+      "id": "amigos-aladdin",
+      "nombre": "Amigos de Aladdín",
+      "categoria": "Los Cuatro Amigos",
+      "grupo": true,
+      "cubre": [
+        "omar",
+        "kassim",
+        "babkak"
+      ],
+      "vestuarios": [
+        {
+          "letra": "A",
+          "titulo": "Los amigos: referencia",
+          "resumen": "",
+          "escena": "",
+          "guia": null,
+          "fotos": [
+            {
+              "archivo": "assets/vestuarios/amigos-aladdin/vestuarios-1a.webp",
+              "caption": "Tras bambalinas: tres intérpretes con Jasmine, con vestuarios callejeros en rojo, azul y verde",
+              "w": 750,
+              "h": 763
+            }
+          ]
+        }
+      ],
       "otras": [
         {
           "archivo": "assets/vestuarios/amigos-aladdin/los-cuatro-amigos.webp",
@@ -393,6 +460,7 @@
       "nombre": "Ensamble",
       "categoria": "Grupos",
       "grupo": true,
+      "cubre": [],
       "vestuarios": [],
       "otras": [
         {
@@ -414,6 +482,7 @@
       "nombre": "Ensamble Hombres",
       "categoria": "Grupos",
       "grupo": true,
+      "cubre": [],
       "vestuarios": [],
       "otras": [
         {
@@ -435,6 +504,7 @@
       "nombre": "Escenografía",
       "categoria": "Grupos",
       "grupo": true,
+      "cubre": [],
       "vestuarios": [],
       "otras": [
         {
@@ -450,6 +520,7 @@
       "nombre": "Guardias del palacio",
       "categoria": "Grupos",
       "grupo": true,
+      "cubre": [],
       "vestuarios": [
         {
           "letra": "A",

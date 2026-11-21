@@ -404,7 +404,10 @@ Promise.all([getJson("data/vestuarios.json"), getJson("data/personajes.json")])
       .filter(g => g.entradas.length);
     ENT = GRUPOS.flatMap(g => g.entradas);   // el anterior/siguiente sigue el orden del índice
 
-    PEND = pers.categorias.flatMap(c => c.personajes).filter(p => !porId.has(p.id)).map(p => p.nombre);
+    // Un personaje no está pendiente si tiene carpeta propia o si una carpeta de grupo declara que lo cubre.
+    const cubiertos = new Set(ENT.flatMap(e => e.cubre || []));
+    PEND = pers.categorias.flatMap(c => c.personajes)
+      .filter(p => !porId.has(p.id) && !cubiertos.has(p.id)).map(p => p.nombre);
     route();
   })
   .catch(err => {
