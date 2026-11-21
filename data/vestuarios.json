@@ -1,6 +1,65 @@
 {
   "personajes": [
     {
+      "id": "aladdin",
+      "nombre": "Aladdín",
+      "categoria": "Protagonistas",
+      "grupo": false,
+      "vestuarios": [
+        {
+          "letra": "A",
+          "titulo": "Aladdín callejero",
+          "resumen": "Gorro tipo fez, chaleco sin mangas rojo terracota con ribetes oscuros, camisa cruda de raya fina, fajín ancho, pantalón bombacho crema, cubretobillos y morral cruzado. La guía técnica lo plantea en versión optimizada de costo: pocas piezas, telas rústicas y brillo mínimo.",
+          "escena": "Escena Uno: Mercado. Vuelve a este look al final (Escena Trece), cuando Iago le quita el turbante y queda con su vestuario original.",
+          "guia": {
+            "archivo": "assets/vestuarios/aladdin/guia-tecnica-a.webp",
+            "w": 1448,
+            "h": 1086
+          },
+          "fotos": [
+            {
+              "archivo": "assets/vestuarios/aladdin/vestuario-a1.webp",
+              "caption": "Producción teatral: chaleco bordado, fajín y morral en el mercado",
+              "w": 1033,
+              "h": 1600
+            },
+            {
+              "archivo": "assets/vestuarios/aladdin/vestuario-a2.webp",
+              "caption": "Referencia del look de la película live-action: chaleco rojo y camisa de rayas",
+              "w": 857,
+              "h": 1440
+            }
+          ]
+        },
+        {
+          "letra": "B",
+          "titulo": "Príncipe Alí",
+          "resumen": "Turbante alto con pluma, chaqueta marfil corta con escote en V y pedrería, cinturón con broche, pantalón bombacho, capa larga con forro estampado lavanda y cubrebotas. La guía técnica lo plantea en versión optimizada de costo: galones y aplicaciones en lugar de bordado manual.",
+          "escena": "Escena Siete: canción \"Príncipe Ali\" y llegada al palacio. En la Escena Trece Iago le quita el turbante.",
+          "guia": {
+            "archivo": "assets/vestuarios/aladdin/guia-tecnica-b.webp",
+            "w": 1448,
+            "h": 1086
+          },
+          "fotos": [
+            {
+              "archivo": "assets/vestuarios/aladdin/vestuario-b1.webp",
+              "caption": "Producción teatral: chaqueta marfil, capa y turbante con pluma",
+              "w": 776,
+              "h": 1279
+            },
+            {
+              "archivo": "assets/vestuarios/aladdin/vestuario-b2.webp",
+              "caption": "Producción teatral: chaqueta con pedrería y capa con forro brocado",
+              "w": 1200,
+              "h": 1800
+            }
+          ]
+        }
+      ],
+      "otras": []
+    },
+    {
       "id": "jasmine",
       "nombre": "Jasmine",
       "categoria": "Protagonistas",
