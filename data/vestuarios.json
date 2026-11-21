@@ -450,15 +450,28 @@
       "nombre": "Guardias del palacio",
       "categoria": "Grupos",
       "grupo": true,
-      "vestuarios": [],
-      "otras": [
+      "vestuarios": [
         {
-          "archivo": "assets/vestuarios/guardias/guardias.webp",
-          "caption": "Guardias del palacio",
-          "w": 1024,
-          "h": 883
+          "letra": "A",
+          "titulo": "Guardias árabes: versión masculina y femenina",
+          "resumen": "Turbante claro de tela ligera, chaleco negro sin mangas con ornamentos dorados, faja vino en capas, pantalón bombacho marfil con galón dorado y cubrebotas claras. La guía técnica propone dos versiones coordinadas, masculina y femenina (esta última con sobre-faldón corto en rojo vino), pensadas para producción teatral real: alta legibilidad a distancia, movilidad para la coreografía y costo moderado.",
+          "escena": "Escena Uno: Mercado (persecución en \"Un Salto Adelante\") y Escena Tres: Mercado (Persecución 1, con Razoul).",
+          "guia": {
+            "archivo": "assets/vestuarios/guardias/guia-tecnica.webp",
+            "w": 1448,
+            "h": 1086
+          },
+          "fotos": [
+            {
+              "archivo": "assets/vestuarios/guardias/vestuario-a1.webp",
+              "caption": "Guardias en escena: chaleco negro con bordado dorado, faja vino y bombacho marfil",
+              "w": 1024,
+              "h": 883
+            }
+          ]
         }
-      ]
+      ],
+      "otras": []
     }
   ]
 }
