@@ -197,6 +197,40 @@
       "otras": []
     },
     {
+      "id": "jafar",
+      "nombre": "Jafar",
+      "categoria": "Antagonistas",
+      "grupo": false,
+      "vestuarios": [
+        {
+          "letra": "A",
+          "titulo": "Gran visir: versión combinada",
+          "resumen": "Tocado alto negro con pieza roja y vivos dorados, túnica negra con líneas verticales doradas, mangas rojas, hombreras angulares, faja roja y capa larga negra con forro rojo. La guía técnica combina la lectura clara de la referencia 1 (silueta, colores y tocado icónicos) con la riqueza de la referencia 2 (cuello y pechera ornamentales, verticales dorados y capa de gran caída), en versión optimizada de costo. Barba y perilla postizas opcionales.",
+          "escena": "Aparece desde la Escena Uno y tiene su peso en la Escena Dos: Palacio, con Iago, el Sultán y el Príncipe Abdullah.",
+          "guia": {
+            "archivo": "assets/vestuarios/jafar/guia-tecnica.webp",
+            "w": 1448,
+            "h": 1086
+          },
+          "fotos": [
+            {
+              "archivo": "assets/vestuarios/jafar/vestuario-1a.webp",
+              "caption": "Referencia 1: túnica negra con mangas rojas, hombreras y tocado alto",
+              "w": 1200,
+              "h": 1714
+            },
+            {
+              "archivo": "assets/vestuarios/jafar/vestuario-1b.webp",
+              "caption": "Referencia 2: terciopelo rojo con verticales dorados, pechera ornamental y capa con cenefa",
+              "w": 750,
+              "h": 1000
+            }
+          ]
+        }
+      ],
+      "otras": []
+    },
+    {
       "id": "sultan",
       "nombre": "Sultán",
       "categoria": "La Corte",
