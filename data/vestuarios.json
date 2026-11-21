@@ -426,14 +426,18 @@
       "vestuarios": [
         {
           "letra": "A",
-          "titulo": "Los amigos: referencia",
-          "resumen": "",
-          "escena": "",
-          "guia": null,
+          "titulo": "Babkak, Omar y Kasim",
+          "resumen": "Tres siluetas con una misma base de patronaje (chaleco o cuerpo superior, pantalón bombacho, fajín superpuesto, brazaletes y gorrito pequeño), diferenciadas por color y volumen. Babkak, el amigo grande y cómico: verde lima y oliva, silueta amplia con mezcla de estampados. Omar, el ágil y carismático: turquesa y azul petróleo, silueta entallada. Kasim, el aventurero y cachondo: rojo y crema, chaleco corto y abierto con bombacho calado y fajín anaranjado. La guía técnica los plantea en versión optimizada de costo.",
+          "escena": "Escena Uno: Mercado, y de nuevo en la Escena Tres (canción \"Babkak, Omar, Kassim, Aladdin\"). En la Escena Siete entran con ropa elegante de comitiva, otro vestuario que aún no tiene referencia.",
+          "guia": {
+            "archivo": "assets/vestuarios/amigos-aladdin/guia-tecnica.webp",
+            "w": 1448,
+            "h": 1086
+          },
           "fotos": [
             {
               "archivo": "assets/vestuarios/amigos-aladdin/vestuarios-1a.webp",
-              "caption": "Tras bambalinas: tres intérpretes con Jasmine, con vestuarios callejeros en rojo, azul y verde",
+              "caption": "Tras bambalinas: los tres amigos con Jasmine, en verde (Babkak), azul (Omar) y rojo (Kasim)",
               "w": 750,
               "h": 763
             }
@@ -449,7 +453,7 @@
         },
         {
           "archivo": "assets/vestuarios/amigos-aladdin/amigos-aladdin.webp",
-          "caption": "Amigos aladdin",
+          "caption": "Baile en el mercado de Agrabah, con los amigos en verde, azul y crema",
           "w": 1080,
           "h": 723
         }
