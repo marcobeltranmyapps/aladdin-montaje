@@ -57,7 +57,50 @@
           ]
         }
       ],
-      "otras": []
+      "otras": [
+        {
+          "archivo": "assets/vestuarios/aladdin/principe-ali-jasmine.webp",
+          "caption": "Aladdín (Príncipe Alí) y Jasmín bajo la luna",
+          "w": 390,
+          "h": 486
+        },
+        {
+          "archivo": "assets/vestuarios/aladdin/alfombra-luna.webp",
+          "caption": "Aladdín y Jasmín volando en la alfombra mágica",
+          "w": 1020,
+          "h": 585
+        },
+        {
+          "archivo": "assets/vestuarios/aladdin/principe-ali.webp",
+          "caption": "Aladdín vestido como el Príncipe Alí",
+          "w": 776,
+          "h": 1279
+        },
+        {
+          "archivo": "assets/vestuarios/aladdin/aladdin-jasmine-sultan.webp",
+          "caption": "Aladdín, Jasmín y el Sultán",
+          "w": 564,
+          "h": 846
+        },
+        {
+          "archivo": "assets/vestuarios/aladdin/aladdin-mercado.webp",
+          "caption": "Aladdín en el mercado de Agrabah",
+          "w": 1033,
+          "h": 1600
+        },
+        {
+          "archivo": "assets/vestuarios/aladdin/aladdin-lampara.webp",
+          "caption": "Aladdín frota la lámpara en la Cueva de las Maravillas",
+          "w": 586,
+          "h": 845
+        },
+        {
+          "archivo": "assets/vestuarios/aladdin/banner-aladdin.webp",
+          "caption": "Aladdín frente al palacio",
+          "w": 1013,
+          "h": 423
+        }
+      ]
     },
     {
       "id": "jasmine",
@@ -194,7 +237,20 @@
           ]
         }
       ],
-      "otras": []
+      "otras": [
+        {
+          "archivo": "assets/vestuarios/genio/genio-vestuario.webp",
+          "caption": "Genio — vestuario completo",
+          "w": 480,
+          "h": 640
+        },
+        {
+          "archivo": "assets/vestuarios/genio/genio-diseno-vestuario.webp",
+          "caption": "Genio — lámina de diseño de vestuario (concepto)",
+          "w": 1159,
+          "h": 2295
+        }
+      ]
     },
     {
       "id": "jafar",
@@ -228,7 +284,14 @@
           ]
         }
       ],
-      "otras": []
+      "otras": [
+        {
+          "archivo": "assets/vestuarios/jafar/jaffar.webp",
+          "caption": "Jafar — vestuario de gran vizier",
+          "w": 949,
+          "h": 1024
+        }
+      ]
     },
     {
       "id": "sultan",
@@ -278,10 +341,37 @@
       "vestuarios": [],
       "otras": [
         {
+          "archivo": "assets/vestuarios/amigos-aladdin/los-cuatro-amigos.webp",
+          "caption": "Aladdín con Babkak, Omar y Kasim",
+          "w": 1200,
+          "h": 922
+        },
+        {
           "archivo": "assets/vestuarios/amigos-aladdin/amigos-aladdin.webp",
           "caption": "Amigos aladdin",
           "w": 1080,
           "h": 723
+        }
+      ]
+    },
+    {
+      "id": "ensamble",
+      "nombre": "Ensamble",
+      "categoria": "Grupos",
+      "grupo": true,
+      "vestuarios": [],
+      "otras": [
+        {
+          "archivo": "assets/vestuarios/ensamble/noches-de-arabia.webp",
+          "caption": "Número \"Noches de Arabia\" — ensamble",
+          "w": 820,
+          "h": 502
+        },
+        {
+          "archivo": "assets/vestuarios/ensamble/banner-mercado-agrabah.webp",
+          "caption": "Número de baile en el mercado de Agrabah",
+          "w": 1005,
+          "h": 416
         }
       ]
     },
@@ -293,10 +383,46 @@
       "vestuarios": [],
       "otras": [
         {
+          "archivo": "assets/vestuarios/ensamble-hombres/noches-de-arabia-2.webp",
+          "caption": "Número \"Noches de Arabia\" — salto de ensamble",
+          "w": 835,
+          "h": 624
+        },
+        {
           "archivo": "assets/vestuarios/ensamble-hombres/ensamble-hombres.webp",
           "caption": "Ensamble hombres",
           "w": 827,
           "h": 810
+        }
+      ]
+    },
+    {
+      "id": "escenografia",
+      "nombre": "Escenografía",
+      "categoria": "Grupos",
+      "grupo": true,
+      "vestuarios": [],
+      "otras": [
+        {
+          "archivo": "assets/vestuarios/escenografia/cueva-de-las-maravillas.webp",
+          "caption": "Escenografía: la Cueva de las Maravillas",
+          "w": 1003,
+          "h": 321
+        }
+      ]
+    },
+    {
+      "id": "guardias",
+      "nombre": "Guardias del palacio",
+      "categoria": "Grupos",
+      "grupo": true,
+      "vestuarios": [],
+      "otras": [
+        {
+          "archivo": "assets/vestuarios/guardias/guardias.webp",
+          "caption": "Guardias del palacio",
+          "w": 1024,
+          "h": 883
         }
       ]
     }
