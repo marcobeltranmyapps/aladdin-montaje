@@ -294,6 +294,40 @@
       ]
     },
     {
+      "id": "iago",
+      "nombre": "Iago",
+      "categoria": "Antagonistas",
+      "grupo": false,
+      "vestuarios": [
+        {
+          "letra": "A",
+          "titulo": "Iago: versión para adolescente",
+          "resumen": "Turbante con pluma y broche, chaleco corto carmín y fucsia con vivos dorados, camisa crema de manga amplia, hombreras suaves, faja envolvente en capas (rojo, fucsia, naranja y azul), pantalón bombacho y brazaletes opcionales. La guía técnica lo plantea en versión optimizada para intérprete adolescente: ligero, cómodo y de cambio rápido, con galones y pasamanería en lugar de bordado pesado.",
+          "escena": "Acompaña a Jafar en sus escenas: aparece desde la Escena Uno y en la Escena Dos: Palacio.",
+          "guia": {
+            "archivo": "assets/vestuarios/iago/guia-tecnica-1.webp",
+            "w": 1448,
+            "h": 1086
+          },
+          "fotos": [
+            {
+              "archivo": "assets/vestuarios/iago/vestuario-1a.webp",
+              "caption": "Producción teatral: look rojo con chaleco abierto y brazaletes de cuero",
+              "w": 1200,
+              "h": 1600
+            },
+            {
+              "archivo": "assets/vestuarios/iago/vestuario-1b.webp",
+              "caption": "Producción teatral: turbante fucsia y túnica morada con galones",
+              "w": 911,
+              "h": 1200
+            }
+          ]
+        }
+      ],
+      "otras": []
+    },
+    {
       "id": "sultan",
       "nombre": "Sultán",
       "categoria": "La Corte",
