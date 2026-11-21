@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vestuario — ALADDÍN</title>
+<meta name="description" content="Vestuario del musical ALADDÍN por personaje: fotos de referencia y guías técnicas de confección — B612 Audiovisual">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aladdin.b612.org.pe/vestuarios.html">
+<meta property="og:title" content="Vestuario — ALADDÍN">
+<meta property="og:description" content="Vestuario del musical ALADDÍN por personaje: fotos de referencia y guías técnicas de confección — B612 Audiovisual">
+<meta property="og:image" content="https://aladdin.b612.org.pe/assets/img/genio-vestuario.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vestuario — ALADDÍN">
+<meta name="twitter:description" content="Vestuario del musical ALADDÍN por personaje: fotos de referencia y guías técnicas de confección — B612 Audiovisual">
+<meta name="twitter:image" content="https://aladdin.b612.org.pe/assets/img/genio-vestuario.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Vazirmatn:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* ---------- Índice por personaje ---------- */
+  .vest-row {
+    display: flex; align-items: center; gap: 14px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 10px 14px 10px 10px; margin-bottom: 8px; text-decoration: none; color: inherit;
+    transition: transform 120ms ease, border-color 120ms ease;
+  }
+  .vest-row:hover { border-color: var(--border-strong); }
+  .vest-row:active { transform: scale(0.99); }
+  .vest-row .thumb {
+    width: 46px; height: 60px; flex-shrink: 0; border-radius: 7px; object-fit: cover;
+    object-position: center 18%; background: var(--surface-2, var(--brass-soft));
+  }
+  .vest-row .txt { flex: 1; min-width: 0; }
+  .vest-row .nombre { display: block; font-family: var(--font-display); font-size: 15.5px; color: var(--ink); }
+  .vest-row .meta { display: block; font-size: 12px; color: var(--ink-faint); margin-top: 2px; }
+  .vest-row .chev { color: var(--ink-faint); flex-shrink: 0; }
+
+  /* ---------- Ficha de personaje ---------- */
+  .ficha-header { margin-bottom: 18px; }
+  .ficha-header h1 { font-size: clamp(24px, 6vw, 32px); margin-top: 4px; }
+  .ficha-header .pill { margin-top: 10px; }
+  .ficha-link {
+    display: inline-flex; align-items: center; gap: 6px; margin-top: 12px;
+    font-size: 13px; color: var(--teal); text-decoration: none; font-weight: 600;
+  }
+  .ficha-link:hover { text-decoration: underline; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 6px; }
+  .chip {
+    font: inherit; font-size: 13px; cursor: pointer; padding: 7px 14px; border-radius: 999px;
+    border: 1px solid var(--border-strong); background: var(--surface); color: var(--ink);
+  }
+  .chip:hover { border-color: var(--brass); }
+  .chip b { color: var(--brass); margin-right: 4px; }
+
+  .vestuario { margin-top: 30px; scroll-margin-top: 16px; }
+  .vestuario .eyebrow { color: var(--brass); }
+  .vestuario h2 { font-size: clamp(21px, 5vw, 26px); color: var(--ink); margin: 2px 0 10px; }
+  .vestuario .resumen { margin: 0 0 14px; font-size: 15px; line-height: 1.6; color: var(--ink); }
+  .v-field { margin: 0 0 16px; }
+  .v-field h3 {
+    font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;
+    color: var(--teal); margin-bottom: 4px;
+  }
+  .v-field p { margin: 0; font-size: 14.5px; line-height: 1.6; color: var(--ink); }
+
+  .sub-label {
+    font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px;
+    color: var(--ink-soft); margin: 20px 0 8px;
+  }
+
+  .photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px 10px; align-items: start; }
+  .fig { margin: 0; }
+  .fig figcaption { margin-top: 6px; font-size: 12px; line-height: 1.4; color: var(--ink-soft); }
+  .photo {
+    position: relative; display: block; width: 100%; padding: 0; border: none; cursor: zoom-in;
+    border-radius: 12px; overflow: hidden; background: var(--surface);
+    aspect-ratio: 3 / 4; box-shadow: var(--shadow);
+  }
+  .photo img {
+    position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%;
+    transition: transform 200ms ease;
+  }
+  .photo:hover img { transform: scale(1.04); }
+
+  .guia {
+    position: relative; display: block; width: 100%; padding: 0; border: 1px solid var(--border);
+    border-radius: 12px; overflow: hidden; cursor: zoom-in; background: var(--surface);
+    box-shadow: var(--shadow);
+  }
+  .guia img { display: block; width: 100%; height: auto; }
+  .guia .hint {
+    position: absolute; right: 10px; bottom: 10px; display: inline-flex; align-items: center; gap: 6px;
+    padding: 6px 11px; border-radius: 999px; font-size: 12px; font-weight: 600;
+    background: rgba(20, 14, 6, 0.82); color: #f3e7c9; text-shadow: none;
+  }
+
+  /* ---------- Navegación entre fichas (igual que personajes.html) ---------- */
+  .ficha-nav { display: flex; align-items: stretch; gap: 10px; margin: 10px 0 22px; }
+  .ficha-nav .nav-link {
+    flex: 1; display: flex; flex-direction: column; gap: 2px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 10px 14px; text-decoration: none; color: inherit; min-width: 0;
+  }
+  .ficha-nav .nav-link:hover { border-color: var(--border-strong); }
+  .ficha-nav .nav-link.prev { text-align: left; }
+  .ficha-nav .nav-link.next { text-align: right; }
+  .ficha-nav .nav-link .lbl {
+    font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--ink-faint);
+  }
+  .ficha-nav .nav-link .ttl {
+    font-family: var(--font-display); font-size: 14px; color: var(--ink);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .ficha-nav .nav-link.index {
+    flex: 0 0 auto; align-items: center; justify-content: center; flex-direction: row; gap: 6px;
+  }
+  .ficha-nav .nav-link.index svg { width: 16px; height: 16px; flex-shrink: 0; }
+  .ficha-nav.bottom { margin-top: 30px; margin-bottom: 0; }
+  @media (max-width: 480px) {
+    .ficha-nav { flex-wrap: wrap; }
+    .ficha-nav .nav-link.prev, .ficha-nav .nav-link.next { flex: 1 1 100%; }
+    .ficha-nav .nav-link.index { flex: 1 1 100%; order: -1; }
+  }
+
+  .loading, .error { text-align: center; color: var(--ink-soft); padding: 40px 0; font-size: 14px; }
+
+  /* ---------- Visor ampliado ---------- */
+  #lightbox {
+    position: fixed; inset: 0; z-index: 60; display: flex; flex-direction: column;
+    background: rgba(10, 7, 3, 0.97);
+  }
+  #lightbox[hidden] { display: none; }
+  #lb-scroll {
+    flex: 1; min-height: 0; overflow: auto; display: flex; padding: 58px 14px 8px;
+    -webkit-overflow-scrolling: touch;
+  }
+  #lb-img {
+    margin: auto; flex: none; max-width: 100%; max-height: calc(100dvh - 150px);
+    border-radius: 8px; box-shadow: 0 20px 60px -10px rgba(0,0,0,0.6); cursor: zoom-in;
+  }
+  #lb-img.zoomed { max-width: none; max-height: none; width: auto; cursor: zoom-out; }
+  #lightbox .lb-foot { padding: 6px 18px 14px; text-align: center; }
+  #lightbox .cap { margin: 0; color: #f3e7c9; font-size: 13.5px; text-shadow: none; }
+  #lightbox .tip { margin: 4px 0 0; color: #a99a78; font-size: 12px; text-shadow: none; }
+  #lightbox .close {
+    position: absolute; top: 12px; right: 12px; z-index: 2; width: 40px; height: 40px; border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: #fff;
+    display: flex; align-items: center; justify-content: center; cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="hero-bg" aria-hidden="true">
+  <div class="hero-bg-img" id="hero-img" style="background-image:url('assets/img/genio-vestuario.jpg')"></div>
+</div>
+
+<div class="shell">
+  <a class="crumb" href="index.html">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    Inicio
+  </a>
+
+  <div id="root">
+    <div class="loading">Cargando vestuario…</div>
+  </div>
+
+  <footer class="site">Vestuario por personaje — se va completando a medida que se suben fotos y guías técnicas.</footer>
+</div>
+
+<div id="lightbox" hidden>
+  <button class="close" id="lb-close" aria-label="Cerrar" type="button">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <div id="lb-scroll"><img id="lb-img" alt=""></div>
+  <div class="lb-foot">
+    <p class="cap" id="lb-cap"></p>
+    <p class="tip" id="lb-tip">Toca la imagen para acercar o alejar</p>
+  </div>
+</div>
+
+<script>
+const root = document.getElementById("root");
+let ENT = [];      // entradas publicadas (personajes y grupos), en orden de visualización
+let GRUPOS = [];   // [{ nombre, entradas: [...] }] para el índice
+let PEND = [];     // personajes de personajes.json que todavía no tienen carpeta
+
+function escapeHtml(text) {
+  return String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+}
+function plural(n, uno, varios) { return `${n} ${n === 1 ? uno : varios}`; }
+
+const CHEV = `<svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>`;
+const INDEX_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>`;
+const ZOOM_ICON = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>`;
+
+/* ---------- Visor ---------- */
+const lightbox = document.getElementById("lightbox");
+const lbImg = document.getElementById("lb-img");
+const lbCap = document.getElementById("lb-cap");
+const lbScroll = document.getElementById("lb-scroll");
+
+function openLightbox(src, caption) {
+  lbImg.classList.remove("zoomed");
+  lbImg.src = src;
+  lbImg.alt = caption;
+  lbCap.textContent = caption;
+  lbScroll.scrollTo(0, 0);
+  lightbox.hidden = false;
+  document.body.style.overflow = "hidden";
+}
+function closeLightbox() {
+  lightbox.hidden = true;
+  lbImg.removeAttribute("src");
+  document.body.style.overflow = "";
+}
+lbImg.addEventListener("click", () => {
+  lbImg.classList.toggle("zoomed");
+  lbScroll.scrollTo(0, 0);
+});
+lightbox.addEventListener("click", e => {
+  if (e.target === lightbox || e.target === lbScroll) closeLightbox();
+});
+document.getElementById("lb-close").addEventListener("click", closeLightbox);
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && !lightbox.hidden) closeLightbox();
+});
+
+// Un solo manejador para todas las miniaturas: se abren por data-src / data-cap.
+root.addEventListener("click", e => {
+  const zoomable = e.target.closest("[data-src]");
+  if (zoomable) { openLightbox(zoomable.dataset.src, zoomable.dataset.cap); return; }
+  const chip = e.target.closest("[data-goto]");
+  if (chip) {
+    const el = document.getElementById(chip.dataset.goto);
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (el) el.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+  }
+});
+
+/* ---------- Índice ---------- */
+function portada(e) {
+  for (const v of e.vestuarios) if (v.fotos.length) return v.fotos[0].archivo;
+  return e.otras.length ? e.otras[0].archivo : "";
+}
+
+function metaTexto(e) {
+  const partes = [];
+  const g = e.vestuarios.filter(v => v.guia).length;
+  const f = e.vestuarios.reduce((n, v) => n + v.fotos.length, 0) + e.otras.length;
+  if (e.vestuarios.length) partes.push(plural(e.vestuarios.length, "vestuario", "vestuarios"));
+  if (g) partes.push(plural(g, "guía técnica", "guías técnicas"));
+  if (f) partes.push(plural(f, "foto", "fotos"));
+  return partes.join(" · ");
+}
+
+function renderIndex() {
+  let html = `
+    <header class="masthead" style="text-align:left; padding-bottom:4px;">
+      <div class="brand">B612 Audiovisual</div>
+      <h1>Vestuario</h1>
+      <p class="sub">Fotos de referencia y guías técnicas de confección, personaje por personaje. Toca uno para ver sus vestuarios.</p>
+    </header>
+  `;
+  GRUPOS.forEach(g => {
+    html += `<h2 class="section-title">${escapeHtml(g.nombre)}</h2>`;
+    g.entradas.forEach(e => {
+      const img = portada(e);
+      html += `
+        <a class="vest-row" href="#${e.id}">
+          ${img ? `<img class="thumb" src="${img}" alt="" loading="lazy">` : `<span class="thumb"></span>`}
+          <span class="txt">
+            <span class="nombre">${escapeHtml(e.nombre)}</span>
+            <span class="meta">${escapeHtml(metaTexto(e))}</span>
+          </span>
+          ${CHEV}
+        </a>`;
+    });
+  });
+  if (PEND.length) {
+    html += `<div class="note"><strong>Pendientes de subir:</strong> ${PEND.map(escapeHtml).join(", ")}.</div>`;
+  }
+  html += `<div class="note"><strong>Importante:</strong> son fotos de referencia de otras producciones y guías de apoyo — sirven para inspirar y construir el vestuario, no son un calco obligatorio de cómo debe verse nuestro montaje.</div>`;
+  root.innerHTML = html;
+}
+
+/* ---------- Ficha ---------- */
+function fichaNav(e) {
+  const idx = ENT.indexOf(e);
+  const prev = idx > 0 ? ENT[idx - 1] : null;
+  const next = idx < ENT.length - 1 ? ENT[idx + 1] : null;
+  const prevHtml = prev
+    ? `<a class="nav-link prev" href="#${prev.id}"><span class="lbl">← Anterior</span><span class="ttl">${escapeHtml(prev.nombre)}</span></a>` : "";
+  const nextHtml = next
+    ? `<a class="nav-link next" href="#${next.id}"><span class="lbl">Siguiente →</span><span class="ttl">${escapeHtml(next.nombre)}</span></a>` : "";
+  return `
+    <div class="ficha-nav">
+      ${prevHtml}
+      <a class="nav-link index" href="#" onclick="location.hash=''; return false;">${INDEX_ICON}Índice</a>
+      ${nextHtml}
+    </div>`;
+}
+
+function fotosHtml(fotos) {
+  return `<div class="photo-grid">${fotos.map(f => `
+    <figure class="fig">
+      <button type="button" class="photo" data-src="${f.archivo}" data-cap="${escapeHtml(f.caption)}">
+        <img src="${f.archivo}" alt="${escapeHtml(f.caption)}" loading="lazy" width="${f.w}" height="${f.h}">
+      </button>
+      <figcaption>${escapeHtml(f.caption)}</figcaption>
+    </figure>`).join("")}</div>`;
+}
+
+function vestuarioHtml(e, v) {
+  const titulo = `${v.titulo}`;
+  let html = `<section class="vestuario" id="v-${v.letra.toLowerCase()}">
+    <div class="eyebrow">Vestuario ${escapeHtml(v.letra)}</div>
+    <h2>${escapeHtml(titulo)}</h2>`;
+  if (v.resumen) html += `<p class="resumen">${escapeHtml(v.resumen)}</p>`;
+  if (v.escena) html += `<div class="v-field"><h3>Escena</h3><p>${escapeHtml(v.escena)}</p></div>`;
+  if (v.fotos.length) {
+    html += `<div class="sub-label">Fotos de referencia</div>${fotosHtml(v.fotos)}`;
+  }
+  if (v.guia) {
+    const cap = `Guía técnica — ${e.nombre}, vestuario ${v.letra}: ${v.titulo}`;
+    html += `<div class="sub-label">Guía técnica</div>
+      <button type="button" class="guia" data-src="${v.guia.archivo}" data-cap="${escapeHtml(cap)}">
+        <img src="${v.guia.archivo}" alt="${escapeHtml(cap)}" loading="lazy" width="${v.guia.w}" height="${v.guia.h}">
+        <span class="hint">${ZOOM_ICON}Ampliar</span>
+      </button>`;
+  }
+  return html + `</section>`;
+}
+
+function renderFicha(id) {
+  const e = ENT.find(x => x.id === id);
+  if (!e) { renderIndex(); return; }
+
+  const nav = fichaNav(e);
+  const resumen = [];
+  if (e.vestuarios.length) resumen.push(plural(e.vestuarios.length, "vestuario", "vestuarios"));
+  else resumen.push("Fotos de referencia");
+
+  let html = `
+    ${nav}
+    <div class="ficha-header">
+      <div class="eyebrow">${escapeHtml(e.categoria)}</div>
+      <h1>${escapeHtml(e.nombre)}</h1>
+      <div class="pill">${escapeHtml(resumen.join(" · "))}</div>
+      ${e.grupo ? "" : `<div><a class="ficha-link" href="personajes.html#${e.id}">Ver ficha del personaje →</a></div>`}
+    </div>`;
+
+  if (e.vestuarios.length > 1) {
+    html += `<div class="chips">${e.vestuarios.map(v =>
+      `<button type="button" class="chip" data-goto="v-${v.letra.toLowerCase()}"><b>${escapeHtml(v.letra)}</b>${escapeHtml(v.titulo)}</button>`
+    ).join("")}</div>`;
+  }
+
+  e.vestuarios.forEach(v => { html += vestuarioHtml(e, v); });
+
+  if (e.otras.length) {
+    html += `<h2 class="section-title">${e.vestuarios.length ? "Otras fotos" : "Fotos de referencia"}</h2>${fotosHtml(e.otras)}`;
+  }
+
+  html += nav.replace('class="ficha-nav"', 'class="ficha-nav bottom"');
+  root.innerHTML = html;
+  window.scrollTo(0, 0);
+}
+
+// Fondo de la cabecera: en la ficha, una foto del propio personaje (mejor una de escena, que
+// trae fondo de teatro; las de catálogo suelen tener fondo blanco); en el índice, la genérica.
+const HERO_DEFAULT = "assets/img/genio-vestuario.jpg";
+function setHero(e) {
+  const src = e ? (e.otras[0] || (e.vestuarios.find(v => v.fotos.length) || {fotos: []}).fotos[0] || {}).archivo : null;
+  document.getElementById("hero-img").style.backgroundImage = `url('${src || HERO_DEFAULT}')`;
+}
+
+function route() {
+  const id = location.hash.replace(/^#/, "");
+  setHero(ENT.find(x => x.id === id));
+  if (id) renderFicha(id); else renderIndex();
+}
+window.addEventListener("hashchange", () => { if (!lightbox.hidden) closeLightbox(); route(); });
+
+/* ---------- Carga ---------- */
+function getJson(url) {
+  return fetch(url, { cache: "no-store" }).then(r => {
+    if (!r.ok) throw new Error(url + ": HTTP " + r.status);
+    return r.json();
+  });
+}
+
+Promise.all([getJson("data/vestuarios.json"), getJson("data/personajes.json")])
+  .then(([vest, pers]) => {
+    ENT = vest.personajes;
+    const porId = new Map(ENT.map(e => [e.id, e]));
+
+    // Categorías en el orden de personajes.json; las de grupos (u otras) van después.
+    const orden = pers.categorias.map(c => c.nombre);
+    ENT.forEach(e => { if (!orden.includes(e.categoria)) orden.push(e.categoria); });
+    GRUPOS = orden
+      .map(nombre => ({ nombre, entradas: ENT.filter(e => e.categoria === nombre) }))
+      .filter(g => g.entradas.length);
+    ENT = GRUPOS.flatMap(g => g.entradas);   // el anterior/siguiente sigue el orden del índice
+
+    PEND = pers.categorias.flatMap(c => c.personajes).filter(p => !porId.has(p.id)).map(p => p.nombre);
+    route();
+  })
+  .catch(err => {
+    root.innerHTML = `<div class="error">No se pudo cargar el vestuario (${escapeHtml(err.message)}).<br>Si estás probando esto localmente, ábrelo desde un servidor (no directamente como archivo).</div>`;
+  });
+</script>
+</body>
+</html>

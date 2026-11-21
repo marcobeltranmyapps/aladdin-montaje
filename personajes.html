@@ -150,6 +150,7 @@
 const root = document.getElementById("root");
 let DATA = null;   // { categorias: [...], notaConjunto }
 let FLAT = null;   // lista plana de personajes en orden, para prev/siguiente
+const VEST_IDS = new Set();   // ids con vestuario publicado (data/vestuarios.json), para enlazar a vestuarios.html
 
 function escapeHtml(text) {
   return String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -224,6 +225,7 @@ function renderPersonaje(id) {
       <div class="eyebrow">${escapeHtml(p.categoria)}</div>
       <h1>${escapeHtml(p.nombre)}</h1>
       ${p.arquetipo ? `<div class="pill">${escapeHtml(p.arquetipo)}</div>` : ""}
+      ${VEST_IDS.has(p.id) ? `<div><a href="vestuarios.html#${p.id}" style="display:inline-block; margin-top:12px; font-size:13px; font-weight:600; color:var(--teal); text-decoration:none;">Ver vestuario →</a></div>` : ""}
     </div>
   `;
 
@@ -260,7 +262,14 @@ function loadPersonajes() {
       data.categorias.forEach(cat => {
         cat.personajes.forEach(p => { p.categoria = cat.nombre; FLAT.push(p); });
       });
-      route();
+      // El enlace al vestuario es opcional: si vestuarios.json falla, la ficha sale igual sin él.
+      return fetch("data/vestuarios.json", { cache: "no-store" })
+        .then(r => (r.ok ? r.json() : null))
+        .catch(() => null)
+        .then(v => {
+          if (v) v.personajes.forEach(e => VEST_IDS.add(e.id));
+          route();
+        });
     })
     .catch(err => {
       root.innerHTML = `<div class="error">No se pudieron cargar los personajes (${err.message}).<br>Si estás probando esto localmente, ábrelo desde un servidor (no directamente como archivo).</div>`;

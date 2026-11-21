@@ -1,0 +1,137 @@
+{
+  "personajes": [
+    {
+      "id": "jasmine",
+      "nombre": "Jasmine",
+      "categoria": "Protagonistas",
+      "grupo": false,
+      "vestuarios": [
+        {
+          "letra": "A",
+          "titulo": "Pavo real turquesa",
+          "resumen": "Corsé turquesa con cintura ilusión en tul color piel, pantalón bombacho y capa de tul bordada con plumas de pavo real. Inspirado en el look de la versión live-action de Disney; la guía técnica lo adapta a escena: ligero, cómodo y con mucha presencia visual.",
+          "escena": "",
+          "guia": {
+            "archivo": "assets/vestuarios/jasmine/guia-tecnica-a.webp",
+            "w": 1199,
+            "h": 1312
+          },
+          "fotos": [
+            {
+              "archivo": "assets/vestuarios/jasmine/vestuario-a1.webp",
+              "caption": "Referencia oficial del look de la película (© Disney)",
+              "w": 736,
+              "h": 1104
+            },
+            {
+              "archivo": "assets/vestuarios/jasmine/vestuario-a2.webp",
+              "caption": "Confección sobre maniquí: corsé, cintura ilusión y bordado de plumas",
+              "w": 709,
+              "h": 1280
+            }
+          ]
+        },
+        {
+          "letra": "B",
+          "titulo": "Lila con capucha",
+          "resumen": "Vestido fluido lila con capucha, mangas acampanadas, cinturón-lazo y falda por niveles, con bordados florales en fucsia y dorado. Inspirado en el vestuario del musical (Broadway / West End).",
+          "escena": "Escena Tres: Mercado. Jasmine sale del palacio con capucha (final de \"Estos Muros de Palacio\") y la baja en la Persecución 2 para revelar su tiara.",
+          "guia": {
+            "archivo": "assets/vestuarios/jasmine/guia-tecnica-b.webp",
+            "w": 1199,
+            "h": 1312
+          },
+          "fotos": [
+            {
+              "archivo": "assets/vestuarios/jasmine/vestuario-b1.webp",
+              "caption": "Producción del West End: Jasmine con la capucha puesta",
+              "w": 640,
+              "h": 920
+            },
+            {
+              "archivo": "assets/vestuarios/jasmine/vestuario-b2.webp",
+              "caption": "Producción del musical: mangas acampanadas y capucha bajada",
+              "w": 406,
+              "h": 581
+            }
+          ]
+        },
+        {
+          "letra": "C",
+          "titulo": "Marfil y turquesa (costo optimizado)",
+          "resumen": "Vestido de princesa árabe en marfil con panel central turquesa, galones dorados, velo de tul y cola. La guía lo plantea en versión optimizada de costo: pedrería solo en zonas clave, cenefas compradas y falda con menos capas.",
+          "escena": "",
+          "guia": {
+            "archivo": "assets/vestuarios/jasmine/guia-tecnica-c.webp",
+            "w": 1448,
+            "h": 1086
+          },
+          "fotos": [
+            {
+              "archivo": "assets/vestuarios/jasmine/vestuario-c1.webp",
+              "caption": "Confección de referencia: corpiño turquesa y falda marfil con abertura y cola",
+              "w": 570,
+              "h": 856
+            },
+            {
+              "archivo": "assets/vestuarios/jasmine/vestuario-c2.webp",
+              "caption": "Look completo de referencia: velo de tul y tiara",
+              "w": 736,
+              "h": 736
+            }
+          ]
+        }
+      ],
+      "otras": [
+        {
+          "archivo": "assets/vestuarios/jasmine/escena-palacio-damas.webp",
+          "caption": "Jasmín con sus damas, en el palacio",
+          "w": 1363,
+          "h": 2048
+        },
+        {
+          "archivo": "assets/vestuarios/jasmine/escena-palacio-damas-2.webp",
+          "caption": "Jasmín con sus damas",
+          "w": 593,
+          "h": 517
+        },
+        {
+          "archivo": "assets/vestuarios/jasmine/escena-mercado-baile.webp",
+          "caption": "Jasmín y Aladdin bailando en el mercado",
+          "w": 1200,
+          "h": 938
+        }
+      ]
+    },
+    {
+      "id": "amigos-aladdin",
+      "nombre": "Amigos Aladdin",
+      "categoria": "Grupos",
+      "grupo": true,
+      "vestuarios": [],
+      "otras": [
+        {
+          "archivo": "assets/vestuarios/amigos-aladdin/amigos-aladdin.webp",
+          "caption": "Amigos aladdin",
+          "w": 1080,
+          "h": 723
+        }
+      ]
+    },
+    {
+      "id": "ensamble-hombres",
+      "nombre": "Ensamble Hombres",
+      "categoria": "Grupos",
+      "grupo": true,
+      "vestuarios": [],
+      "otras": [
+        {
+          "archivo": "assets/vestuarios/ensamble-hombres/ensamble-hombres.webp",
+          "caption": "Ensamble hombres",
+          "w": 827,
+          "h": 810
+        }
+      ]
+    }
+  ]
+}
