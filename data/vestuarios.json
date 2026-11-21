@@ -163,6 +163,40 @@
       ]
     },
     {
+      "id": "genio",
+      "nombre": "Genio",
+      "categoria": "Protagonistas",
+      "grupo": false,
+      "vestuarios": [
+        {
+          "letra": "A",
+          "titulo": "Genio azul",
+          "resumen": "Chaqueta corta azul rey con cuello ornamental dorado, mangas con volumen, fajín rojo estampado, pantalón bombacho con arabescos y cubrebotas. Lleva brazaletes desprendibles con imanes: se sueltan de forma rápida y segura cuando el Genio pierde sus poderes. La guía técnica lo plantea en versión optimizada de costo: galones y aplicaciones en lugar de bordado manual.",
+          "escena": "Escena Cinco: La Cueva de las Maravillas, cuando Aladdín frota la lámpara y el Genio aparece.",
+          "guia": {
+            "archivo": "assets/vestuarios/genio/guia-tecnica-a.webp",
+            "w": 1448,
+            "h": 1086
+          },
+          "fotos": [
+            {
+              "archivo": "assets/vestuarios/genio/vestuario-a1.webp",
+              "caption": "Producción teatral: chaqueta azul, fajín rojo y brazaletes",
+              "w": 606,
+              "h": 872
+            },
+            {
+              "archivo": "assets/vestuarios/genio/vestuario-a2.webp",
+              "caption": "Vestuario original sobre maniquí",
+              "w": 480,
+              "h": 640
+            }
+          ]
+        }
+      ],
+      "otras": []
+    },
+    {
       "id": "amigos-aladdin",
       "nombre": "Amigos Aladdin",
       "categoria": "Grupos",
