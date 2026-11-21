@@ -5,7 +5,7 @@
     {
       "name": "Acto I",
       "scenes": [
-        { "code": "P", "title": "Prólogo: Mercado de Agrabah (años atrás)", "lines": [33, 147], "status": 0, "note": "En pausa: falta elenco infantil.", "songs": [] },
+        { "code": "P", "title": "Prólogo: Mercado de Agrabah (años atrás)", "lines": [33, 147], "status": 2, "note": "Acting ensamblado y repasado completo (nov-2026).", "songs": [] },
         { "code": "E1", "title": "Escena Uno: Mercado", "lines": [148, 532],
           "songs": [
             { "code": "C1", "title": "Noche de Arabia", "lines": [158, 291], "status": 1 },
@@ -15,49 +15,49 @@
           "segments": [
             { "from": 148, "to": 293, "status": 2, "label": "Apertura (Samira y Soraya) + 'Noche de Arabia' — acting y posiciones repasados, falta coreografía" },
             { "from": 295, "to": 365, "status": 2, "label": "Tienda + inicio de persecución — cerrado, no reprogramar hasta el ensayo final" },
-            { "from": 366, "to": 442, "status": 1, "label": "'Un Salto Adelante' — ensamble inicial completo (con coreografía), falta repasada" },
-            { "from": 443, "to": 484, "status": 1, "label": "Acting final: encuentro con los amigos + entrada del Príncipe Abdullah — terminado, falta repasada" },
-            { "from": 485, "to": 532, "status": 1, "label": "Canción 'Orgullosa de Mí' (solo de Aladdín) — ensamble completo, falta repasada" }
+            { "from": 366, "to": 442, "status": 2, "label": "'Un Salto Adelante' — acting y persecución repasados (la canción tiene su propio avance)" },
+            { "from": 443, "to": 484, "status": 2, "label": "Acting final: encuentro con los amigos + entrada del Príncipe Abdullah — repasado" },
+            { "from": 485, "to": 532, "status": 2, "label": "Tramo de 'Orgullosa de Mí' — acting repasado (la canción tiene su propio avance)" }
           ]
         },
         { "code": "E2", "title": "Escena Dos: Palacio", "lines": [533, 762],
           "songs": [ { "code": "C4", "title": "Estos Muros de Palacio", "lines": [645, 713], "status": 1 } ],
           "segments": [
             { "from": 533, "to": 644, "status": 2, "label": "Apertura: Jafar, Iago, Sultán, corte y asistentes de Jasmine — acting repasado" },
-            { "from": 714, "to": 762, "status": 1, "label": "Plan de Jafar e Iago — ya ensamblado (5-sep), falta repasarlo" }
+            { "from": 714, "to": 762, "status": 2, "label": "Plan de Jafar e Iago — acting repasado" }
           ]
         },
-        { "code": "E3", "title": "Escena Tres: Mercado", "lines": [763, 1085], "status": 0,
+        { "code": "E3", "title": "Escena Tres: Mercado", "lines": [763, 1085], "status": 2,
           "songs": [
-            { "code": "C5", "title": "Babkak, Omar, Kassim, Aladdin", "lines": [787, 823], "status": 0 },
-            { "code": "C6", "title": "A mil kilómetros de aquí", "lines": [933, 1004], "status": 0 }
+            { "code": "C5", "title": "Babkak, Omar, Kassim, Aladdin", "lines": [787, 823], "status": 1 },
+            { "code": "C6", "title": "A mil kilómetros de aquí", "lines": [933, 1004], "status": 1 }
           ] },
-        { "code": "E4", "title": "Escena Cuatro: Viaje al Desierto", "lines": [1086, 1141], "status": 1, "songs": [] },
-        { "code": "E5", "title": "Escena Cinco: La Cueva de las Maravillas", "lines": [1142, 1270], "status": 1,
-          "songs": [ { "code": "C7", "title": "Un Amigo Fiel en Mí", "lines": [1196, 1251], "status": 1, "note": "Coreografía ensamblada (arrancó el 26-set con el coreógrafo); falta una repasada" } ] },
-        { "code": "E6", "title": "Escena Seis: Viaje fuera del desierto", "lines": [1271, 1376], "status": 0,
-          "songs": [ { "code": "C8", "title": "Reprise Orgullosa de Mí", "lines": [1359, 1371], "status": 0 } ] }
+        { "code": "E4", "title": "Escena Cuatro: Viaje al Desierto", "lines": [1086, 1141], "status": 2, "songs": [] },
+        { "code": "E5", "title": "Escena Cinco: La Cueva de las Maravillas", "lines": [1142, 1270], "status": 2,
+          "songs": [ { "code": "C7", "title": "Un Amigo Fiel en Mí", "lines": [1196, 1251], "status": 2, "note": "Coreografía ensamblada (arrancó el 26-set con el coreógrafo) y repasada (17-oct)" } ] },
+        { "code": "E6", "title": "Escena Seis: Viaje fuera del desierto", "lines": [1271, 1376], "status": 2,
+          "songs": [ { "code": "C8", "title": "Reprise Orgullosa de Mí", "lines": [1359, 1371], "status": 1 } ] }
       ]
     },
     {
       "name": "Acto II",
       "scenes": [
-        { "code": "E7", "title": "Escena Siete: Palacio (Príncipe Alí)", "lines": [1377, 1643], "status": 0,
-          "songs": [ { "code": "C1", "title": "Príncipe Alí", "lines": [1431, 1534], "status": 0 } ] },
-        { "code": "E8", "title": "Escena Ocho: Balcón de Jasmine", "lines": [1644, 1865], "status": 0,
-          "songs": [ { "code": "C2", "title": "Un Mundo Ideal", "lines": [1728, 1806], "status": 0 } ] },
+        { "code": "E7", "title": "Escena Siete: Palacio (Príncipe Alí)", "lines": [1377, 1643], "status": 2,
+          "songs": [ { "code": "C1", "title": "Príncipe Alí", "lines": [1431, 1534], "status": 1 } ] },
+        { "code": "E8", "title": "Escena Ocho: Balcón de Jasmine", "lines": [1644, 1865], "status": 2,
+          "songs": [ { "code": "C2", "title": "Un Mundo Ideal", "lines": [1728, 1806], "status": 1 } ] },
         { "code": "E9", "title": "Escena Nueve: Mercado", "lines": [1866, 1919], "status": 2, "note": "Acting y posiciones marcados — no reprogramar hasta el ensayo final.", "songs": [] },
         { "code": "E10", "title": "Escena Diez: Viaje al Palacio", "lines": [1920, 1943], "status": 2, "note": "Acting y posiciones marcados — no reprogramar hasta el ensayo final.", "songs": [] },
-        { "code": "E11", "title": "Escena Once: Palacio", "lines": [1944, 1969], "status": 0, "songs": [] },
-        { "code": "G2", "title": "Entrada de Genio 2", "lines": [1970, 2013], "status": 0, "songs": [] },
-        { "code": "E12", "title": "Escena Doce: Habitación del Palacio", "lines": [2014, 2102], "status": 0,
-          "songs": [ { "code": "C3", "title": "Orgullosa de Mí (Reprise)", "lines": [2072, 2090], "status": 0 } ] },
-        { "code": "E13", "title": "Escena Trece: La Boda", "lines": [2103, 2470], "status": 0,
+        { "code": "E11", "title": "Escena Once: Palacio", "lines": [1944, 1969], "status": 2, "songs": [] },
+        { "code": "G2", "title": "Entrada de Genio 2", "lines": [1970, 2013], "status": 2, "songs": [] },
+        { "code": "E12", "title": "Escena Doce: Habitación del Palacio", "lines": [2014, 2102], "status": 2,
+          "songs": [ { "code": "C3", "title": "Orgullosa de Mí (Reprise)", "lines": [2072, 2090], "status": 1 } ] },
+        { "code": "E13", "title": "Escena Trece: La Boda", "lines": [2103, 2470], "status": 1,
           "songs": [
-            { "code": "C4", "title": "Príncipe Alí / Jafar Reprise", "lines": [2119, 2166], "status": 0 },
-            { "code": "C5", "title": "Callar", "lines": [2191, 2217], "status": 0 },
-            { "code": "C6", "title": "El Poder", "lines": [2258, 2314], "status": 0 },
-            { "code": "C7", "title": "Un Mundo Ideal (Finale)", "lines": [2420, 2470], "status": 0 }
+            { "code": "C4", "title": "Príncipe Alí / Jafar Reprise", "lines": [2119, 2166], "status": 1 },
+            { "code": "C5", "title": "Callar", "lines": [2191, 2217], "status": 1 },
+            { "code": "C6", "title": "El Poder", "lines": [2258, 2314], "status": 1 },
+            { "code": "C7", "title": "Un Mundo Ideal (Finale)", "lines": [2420, 2470], "status": 1 }
           ] }
       ]
     }

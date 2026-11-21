@@ -48,34 +48,7 @@
           "activities": [
             { "scene": "E2", "name": "Palacio", "tasks": [ "Repasar: acting del plan de Jafar e Iago (ya ensamblado, falta cerrarlo)" ] }
           ],
-          "note": "Quedó pendiente del 26-set (esa sesión se usó para coreografía con el coreógrafo); el resto de ese bloque —Escena Uno y Escena Cuatro— se completó el 3-oct." },
-        { "num": "07·12·13", "desc": "Escena Seis: Viaje + Escena Once + Entrada de Genio 2",
-          "activities": [
-            { "scene": "E6", "name": "Viaje fuera del desierto", "tasks": [ "Montar: viaje de vuelta y reprise de 'Orgullosa de Mí'" ] },
-            { "scene": "E11", "name": "Palacio", "tasks": [ "Ensamblar: transición corta" ] },
-            { "scene": "G2", "name": "Entrada de Genio 2", "tasks": [ "Ensamblar: transición corta" ] }
-          ],
-          "note": "Quedó pendiente del 3-oct: esa sesión se usó para cerrar Escena Uno y ensamblar Escena Cuatro y Cinco." },
-        { "num": "08·14", "desc": "Escena Siete: Palacio (Príncipe Alí) + Escena Doce",
-          "activities": [
-            { "scene": "E7", "name": "Palacio (Príncipe Alí)", "tasks": [ "Montar: entrada con posiciones del séquito y del Sultán" ] },
-            { "scene": "E12", "name": "Habitación del Palacio", "tasks": [ "Montar: reprise de 'Orgullosa de Mí'" ] }
-          ] },
-        { "num": "09", "desc": "Escena Ocho: Balcón (Un Mundo Ideal) — sesión completa",
-          "activities": [
-            { "scene": "E8", "name": "Balcón de Jasmine", "tasks": [ "Montar: 'Un Mundo Ideal', incluido el vuelo en alfombra" ] }
-          ],
-          "note": "Pieza grande y técnica: conviene reservarle una sesión de duración completa." },
-        { "num": "15", "desc": "Escena Trece: La Boda — sesión completa",
-          "activities": [
-            { "scene": "E13", "name": "La Boda", "tasks": [
-                "Montar: posiciones de la boda y la traición de Jafar (sus tres deseos)",
-                "Montar: canción 'Callar'",
-                "Montar: canción 'El Poder'",
-                "Montar: desenlace final"
-              ] }
-          ],
-          "note": "Es la escena más grande de la obra (4 canciones): conviene reservarle una sesión de duración completa." }
+          "note": "Quedó pendiente del 26-set (esa sesión se usó para coreografía con el coreógrafo); el resto de ese bloque —Escena Uno y Escena Cuatro— se completó el 3-oct." }
       ] },
     { "date": "2026-10-03", "phase": "Ensamble inicial", "num": "06·07·12·13", "desc": "Escena Cinco: Cueva + Escena Seis: Viaje + Escena Once + Entrada de Genio 2",
       "objective": "Montar Escena Cinco, Seis, Once y Entrada de Genio 2",
@@ -97,7 +70,8 @@
             "Montar: encuentro entre Aladdín y Jasmín"
           ] },
         { "scene": "P", "name": "Prólogo", "tasks": [ "Ensamblar: desde 'El impuesto del mercado, vieja. Hoy vencía.' hasta el final" ] }
-      ] },
+      ],
+      "progress": "Real: se ensayó según lo programado. Escena Tres ensamblada completa ('Cuatro Amigos', 'A mil kilómetros de aquí', ambas persecuciones y el encuentro de Aladdín y Jasmín). Prólogo ensamblado desde 'El impuesto del mercado, vieja. Hoy vencía.' hasta el final." },
     { "date": "2026-10-17", "phase": "Ensayo 1 (coreografía básica, sin libreto en mano)", "num": "05–08", "desc": "Repaso Acto I final + arranque Acto II: Escena Cuatro – Escena Siete",
       "objective": "Repasar con coreografía básica y sin libreto en mano, de Escena Cuatro a Siete",
       "activities": [
@@ -105,7 +79,8 @@
         { "scene": "E5", "name": "La Cueva de las Maravillas", "tasks": [ "Repasar" ] },
         { "scene": "E6", "name": "Viaje fuera del desierto", "tasks": [ "Repasar" ] },
         { "scene": "E7", "name": "Palacio (Príncipe Alí)", "tasks": [ "Repasar" ] }
-      ] },
+      ],
+      "progress": "Real: se ensayó según lo programado (Escenas Cuatro a Siete). Cuatro y Cinco (con 'Un Amigo Fiel en Mí') quedan repasadas; Seis y Siete se trabajaron por primera vez, así que quedan en primer ensamble." },
     { "date": "2026-10-24", "phase": "Ensayo 1 (coreografía básica, sin libreto en mano)", "num": "09–14", "desc": "Acto II: Escena Ocho – Escena Doce",
       "objective": "Repasar con coreografía básica y sin libreto en mano, de Escena Ocho a Doce",
       "activities": [
@@ -115,12 +90,14 @@
         { "scene": "E11", "name": "Palacio", "tasks": [ "Repasar" ] },
         { "scene": "G2", "name": "Entrada de Genio 2", "tasks": [ "Repasar" ] },
         { "scene": "E12", "name": "Habitación del Palacio", "tasks": [ "Repasar" ] }
-      ] },
+      ],
+      "progress": "Real: se ensayó según lo programado (Escenas Ocho a Doce, incluida Entrada de Genio 2). Ocho, Once, Genio 2 y Doce se trabajaron por primera vez y quedan en primer ensamble; Nueve y Diez ya estaban cerradas." },
     { "date": "2026-10-31", "phase": "Ensayo 1 (coreografía básica, sin libreto en mano)", "num": "15", "desc": "Escena Trece: La Boda",
       "objective": "Repasar con coreografía básica y sin libreto en mano la Escena Trece completa",
       "activities": [
         { "scene": "E13", "name": "La Boda", "tasks": [ "Repasar: completa" ] }
-      ] },
+      ],
+      "progress": "Real: se ensayó según lo programado. Escena Trece (La Boda) con sus cuatro canciones, trabajada por primera vez: queda en primer ensamble." },
 
     { "date": "2026-11-07", "phase": "Ensayo 2 (afinar coreografía, armonías, timing)", "num": "01–07", "desc": "Acto I completo (Prólogo – Escena Seis)",
       "objective": "Afinar coreografía, armonías y timing de todo el Acto I",
