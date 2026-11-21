@@ -197,6 +197,46 @@
       "otras": []
     },
     {
+      "id": "sultan",
+      "nombre": "Sultán",
+      "categoria": "La Corte",
+      "grupo": false,
+      "vestuarios": [
+        {
+          "letra": "A",
+          "titulo": "Sultán árabe",
+          "resumen": "Turbante voluminoso con pluma alta y broche, abrigo o caftán largo con bordado arabesco, túnica interior con botones, fajín drapeado, pantalón bombacho, cubrebotas y collar ornamental. Paleta marfil, crema y champagne con acentos verde agua y celeste. La guía técnica lo plantea en versión optimizada de costo: galones y pasamanería en lugar de bordado completo.",
+          "escena": "Escena Dos: Palacio, junto a Jafar, Iago y el Príncipe Abdullah. Antes aparece brevemente en la Escena Uno.",
+          "guia": {
+            "archivo": "assets/vestuarios/sultan/guia-tecnica-1.webp",
+            "w": 1448,
+            "h": 1086
+          },
+          "fotos": [
+            {
+              "archivo": "assets/vestuarios/sultan/vestuario-1a.webp",
+              "caption": "Producción teatral: abrigo largo bordado, collar y turbante con joyas",
+              "w": 600,
+              "h": 900
+            },
+            {
+              "archivo": "assets/vestuarios/sultan/vestuario-1b.webp",
+              "caption": "Producción teatral: abrigo con estampado paisley y turbante con pluma turquesa, junto a Jasmine",
+              "w": 564,
+              "h": 846
+            },
+            {
+              "archivo": "assets/vestuarios/sultan/vestuario-1c.webp",
+              "caption": "Producción teatral: fajín cruzado y turbante con pluma azul, junto a Jasmine",
+              "w": 682,
+              "h": 1024
+            }
+          ]
+        }
+      ],
+      "otras": []
+    },
+    {
       "id": "amigos-aladdin",
       "nombre": "Amigos Aladdin",
       "categoria": "Grupos",
