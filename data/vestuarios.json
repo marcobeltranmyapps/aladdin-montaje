@@ -113,7 +113,7 @@
         {
           "letra": "A",
           "titulo": "Pavo real turquesa",
-          "resumen": "Corsé turquesa con cintura ilusión en tul color piel, pantalón bombacho y capa de tul bordada con plumas de pavo real. Inspirado en el look de la versión live-action de Disney; la guía técnica lo adapta a escena: ligero, cómodo y con mucha presencia visual.",
+          "resumen": "Corsé turquesa con cintura ilusión en tul color piel, pantalón bombacho y capa de tul bordada con plumas de pavo real. Inspirado en el look de la versión live-action de Disney; la guía técnica lo adapta a escena: ligero, cómodo y con mucha presencia visual. Es el vestido base: la túnica de mercado y el velo de novia se ponen encima.",
           "escena": "",
           "guia": {
             "archivo": "assets/vestuarios/jasmine/guia-tecnica-a.webp",
@@ -137,51 +137,39 @@
         },
         {
           "letra": "B",
-          "titulo": "Lila con capucha",
-          "resumen": "Vestido fluido lila con capucha, mangas acampanadas, cinturón-lazo y falda por niveles, con bordados florales en fucsia y dorado. Inspirado en el vestuario del musical (Broadway / West End).",
-          "escena": "Escena Tres: Mercado. Jasmine sale del palacio con capucha (final de \"Estos Muros de Palacio\") y la baja en la Persecución 2 para revelar su tiara.",
+          "titulo": "Túnica de mercado (lila)",
+          "resumen": "Túnica lila con capucha, de estilo recatado y sencillo: lino chantú color uva, mangas amplias tipo campana, cinturón de lazo en la misma tela, bajo con volante fruncido y greca dorada en capucha, delantero, mangas y bajo. Cubre por completo el vestido turquesa y permite un cambio rápido (retirar la túnica). La guía incluye patronaje y medidas de referencia para talla M adolescente.",
+          "escena": "Escena Dos: Palacio, al final de \"Estos Muros de Palacio\", Jasmine se pone la capucha y sale corriendo. Escena Tres: Mercado, entra con la túnica y baja la capucha en la Persecución 2 para revelar su tiara; la guía prevé retirar la túnica de forma rápida y dejar a la vista el vestido turquesa.",
           "guia": {
-            "archivo": "assets/vestuarios/jasmine/guia-tecnica-b.webp",
+            "archivo": "assets/vestuarios/jasmine/guia-tecnica-lila.webp",
             "w": 1199,
             "h": 1312
           },
           "fotos": [
             {
-              "archivo": "assets/vestuarios/jasmine/vestuario-b1.webp",
-              "caption": "Producción del West End: Jasmine con la capucha puesta",
-              "w": 640,
-              "h": 920
-            },
-            {
-              "archivo": "assets/vestuarios/jasmine/vestuario-b2.webp",
-              "caption": "Producción del musical: mangas acampanadas y capucha bajada",
-              "w": 406,
-              "h": 581
+              "archivo": "assets/vestuarios/jasmine/vestuario-lila.webp",
+              "caption": "Referencia de diseño: con túnica (disfraz de mercado) y sin túnica (vestido turquesa)",
+              "w": 1122,
+              "h": 1402
             }
           ]
         },
         {
           "letra": "C",
-          "titulo": "Marfil y turquesa (costo optimizado)",
-          "resumen": "Vestido de princesa árabe en marfil con panel central turquesa, galones dorados, velo de tul y cola. La guía lo plantea en versión optimizada de costo: pedrería solo en zonas clave, cenefas compradas y falda con menos capas.",
-          "escena": "",
+          "titulo": "Velo de novia sobre el vestido turquesa",
+          "resumen": "El vestido de la boda se reemplaza por un velo largo de novia que va encima del vestido turquesa: organza tornasol marfil perlado, con orilla fina y bordado dorado de motivos vegetales, de caída suelta y vaporosa, hasta el piso con cola extendida. Se sujeta con peineta o base oculta bajo el tocado, y debe ser fácil de retirar en escena.",
+          "escena": "Escena Trece: La Boda.",
           "guia": {
-            "archivo": "assets/vestuarios/jasmine/guia-tecnica-c.webp",
-            "w": 1448,
-            "h": 1086
+            "archivo": "assets/vestuarios/jasmine/guia-tecnica-velo-novia.webp",
+            "w": 1122,
+            "h": 1402
           },
           "fotos": [
             {
-              "archivo": "assets/vestuarios/jasmine/vestuario-c1.webp",
-              "caption": "Confección de referencia: corpiño turquesa y falda marfil con abertura y cola",
-              "w": 570,
-              "h": 856
-            },
-            {
-              "archivo": "assets/vestuarios/jasmine/vestuario-c2.webp",
-              "caption": "Look completo de referencia: velo de tul y tiara",
-              "w": 736,
-              "h": 736
+              "archivo": "assets/vestuarios/jasmine/velo-novia.webp",
+              "caption": "Referencia de diseño: velo de organza sobre el vestido turquesa, con tiara",
+              "w": 1024,
+              "h": 1536
             }
           ]
         }
@@ -542,6 +530,35 @@
               "caption": "Guardias en escena: chaleco negro con bordado dorado, faja vino y bombacho marfil",
               "w": 1024,
               "h": 883
+            }
+          ]
+        }
+      ],
+      "otras": []
+    },
+    {
+      "id": "sirviente-encantado",
+      "nombre": "Sirviente encantado",
+      "categoria": "Grupos",
+      "grupo": true,
+      "cubre": [],
+      "vestuarios": [
+        {
+          "letra": "A",
+          "titulo": "Sirviente encantado: versión hombre y mujer (adolescente)",
+          "resumen": "Montera (fez) roja con flor de lis y borla dorada, chaleco rojo sin mangas con galón dorado y botones dorados, pantalón tipo harén morado amplio con ajuste en tobillos y cubrebotas negras lisas. La guía técnica trae versión masculina y femenina para intérpretes adolescentes, con planos de patronaje y especificaciones de confección. Diseñado para danza y escena.",
+          "escena": "Escena Cinco: La Cueva de las Maravillas, en la canción \"Un amigo fiel en mí\" del Genio. El libreto actual no menciona a los sirvientes; los ubiqué ahí porque en la foto de Broadway acompañan al Genio en ese número.",
+          "guia": {
+            "archivo": "assets/vestuarios/sirviente-encantado/sirviente-encantado.webp",
+            "w": 1216,
+            "h": 1294
+          },
+          "fotos": [
+            {
+              "archivo": "assets/vestuarios/sirviente-encantado/referencia-broadway.webp",
+              "caption": "Referencia de Broadway: el Genio con sirvientes encantados, con montera roja, chaleco y pantalón morado",
+              "w": 1122,
+              "h": 1402
             }
           ]
         }
